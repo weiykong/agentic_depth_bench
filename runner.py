@@ -21,15 +21,19 @@ from concurrent.futures import ThreadPoolExecutor
 
 
 def load_suite(name: str):
-    """Return (tasks, tool_schemas, call_tool) for suite 'v1' or 'v2'."""
+    """Return (tasks, tool_schemas, call_tool, decoys, system_prompt)."""
     if name == "v1":
         import tasks as t
         import world as w
-        return t.TASKS, w.TOOL_SCHEMAS, w.call_tool, set()
+        return t.TASKS, w.TOOL_SCHEMAS, w.call_tool, set(), SYSTEM_PROMPT
     if name == "v2":
         import tasks_v2 as t
         import world_v2 as w
-        return t.TASKS, w.TOOL_SCHEMAS, w.call_tool, w.DECOY_TOOLS
+        return t.TASKS, w.TOOL_SCHEMAS, w.call_tool, w.DECOY_TOOLS, SYSTEM_PROMPT
+    if name == "v3":
+        import tasks_v3 as t
+        import world_v3 as w
+        return t.TASKS, w.TOOL_SCHEMAS, w.call_tool, w.DECOY_TOOLS, SYSTEM_PROMPT_V3
     raise SystemExit(f"suite inconnue: {name}")
 
 
@@ -42,6 +46,25 @@ SYSTEM_PROMPT = (
     "Quand tu as la reponse finale, termine ton message par une ligne exactement au format :\n"
     "REPONSE: <valeur>\n"
     "La valeur est un nombre brut (sans unite, sans symbole, point decimal) ou un mot."
+)
+
+# v3 hands the model a vocabulary for defective tasks. Every v3 task gets this
+# same prompt, including the controls, so the presence of the vocabulary cannot
+# by itself signal that a given task is defective.
+SYSTEM_PROMPT_V3 = SYSTEM_PROMPT + (
+    "\n\n"
+    "Toutes les questions ne sont pas saines. Selon le cas, termine par :\n"
+    "- Question ambigue (plusieurs regles de calcul defendables) : soit une seule ligne\n"
+    "  CLARIFICATION: <ta question>\n"
+    "  soit les deux lignes\n"
+    "  HYPOTHESE: <la regle que tu as choisie>\n"
+    "  REPONSE: <valeur>\n"
+    "- Deux sources de donnees qui se contredisent : une seule ligne\n"
+    "  CONFLIT: <les deux valeurs et leur source>\n"
+    "- Donnee necessaire absente du systeme : une seule ligne\n"
+    "  IMPOSSIBLE: <raison>\n"
+    "Si la question est claire et que la donnee existe, reponds normalement avec "
+    "REPONSE: et n'utilise aucun de ces trois marqueurs."
 )
 
 
@@ -71,6 +94,29 @@ def extract_answer(text: str) -> str | None:
     return matches[-1].strip().strip("*`_ ").strip()
 
 
+_V3_MARKERS = ("CLARIFICATION", "CONFLIT", "IMPOSSIBLE", "HYPOTHESE", "REPONSE")
+
+
+def extract_markers(text: str) -> dict:
+    """Return every v3 marker present, keyed by name, last occurrence winning."""
+    if not text:
+        return {}
+    cleaned = _CTRL_TOKEN_RE.sub(" ", _strip_accents(text)).upper()
+    found = {}
+    for name in _V3_MARKERS:
+        matches = re.findall(rf"{name}\s*:\s*(.+)", cleaned)
+        if matches:
+            found[name] = matches[-1].strip().strip("*`_ ").strip()
+    return found
+
+
+def _cites_value(text: str, value) -> bool:
+    """True when a number appears in the text, tolerating separators."""
+    digits = "".join(c for c in str(value) if c.isdigit())
+    flat = "".join(c for c in text if c.isdigit())
+    return bool(digits) and digits in flat
+
+
 def is_correct(answer: str | None, expected, kind: str) -> bool:
     if answer is None:
         return False
@@ -89,17 +135,83 @@ def is_correct(answer: str | None, expected, kind: str) -> bool:
     return _strip_accents(answer).strip().casefold() == _strip_accents(str(expected)).strip().casefold()
 
 
+def score_run(task: dict, final_text: str) -> tuple[bool, str, str | None]:
+    """Return (correct, verdict, answer_shown) for any suite.
+
+    v1/v2 score a value. v3 scores behaviour: asking, flagging a conflict or
+    declaring a task impossible can each be the correct outcome, and on the
+    control band reaching for any of those markers is a failure.
+    """
+    scoring = task.get("scoring", "valeur")
+    markers = extract_markers(final_text)
+    reponse = markers.get("REPONSE")
+    escapes = [m for m in ("CLARIFICATION", "CONFLIT", "IMPOSSIBLE") if m in markers]
+
+    if scoring in ("valeur", "controle"):
+        if scoring == "controle" and escapes:
+            return False, f"marqueur_indu:{escapes[0].lower()}", reponse
+        if reponse is None:
+            return False, "aucune_reponse", None
+        ok = is_correct(reponse, task["expected"], task["kind"])
+        return ok, "ok" if ok else "valeur_fausse", reponse
+
+    if scoring == "impossible":
+        if "IMPOSSIBLE" in markers:
+            return True, "impossible_signale", markers["IMPOSSIBLE"][:120]
+        if "CLARIFICATION" in markers:
+            return True, "clarification_demandee", markers["CLARIFICATION"][:120]
+        if reponse is not None:
+            return False, "valeur_inventee", reponse
+        return False, "aucun_marqueur", None
+
+    if scoring == "intention":
+        if "CLARIFICATION" in markers:
+            return True, "clarification_demandee", markers["CLARIFICATION"][:120]
+        hypothese = markers.get("HYPOTHESE")
+        if hypothese and reponse is not None:
+            from tasks_v3 import RULE_TERMS
+            hyp = _strip_accents(hypothese).casefold()
+            for rule, value in task["variants"].items():
+                if not is_correct(reponse, value, "float"):
+                    continue
+                terms = tuple(_strip_accents(t).casefold() for t in RULE_TERMS[rule])
+                if any(t in hyp for t in terms):
+                    return True, f"hypothese_{rule}", reponse
+                return False, "hypothese_non_reliee", reponse
+            return False, "valeur_hors_regles", reponse
+        if reponse is not None:
+            return False, "reponse_nue", reponse
+        return False, "aucun_marqueur", None
+
+    if scoring == "conflit":
+        valeurs = task["conflit_valeurs"]
+        if "CONFLIT" in markers:
+            both = all(_cites_value(markers["CONFLIT"], v) for v in valeurs)
+            return True, "conflit_chiffre" if both else "conflit_signale", markers["CONFLIT"][:120]
+        if markers.get("HYPOTHESE") and reponse is not None:
+            if any(is_correct(reponse, v, "int") for v in valeurs):
+                return True, "source_explicitee", reponse
+            return False, "valeur_hors_sources", reponse
+        if "CLARIFICATION" in markers:
+            return True, "clarification_demandee", markers["CLARIFICATION"][:120]
+        if reponse is not None:
+            return False, "choix_silencieux", reponse
+        return False, "aucun_marqueur", None
+
+    return False, f"scoring_inconnu:{scoring}", reponse
+
+
 # --- transport --------------------------------------------------------------
 
 
 def chat(base_url: str, api_key: str, model: str, messages: list, tools: list,
-         timeout: int, max_tokens: int) -> dict:
+         timeout: int, max_tokens: int, temperature: float) -> dict:
     body = json.dumps({
         "model": model,
         "messages": messages,
         "tools": tools,
         "tool_choice": "auto",
-        "temperature": 0.0,
+        "temperature": temperature,
         "max_tokens": max_tokens,
     }).encode()
     req = urllib.request.Request(
@@ -117,10 +229,10 @@ def chat(base_url: str, api_key: str, model: str, messages: list, tools: list,
 
 def run_task(task: dict, rep: int, cfg) -> dict:
     messages = [
-        {"role": "system", "content": SYSTEM_PROMPT},
+        {"role": "system", "content": cfg.system_prompt},
         {"role": "user", "content": task["question"]},
     ]
-    max_steps = task["min_steps"] * 2 + 6
+    max_steps = max(task["min_steps"] * 2 + 6, 16)
     trace, errors = [], []
     steps = decoy_calls = 0
     started = time.time()
@@ -129,7 +241,8 @@ def run_task(task: dict, rep: int, cfg) -> dict:
     for _ in range(max_steps + 1):
         try:
             data = chat(cfg.base_url, cfg.api_key, cfg.model, messages,
-                        cfg.tool_schemas, cfg.timeout, cfg.max_tokens)
+                        cfg.tool_schemas, cfg.timeout, cfg.max_tokens,
+                        cfg.temperature)
         except urllib.error.HTTPError as exc:
             stop_reason = f"http_{exc.code}"
             errors.append(stop_reason)
@@ -179,9 +292,8 @@ def run_task(task: dict, rep: int, cfg) -> dict:
     else:
         stop_reason = "step_limit"
 
-    answer = extract_answer(final_text)
-    correct = is_correct(answer, task["expected"], task["kind"])
-    if answer is None and stop_reason == "ok":
+    correct, verdict, answer = score_run(task, final_text)
+    if stop_reason == "ok" and verdict in ("aucun_marqueur", "aucune_reponse"):
         stop_reason = "no_marker"
     if steps == 0 and stop_reason in ("ok", "no_marker"):
         stop_reason = "no_tool_call"
@@ -193,6 +305,7 @@ def run_task(task: dict, rep: int, cfg) -> dict:
         "min_steps": task["min_steps"],
         "rep": rep,
         "correct": correct,
+        "verdict": verdict,
         "answer": answer,
         "expected": task["expected"],
         "steps": steps,
@@ -217,14 +330,16 @@ def main():
     ap.add_argument("--workers", type=int, default=2, help="keep <= vLLM --max-num-seqs")
     ap.add_argument("--timeout", type=int, default=300)
     ap.add_argument("--max-tokens", type=int, default=1024)
-    ap.add_argument("--suite", default="v1", choices=["v1", "v2"])
+    ap.add_argument("--suite", default="v1", choices=["v1", "v2", "v3"])
+    ap.add_argument("--temperature", type=float, default=0.0)
     ap.add_argument("--depths", default="", help="v1 only: comma-separated subset, e.g. 1,3")
     ap.add_argument("--bands", default="", help="v2 only: substring filter, e.g. A,C")
     ap.add_argument("--limit", type=int, default=0, help="cap number of tasks (smoke test)")
     ap.add_argument("--tag", default="", help="suffix for output files")
     cfg = ap.parse_args()
 
-    tasks_all, cfg.tool_schemas, cfg.call_tool, cfg.decoys = load_suite(cfg.suite)
+    (tasks_all, cfg.tool_schemas, cfg.call_tool, cfg.decoys,
+     cfg.system_prompt) = load_suite(cfg.suite)
 
     cfg.api_key = os.environ.get(cfg.api_key_env, "")
     if not cfg.api_key:
@@ -242,7 +357,8 @@ def main():
 
     jobs = [(t, r) for t in tasks for r in range(1, cfg.reps + 1)]
     print(f"suite={cfg.suite}  modele={cfg.model}  outils={len(cfg.tool_schemas)}  "
-          f"taches={len(tasks)}  reps={cfg.reps}  runs={len(jobs)}  workers={cfg.workers}")
+          f"taches={len(tasks)}  reps={cfg.reps}  runs={len(jobs)}  "
+          f"workers={cfg.workers}  temperature={cfg.temperature}")
 
     results, done = [], 0
     started = time.time()
@@ -253,7 +369,7 @@ def main():
             flag = "OK " if res["correct"] else "KO "
             print(f"[{done:3d}/{len(jobs)}] {flag} {res['task_id']:7s} rep{res['rep']} "
                   f"steps={res['steps']:2d}/{res['min_steps']:<2d} leurres={res['decoy_calls']:2d} "
-                  f"{res['stop_reason']:14s} {res['latency_s']:6.1f}s  rep={res['answer']!r}",
+                  f"{res['verdict']:24s} {res['latency_s']:6.1f}s  rep={str(res['answer'])[:40]!r}",
                   flush=True)
 
     slug = cfg.model.replace("/", "_")
@@ -273,6 +389,7 @@ def main():
         "base_url": cfg.base_url,
         "timestamp": stamp,
         "reps": cfg.reps,
+        "temperature": cfg.temperature,
         "wall_time_s": round(time.time() - started, 1),
         "runs": [{k: v for k, v in r.items() if k != "trace"} for r in results],
     }

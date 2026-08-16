@@ -64,7 +64,15 @@ def report(summary: dict) -> None:
         for kind, count in errs.most_common():
             print(f"  {kind:18s} {count:3d}")
 
-    if per_step:
+    # The projection models a chain that breaks one step at a time. v3 failures
+    # are behavioural (a bare answer, an invented value, arithmetic drift over a
+    # long context), not chain ruptures, so extrapolating from them would
+    # produce a confident and meaningless number.
+    if summary.get("suite") == "v3":
+        print("\nPas de projection par etape sur cette suite : les echecs y sont "
+              "comportementaux,\nnon des ruptures de chaine. La fiabilite par etape "
+              "ne s'y interprete pas.")
+    elif per_step:
         band = max(per_step, key=lambda b: per_step[b][1])
         p, mean_min = per_step[band]
         print(f"\nFiabilite par etape a la bande la plus profonde ({band}, "

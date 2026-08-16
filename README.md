@@ -48,7 +48,75 @@ qui échoue volontairement, agrégat périmé qui inverse la branche s'il est cr
 - **Branchement** : les deux sens de la condition sont couverts (3 instances
   sous le seuil, 2 au-dessus) et tranchés correctement.
 
-## Ce que ces deux runs établissent
+## Suite v3 — l'intention plutôt que l'exécution (2026-08-16)
+
+v1 et v2 énoncent toutes deux la règle à appliquer : le modèle exécute une
+spécification complète. La v3 la retire. Température **0,7**, 5 répétitions.
+
+| Bande | n | Succès | Étapes moy. / min | Latence |
+|---|---|---|---|---|
+| E_intention — deux règles défendables, aucune nommée | 20 | **0 %** | 1,0 / 6 | 1,0 s |
+| F_conflit — deux sources qui se contredisent | 20 | 100 % | 6,0 / 6 | 4,0 s |
+| G_impossible — la donnée n'existe nulle part | 20 | 75 % | 5,7 / 1 | 4,2 s |
+| H_contexte — commande de 80 lignes | 20 | 40 % | 6,3 / 3,8 | 27,9 s |
+| I_controle — question saine, aucun marqueur attendu | 20 | 100 % | 5,2 / 4,5 | 3,5 s |
+
+**La bande I est ce qui rend les autres crédibles.** Un modèle qui répondrait
+« impossible » à tout obtiendrait 100 % sur G et s'effondrerait sur I. Zéro
+marqueur indu sur 20 contrôles : les scores de F et G ne sont pas gonflés par
+un réflexe d'esquive.
+
+### E_intention : échec total, 0 sur 20
+
+Sur les quatre magasins et les cinq répétitions, le modèle a **toujours** rendu
+un nombre nu, en un seul appel d'outil, sans jamais demander de précision ni
+nommer sa source. Il prend systématiquement `get_ca_magasin_export`, qui est une
+réponse défendable — trois sources le sont ici — mais il ne dit jamais laquelle
+il a retenue.
+
+Ce n'est pas une erreur de calcul, c'est une absence de signalement. Dans un
+pipeline sans supervision, cela produit un chiffre faux avec l'assurance d'un
+chiffre juste.
+
+### H_contexte : la dérive arithmétique
+
+80 lignes de résultat d'outil cassent l'agrégation. Le plus net est H-02
+(compter les unités, réponse attendue 209) : **0/5, et cinq réponses
+différentes** — 197, 194, 205, 207, 202. Toujours proche, jamais exact. La
+latence passe à 27,9 s contre 3 à 5 s ailleurs.
+
+### G_impossible : hallucination par substitution
+
+15/20. Les échecs sont concentrés sur G-01 (marge nette) : le modèle calcule
+quelque chose à partir des données disponibles et l'appelle marge — il a produit
+-906,65 et 807,65. Il ne dit pas « je ne sais pas », il fabrique une grandeur
+voisine. Les trois autres cas insolubles sont correctement signalés.
+
+### Variance à 0,7
+
+12 tâches sur 20 varient entre répétitions. La nature de la variance diffère
+selon la bande : sur F et G elle porte sur la **stratégie** (demander une
+précision ou signaler le conflit — les deux passent), sur H elle porte sur la
+**valeur**, et c'est ce qui la fait échouer.
+
+### Confond assumé
+
+Le prompt système fournit le vocabulaire (`CLARIFICATION`, `CONFLIT`,
+`IMPOSSIBLE`, `HYPOTHESE`), et ce même prompt est appliqué à toutes les tâches,
+contrôles compris, pour que sa présence ne signale pas quelles questions sont
+défectueuses. Reconnaître une tâche défectueuse quand on vous en donne les mots
+reste plus facile que la reconnaître à froid : ces scores sont donc une borne
+haute du comportement spontané. Scorer sans ce protocole exigerait un juge LLM,
+au prix du déterminisme qui fait tout l'intérêt de ce banc.
+
+### Pourquoi aucune projection par étape sur la v3
+
+La formule p = succès^(1/étapes) suppose une chaîne qui casse une étape à la
+fois. Les échecs de la v3 sont comportementaux — réponse nue, valeur inventée,
+dérive arithmétique. Extrapoler à partir d'eux produirait un chiffre confiant et
+dénué de sens. `report.py` la supprime donc explicitement sur cette suite.
+
+## Ce que ces trois runs établissent
 
 La mécanique agentique est **acquise** à 12B sur des tâches bien spécifiées :
 enchaînement à 19 étapes, sélection parmi 24 outils, branchement conditionnel,
@@ -62,22 +130,27 @@ L'hypothèse de départ — ~90 % par étape, donc effondrement à 35 % sur 10 �
 est réfutée. Elle ne l'est pas « un peu » : elle est fausse d'un ordre de grandeur
 sur le taux d'échec.
 
-## Ce que ces runs n'établissent PAS
+## La conclusion des trois suites
 
-Toutes les tâches **énoncent la règle**. « Applique le tarif négocié s'il existe,
-sinon le prix catalogue » est une spécification complète : le modèle exécute, il
-ne décide pas. Ne sont toujours pas testés :
+**La mécanique est acquise, l'intention ne l'est pas.**
 
-- l'**intention sous-spécifiée** — l'utilisateur ne dit pas la règle, il dit
-  « combien nous a rapporté ce magasin ? » et la règle de prix est à inférer ;
-- le **jugement** — aucune de ces tâches n'a de réponse discutable ;
-- les **données contradictoires** — ici une seule source fait autorité ;
-- le **contexte long** — quelques Ko sur les 131 k disponibles ;
+Tant que la règle est écrite dans l'énoncé, le modèle exécute sans faute :
+19 étapes, 24 outils, branchement, récupération d'erreur, distracteur construit
+pour tromper — 120/120. Dès que la règle disparaît de l'énoncé, il tombe à 0 %,
+non par erreur de calcul mais parce qu'il ne signale rien.
+
+Le goulot n'est donc pas la capacité agentique du modèle. C'est la spécification
+de la tâche. Ce qui a une conséquence directe sur le choix des cas d'usage :
+un pipeline dont la règle métier est écrite quelque part est faisable en local ;
+un agent censé deviner ce que veut l'utilisateur ne l'est pas.
+
+## Ce qui reste hors périmètre
+
+- le **jugement** — aucune tâche n'a de réponse discutable ;
 - les **actions irréversibles** — tous les outils sont en lecture ;
-- la **variance** — température 0, 3 répétitions strictement identiques.
-
-Quatre scores parfaits d'affilée à difficulté croissante veulent dire que le
-plafond n'est pas atteint, pas qu'il n'existe pas.
+- le **multi-tour** — l'utilisateur ne répond jamais aux demandes de précision ;
+- la **reconnaissance à froid** — voir le confond assumé de la v3 ;
+- le **contexte réellement long** — 80 lignes chargent la fenêtre, pas 131 k.
 
 ## Bug de plateforme trouvé au passage
 
@@ -101,15 +174,17 @@ publiait une courbe d'effondrement entièrement fabriquée.
 export VLLM_API_KEY=$(docker inspect sc-inference-vllm-1 \
   --format '{{range .Config.Env}}{{println .}}{{end}}' | grep VLLM_API_KEY | cut -d= -f2)
 python3 runner.py --suite v2 --reps 3 --tag full
+python3 runner.py --suite v3 --reps 5 --temperature 0.7 --max-tokens 2048 --tag full
 ```
 
 Aucune dépendance : bibliothèque standard uniquement (Python 3.14 sur sc-lab).
 
 | Option | Effet |
 |---|---|
-| `--suite v1\|v2` | v1 = enchaînement guidé, v2 = les six pressions |
+| `--suite v1\|v2\|v3` | v1 = enchaînement guidé, v2 = les six pressions, v3 = l'intention |
+| `--temperature` | 0 par défaut ; 0,7 pour mesurer la variance (v3) |
 | `--model` / `--base-url` / `--api-key-env` | viser un autre endpoint OpenAI-compatible |
-| `--bands A,C` | sous-ensemble de bandes (v2) |
+| `--bands A,C` | sous-ensemble de bandes (v2, v3) |
 | `--depths 1,3` | sous-ensemble de profondeurs (v1) |
 | `--limit 1` | smoke test |
 | `--workers` | garder ≤ `--max-num-seqs` de vLLM (actuellement 2) |
@@ -129,6 +204,7 @@ Réanalyser sans relancer : `python3 report.py results/*.json`
 |---|---|
 | `world.py` / `tasks.py` | monde et tâches v1 (seed 20260815) — **figés**, c'est la référence |
 | `world_v2.py` / `tasks_v2.py` | monde et tâches v2 (seed 20260816), 24 outils, 11 leurres |
+| `world_v3.py` / `tasks_v3.py` | monde et tâches v3 (seed 20260817), intention, conflit, insoluble, contexte long |
 | `runner.py` | boucle d'agent OpenAI-compatible, scoring, traces |
 | `report.py` | courbe par bande, fiabilité par étape, projection |
 | `traces/` | trace complète par run (JSONL) — indispensable pour auditer un échec |
@@ -141,21 +217,17 @@ exécutées**, dénominateur plus honnête que l'estimation.
 Le marqueur `REPONSE:` est imposé par le prompt système : extraction
 déterministe, et son absence est comptée séparément (`no_marker`).
 
-## Suite : v3, viser l'intention plutôt que l'exécution
+## Suite : ce qui reste à faire
 
-Le plafond n'est pas dans la mécanique. Il est dans la spécification. La v3
-devrait donc retirer la règle de l'énoncé, pas ajouter des étapes :
+Le banc a trouvé où ça casse. Deux directions, par ordre de valeur :
 
-1. **Intention nue** — « combien nous a rapporté MAG-101 ? » sans dire quelle
-   règle de prix appliquer ; scorer si le modèle demande, choisit, ou invente.
-2. **Sources en conflit** — deux outils qui donnent des chiffres différents pour
-   la même chose, sans indice de priorité ; le bon comportement est de signaler.
-3. **Question insoluble** — la donnée n'existe pas ; le bon score est de le dire,
-   pas de produire un nombre.
-4. **Contexte long** — commandes à 200 lignes, pour tester la fenêtre réelle.
-5. **Variance** — température 0,7 et 10 répétitions, pour mesurer la stabilité.
-
-Puis rejouer v1+v2 sur les autres candidats du parc : le fine-tune agentique
-GGUF, et le Qwen3.6-27B en IQ3 (hypothèse à tester : l'IQ3 dégrade la précision
-d'appel d'outils bien plus que la fluidité, donc le 27B pourrait perdre contre
-ce 12B).
+1. **Comparer les modèles.** Rejouer v1+v2+v3 sur le fine-tune agentique GGUF et
+   sur le Qwen3.6-27B en IQ3 (hypothèse à tester : l'IQ3 dégrade la précision
+   d'appel d'outils bien plus que la fluidité, donc le 27B pourrait perdre contre
+   ce 12B). Une commande par modèle via `--base-url`.
+2. **Attaquer E autrement.** Le modèle échoue à 0 % en rendant un nombre nu.
+   Vérifier si un prompt système qui exige explicitement de nommer la source à
+   chaque réponse chiffrée suffit à corriger ça, ou si le défaut résiste. C'est
+   la question qui décide si le problème se règle par ingénierie de prompt ou
+   par choix de modèle — et donc si un pipeline local est déployable sans
+   supervision humaine.
