@@ -1,0 +1,1421 @@
+{
+  "model": "gpt-5.6-terra",
+  "suite": "v2",
+  "base_url": "https://api.openai.com/v1",
+  "timestamp": "20260819-084706",
+  "reps": 3,
+  "temperature": 0.0,
+  "wall_time_s": 121.0,
+  "runs": [
+    {
+      "task_id": "A-01",
+      "band": "A_selection",
+      "depth": 3,
+      "min_steps": 3,
+      "rep": 1,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "FRANCE",
+      "expected": "France",
+      "steps": 8,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 5.94,
+      "final_text": "Le fournisseur est situé en France.\n\nREPONSE: France",
+      "usage": {
+        "prompt_tokens": 5154,
+        "completion_tokens": 180
+      }
+    },
+    {
+      "task_id": "A-01",
+      "band": "A_selection",
+      "depth": 3,
+      "min_steps": 3,
+      "rep": 2,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "FRANCE",
+      "expected": "France",
+      "steps": 8,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 5.66,
+      "final_text": "Le fournisseur est situé en France.  \nREPONSE: France",
+      "usage": {
+        "prompt_tokens": 5154,
+        "completion_tokens": 181
+      }
+    },
+    {
+      "task_id": "A-01",
+      "band": "A_selection",
+      "depth": 3,
+      "min_steps": 3,
+      "rep": 3,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "FRANCE",
+      "expected": "France",
+      "steps": 8,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 5.6,
+      "final_text": "Le fournisseur est situé en France.\n\nREPONSE: France",
+      "usage": {
+        "prompt_tokens": 5154,
+        "completion_tokens": 180
+      }
+    },
+    {
+      "task_id": "A-02",
+      "band": "A_selection",
+      "depth": 3,
+      "min_steps": 3,
+      "rep": 1,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "ITALIE",
+      "expected": "Italie",
+      "steps": 8,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 6.68,
+      "final_text": "Le pays du fournisseur est l’Italie.\n\nREPONSE: Italie",
+      "usage": {
+        "prompt_tokens": 5154,
+        "completion_tokens": 182
+      }
+    },
+    {
+      "task_id": "A-02",
+      "band": "A_selection",
+      "depth": 3,
+      "min_steps": 3,
+      "rep": 2,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "ITALIE",
+      "expected": "Italie",
+      "steps": 8,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 5.07,
+      "final_text": "REPONSE: Italie",
+      "usage": {
+        "prompt_tokens": 5154,
+        "completion_tokens": 173
+      }
+    },
+    {
+      "task_id": "A-02",
+      "band": "A_selection",
+      "depth": 3,
+      "min_steps": 3,
+      "rep": 3,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "ITALIE",
+      "expected": "Italie",
+      "steps": 8,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 8.78,
+      "final_text": "Le fournisseur est situé en Italie.\n\nREPONSE: Italie",
+      "usage": {
+        "prompt_tokens": 5154,
+        "completion_tokens": 180
+      }
+    },
+    {
+      "task_id": "A-03",
+      "band": "A_selection",
+      "depth": 3,
+      "min_steps": 3,
+      "rep": 1,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "POLOGNE",
+      "expected": "Pologne",
+      "steps": 8,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 6.75,
+      "final_text": "Le pays du fournisseur est la Pologne.\n\nREPONSE: Pologne",
+      "usage": {
+        "prompt_tokens": 5159,
+        "completion_tokens": 183
+      }
+    },
+    {
+      "task_id": "A-03",
+      "band": "A_selection",
+      "depth": 3,
+      "min_steps": 3,
+      "rep": 2,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "POLOGNE",
+      "expected": "Pologne",
+      "steps": 8,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 6.74,
+      "final_text": "REPONSE: Pologne",
+      "usage": {
+        "prompt_tokens": 5159,
+        "completion_tokens": 174
+      }
+    },
+    {
+      "task_id": "A-03",
+      "band": "A_selection",
+      "depth": 3,
+      "min_steps": 3,
+      "rep": 3,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "POLOGNE",
+      "expected": "Pologne",
+      "steps": 8,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 6.4,
+      "final_text": "Le pays du fournisseur est la Pologne.\n\nREPONSE: Pologne",
+      "usage": {
+        "prompt_tokens": 5159,
+        "completion_tokens": 183
+      }
+    },
+    {
+      "task_id": "A-04",
+      "band": "A_selection",
+      "depth": 3,
+      "min_steps": 3,
+      "rep": 1,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "ESPAGNE",
+      "expected": "Espagne",
+      "steps": 8,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 6.6,
+      "final_text": "Le pays du fournisseur est l’Espagne.\n\nREPONSE: Espagne",
+      "usage": {
+        "prompt_tokens": 5159,
+        "completion_tokens": 182
+      }
+    },
+    {
+      "task_id": "A-04",
+      "band": "A_selection",
+      "depth": 3,
+      "min_steps": 3,
+      "rep": 2,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "ESPAGNE",
+      "expected": "Espagne",
+      "steps": 8,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 6.07,
+      "final_text": "Le pays du fournisseur est l'Espagne.\n\nREPONSE: Espagne",
+      "usage": {
+        "prompt_tokens": 5159,
+        "completion_tokens": 183
+      }
+    },
+    {
+      "task_id": "A-04",
+      "band": "A_selection",
+      "depth": 3,
+      "min_steps": 3,
+      "rep": 3,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "ESPAGNE",
+      "expected": "Espagne",
+      "steps": 8,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 5.07,
+      "final_text": "Le pays du fournisseur est l’Espagne.\n\nREPONSE: Espagne",
+      "usage": {
+        "prompt_tokens": 5159,
+        "completion_tokens": 182
+      }
+    },
+    {
+      "task_id": "A-05",
+      "band": "A_selection",
+      "depth": 3,
+      "min_steps": 3,
+      "rep": 1,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "ALLEMAGNE",
+      "expected": "Allemagne",
+      "steps": 8,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 6.04,
+      "final_text": "Le fournisseur est basé en Allemagne.\n\nREPONSE: Allemagne",
+      "usage": {
+        "prompt_tokens": 5163,
+        "completion_tokens": 180
+      }
+    },
+    {
+      "task_id": "A-05",
+      "band": "A_selection",
+      "depth": 3,
+      "min_steps": 3,
+      "rep": 2,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "ALLEMAGNE",
+      "expected": "Allemagne",
+      "steps": 8,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 5.93,
+      "final_text": "REPONSE: Allemagne",
+      "usage": {
+        "prompt_tokens": 5163,
+        "completion_tokens": 173
+      }
+    },
+    {
+      "task_id": "A-05",
+      "band": "A_selection",
+      "depth": 3,
+      "min_steps": 3,
+      "rep": 3,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "ALLEMAGNE",
+      "expected": "Allemagne",
+      "steps": 8,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 5.75,
+      "final_text": "Le fournisseur est situé en Allemagne.\n\nREPONSE: Allemagne",
+      "usage": {
+        "prompt_tokens": 5163,
+        "completion_tokens": 180
+      }
+    },
+    {
+      "task_id": "B-01",
+      "band": "B_branching",
+      "depth": 7,
+      "min_steps": 7,
+      "rep": 1,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "41",
+      "expected": 41,
+      "steps": 8,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 8.03,
+      "final_text": "REPONSE: 41",
+      "usage": {
+        "prompt_tokens": 7370,
+        "completion_tokens": 219
+      }
+    },
+    {
+      "task_id": "B-01",
+      "band": "B_branching",
+      "depth": 7,
+      "min_steps": 7,
+      "rep": 2,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "41",
+      "expected": 41,
+      "steps": 8,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 7.27,
+      "final_text": "Le cumul réel est de 71, donc inférieur à 100.  \nREPONSE: 41",
+      "usage": {
+        "prompt_tokens": 7370,
+        "completion_tokens": 234
+      }
+    },
+    {
+      "task_id": "B-01",
+      "band": "B_branching",
+      "depth": 7,
+      "min_steps": 7,
+      "rep": 3,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "41",
+      "expected": 41,
+      "steps": 8,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 8.41,
+      "final_text": "Le cumul du stock réel est de 71, donc inférieur à 100.  \nREPONSE: 41",
+      "usage": {
+        "prompt_tokens": 7370,
+        "completion_tokens": 236
+      }
+    },
+    {
+      "task_id": "B-02",
+      "band": "B_branching",
+      "depth": 6,
+      "min_steps": 6,
+      "rep": 1,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "157.65",
+      "expected": 157.65,
+      "steps": 7,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 6.73,
+      "final_text": "REPONSE: 157.65",
+      "usage": {
+        "prompt_tokens": 5901,
+        "completion_tokens": 196
+      }
+    },
+    {
+      "task_id": "B-02",
+      "band": "B_branching",
+      "depth": 6,
+      "min_steps": 6,
+      "rep": 2,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "157.65",
+      "expected": 157.65,
+      "steps": 7,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 8.95,
+      "final_text": "REPONSE: 157.65",
+      "usage": {
+        "prompt_tokens": 5901,
+        "completion_tokens": 196
+      }
+    },
+    {
+      "task_id": "B-02",
+      "band": "B_branching",
+      "depth": 6,
+      "min_steps": 6,
+      "rep": 3,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "157.65",
+      "expected": 157.65,
+      "steps": 6,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 5.81,
+      "final_text": "REPONSE: 157.65",
+      "usage": {
+        "prompt_tokens": 4506,
+        "completion_tokens": 172
+      }
+    },
+    {
+      "task_id": "B-03",
+      "band": "B_branching",
+      "depth": 7,
+      "min_steps": 7,
+      "rep": 1,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "21",
+      "expected": 21,
+      "steps": 7,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 8.41,
+      "final_text": "REPONSE: 21",
+      "usage": {
+        "prompt_tokens": 5935,
+        "completion_tokens": 195
+      }
+    },
+    {
+      "task_id": "B-03",
+      "band": "B_branching",
+      "depth": 7,
+      "min_steps": 7,
+      "rep": 2,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "21",
+      "expected": 21,
+      "steps": 8,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 8.33,
+      "final_text": "REPONSE: 21",
+      "usage": {
+        "prompt_tokens": 7375,
+        "completion_tokens": 219
+      }
+    },
+    {
+      "task_id": "B-03",
+      "band": "B_branching",
+      "depth": 7,
+      "min_steps": 7,
+      "rep": 3,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "21",
+      "expected": 21,
+      "steps": 8,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 7.7,
+      "final_text": "REPONSE: 21",
+      "usage": {
+        "prompt_tokens": 7375,
+        "completion_tokens": 219
+      }
+    },
+    {
+      "task_id": "B-04",
+      "band": "B_branching",
+      "depth": 6,
+      "min_steps": 6,
+      "rep": 1,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "548.5",
+      "expected": 548.5,
+      "steps": 7,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 7.1,
+      "final_text": "REPONSE: 548.5",
+      "usage": {
+        "prompt_tokens": 5897,
+        "completion_tokens": 196
+      }
+    },
+    {
+      "task_id": "B-04",
+      "band": "B_branching",
+      "depth": 6,
+      "min_steps": 6,
+      "rep": 2,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "548.5",
+      "expected": 548.5,
+      "steps": 7,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 6.82,
+      "final_text": "REPONSE: 548.5",
+      "usage": {
+        "prompt_tokens": 5897,
+        "completion_tokens": 196
+      }
+    },
+    {
+      "task_id": "B-04",
+      "band": "B_branching",
+      "depth": 6,
+      "min_steps": 6,
+      "rep": 3,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "548.5",
+      "expected": 548.5,
+      "steps": 7,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 6.71,
+      "final_text": "REPONSE: 548.5",
+      "usage": {
+        "prompt_tokens": 5897,
+        "completion_tokens": 196
+      }
+    },
+    {
+      "task_id": "B-05",
+      "band": "B_branching",
+      "depth": 7,
+      "min_steps": 7,
+      "rep": 1,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "21",
+      "expected": 21,
+      "steps": 8,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 9.3,
+      "final_text": "REPONSE: 21",
+      "usage": {
+        "prompt_tokens": 7375,
+        "completion_tokens": 219
+      }
+    },
+    {
+      "task_id": "B-05",
+      "band": "B_branching",
+      "depth": 7,
+      "min_steps": 7,
+      "rep": 2,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "21",
+      "expected": 21,
+      "steps": 8,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 8.86,
+      "final_text": "REPONSE: 21",
+      "usage": {
+        "prompt_tokens": 7375,
+        "completion_tokens": 219
+      }
+    },
+    {
+      "task_id": "B-05",
+      "band": "B_branching",
+      "depth": 7,
+      "min_steps": 7,
+      "rep": 3,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "21",
+      "expected": 21,
+      "steps": 8,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 8.19,
+      "final_text": "Le stock réel cumulé est de 72, donc inférieur à 100. Le délai de livraison du fournisseur est de 21 jours.\n\nREPONSE: 21",
+      "usage": {
+        "prompt_tokens": 7375,
+        "completion_tokens": 247
+      }
+    },
+    {
+      "task_id": "C-01",
+      "band": "C_recovery",
+      "depth": 10,
+      "min_steps": 10,
+      "rep": 1,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "8832.76",
+      "expected": 8832.76,
+      "steps": 12,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [
+        "expected_miss",
+        "expected_miss",
+        "expected_miss"
+      ],
+      "latency_s": 7.01,
+      "final_text": "Montant total calculé avec les tarifs négociés disponibles et les prix catalogue à défaut.\n\nREPONSE: 8832.76",
+      "usage": {
+        "prompt_tokens": 5645,
+        "completion_tokens": 341
+      }
+    },
+    {
+      "task_id": "C-01",
+      "band": "C_recovery",
+      "depth": 10,
+      "min_steps": 10,
+      "rep": 2,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "8832.76",
+      "expected": 8832.76,
+      "steps": 12,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [
+        "expected_miss",
+        "expected_miss",
+        "expected_miss"
+      ],
+      "latency_s": 6.78,
+      "final_text": "Montant total calculé : 8832.76\n\nREPONSE: 8832.76",
+      "usage": {
+        "prompt_tokens": 5645,
+        "completion_tokens": 334
+      }
+    },
+    {
+      "task_id": "C-01",
+      "band": "C_recovery",
+      "depth": 10,
+      "min_steps": 10,
+      "rep": 3,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "8832.76",
+      "expected": 8832.76,
+      "steps": 12,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [
+        "expected_miss",
+        "expected_miss",
+        "expected_miss"
+      ],
+      "latency_s": 8.39,
+      "final_text": "Montant total calculé : 8832.76\n\nREPONSE: 8832.76",
+      "usage": {
+        "prompt_tokens": 5645,
+        "completion_tokens": 334
+      }
+    },
+    {
+      "task_id": "C-02",
+      "band": "C_recovery",
+      "depth": 10,
+      "min_steps": 10,
+      "rep": 1,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "10795.28",
+      "expected": 10795.28,
+      "steps": 12,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [
+        "expected_miss",
+        "expected_miss",
+        "expected_miss"
+      ],
+      "latency_s": 7.81,
+      "final_text": "Montant total : 10795.28\n\nREPONSE: 10795.28",
+      "usage": {
+        "prompt_tokens": 5648,
+        "completion_tokens": 332
+      }
+    },
+    {
+      "task_id": "C-02",
+      "band": "C_recovery",
+      "depth": 10,
+      "min_steps": 10,
+      "rep": 2,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "10795.28",
+      "expected": 10795.28,
+      "steps": 12,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [
+        "expected_miss",
+        "expected_miss",
+        "expected_miss"
+      ],
+      "latency_s": 6.55,
+      "final_text": "Montant total calculé : 10795.28\n\nREPONSE: 10795.28",
+      "usage": {
+        "prompt_tokens": 5646,
+        "completion_tokens": 332
+      }
+    },
+    {
+      "task_id": "C-02",
+      "band": "C_recovery",
+      "depth": 10,
+      "min_steps": 10,
+      "rep": 3,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "10795.28",
+      "expected": 10795.28,
+      "steps": 12,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [
+        "expected_miss",
+        "expected_miss",
+        "expected_miss"
+      ],
+      "latency_s": 9.29,
+      "final_text": "Montant total calculé : 10795.28\n\nREPONSE: 10795.28",
+      "usage": {
+        "prompt_tokens": 5648,
+        "completion_tokens": 334
+      }
+    },
+    {
+      "task_id": "C-03",
+      "band": "C_recovery",
+      "depth": 10,
+      "min_steps": 10,
+      "rep": 1,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "2667.64",
+      "expected": 2667.64,
+      "steps": 12,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [
+        "expected_miss",
+        "expected_miss",
+        "expected_miss"
+      ],
+      "latency_s": 8.53,
+      "final_text": "Montant total calculé : 2667.64\n\nREPONSE: 2667.64",
+      "usage": {
+        "prompt_tokens": 5642,
+        "completion_tokens": 334
+      }
+    },
+    {
+      "task_id": "C-03",
+      "band": "C_recovery",
+      "depth": 10,
+      "min_steps": 10,
+      "rep": 2,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "2667.64",
+      "expected": 2667.64,
+      "steps": 12,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [
+        "expected_miss",
+        "expected_miss",
+        "expected_miss"
+      ],
+      "latency_s": 8.15,
+      "final_text": "REF-008 : 2 × 298.95 ; REF-012 : 3 × 215.44 ; autres lignes au prix catalogue.  \nREPONSE: 2667.64",
+      "usage": {
+        "prompt_tokens": 5640,
+        "completion_tokens": 351
+      }
+    },
+    {
+      "task_id": "C-03",
+      "band": "C_recovery",
+      "depth": 10,
+      "min_steps": 10,
+      "rep": 3,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "2667.64",
+      "expected": 2667.64,
+      "steps": 12,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [
+        "expected_miss",
+        "expected_miss",
+        "expected_miss"
+      ],
+      "latency_s": 8.96,
+      "final_text": "Montant total calculé : 2667.64\n\nREPONSE: 2667.64",
+      "usage": {
+        "prompt_tokens": 5642,
+        "completion_tokens": 334
+      }
+    },
+    {
+      "task_id": "C-04",
+      "band": "C_recovery",
+      "depth": 10,
+      "min_steps": 10,
+      "rep": 1,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "7246.96",
+      "expected": 7246.96,
+      "steps": 12,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [
+        "expected_miss",
+        "expected_miss",
+        "expected_miss"
+      ],
+      "latency_s": 7.63,
+      "final_text": "Montant total calculé : 7246.96\n\nREPONSE: 7246.96",
+      "usage": {
+        "prompt_tokens": 5647,
+        "completion_tokens": 334
+      }
+    },
+    {
+      "task_id": "C-04",
+      "band": "C_recovery",
+      "depth": 10,
+      "min_steps": 10,
+      "rep": 2,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "7246.96",
+      "expected": 7246.96,
+      "steps": 12,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [
+        "expected_miss",
+        "expected_miss",
+        "expected_miss"
+      ],
+      "latency_s": 6.58,
+      "final_text": "Montant total : 7246.96\n\nREPONSE: 7246.96",
+      "usage": {
+        "prompt_tokens": 5647,
+        "completion_tokens": 332
+      }
+    },
+    {
+      "task_id": "C-04",
+      "band": "C_recovery",
+      "depth": 10,
+      "min_steps": 10,
+      "rep": 3,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "7246.96",
+      "expected": 7246.96,
+      "steps": 12,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [
+        "expected_miss",
+        "expected_miss",
+        "expected_miss"
+      ],
+      "latency_s": 7.08,
+      "final_text": "REF-066 : 410.16 × 2  \nREF-053 : 180.15 × 2  \nREF-038 : 654.91 × 4  \nREF-076 : 448.1 × 4  \nREF-069 : 827.15 × 2  \n\nREPONSE: 7246.96",
+      "usage": {
+        "prompt_tokens": 5647,
+        "completion_tokens": 382
+      }
+    },
+    {
+      "task_id": "C-05",
+      "band": "C_recovery",
+      "depth": 10,
+      "min_steps": 10,
+      "rep": 1,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "4647.64",
+      "expected": 4647.64,
+      "steps": 12,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [
+        "expected_miss",
+        "expected_miss",
+        "expected_miss"
+      ],
+      "latency_s": 8.16,
+      "final_text": "Montant total calculé : 4647.64\n\nREPONSE: 4647.64",
+      "usage": {
+        "prompt_tokens": 5652,
+        "completion_tokens": 334
+      }
+    },
+    {
+      "task_id": "C-05",
+      "band": "C_recovery",
+      "depth": 10,
+      "min_steps": 10,
+      "rep": 2,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "4647.64",
+      "expected": 4647.64,
+      "steps": 13,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [
+        "expected_miss",
+        "expected_miss",
+        "expected_miss"
+      ],
+      "latency_s": 7.83,
+      "final_text": "Montant total calculé : 4647.64\n\nREPONSE: 4647.64",
+      "usage": {
+        "prompt_tokens": 5838,
+        "completion_tokens": 367
+      }
+    },
+    {
+      "task_id": "C-05",
+      "band": "C_recovery",
+      "depth": 10,
+      "min_steps": 10,
+      "rep": 3,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "4647.64",
+      "expected": 4647.64,
+      "steps": 12,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [
+        "expected_miss",
+        "expected_miss",
+        "expected_miss"
+      ],
+      "latency_s": 7.36,
+      "final_text": "Montant total calculé : 4647.64\n\nREPONSE: 4647.64",
+      "usage": {
+        "prompt_tokens": 5652,
+        "completion_tokens": 334
+      }
+    },
+    {
+      "task_id": "D-01",
+      "band": "D_composite",
+      "depth": 18,
+      "min_steps": 18,
+      "rep": 1,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "13128.69",
+      "expected": 13128.69,
+      "steps": 21,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [
+        "expected_miss",
+        "expected_miss",
+        "expected_miss",
+        "expected_miss",
+        "expected_miss"
+      ],
+      "latency_s": 9.26,
+      "final_text": "REPONSE: 13128.69",
+      "usage": {
+        "prompt_tokens": 8180,
+        "completion_tokens": 553
+      }
+    },
+    {
+      "task_id": "D-01",
+      "band": "D_composite",
+      "depth": 18,
+      "min_steps": 18,
+      "rep": 2,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "13128.69",
+      "expected": 13128.69,
+      "steps": 21,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [
+        "expected_miss",
+        "expected_miss",
+        "expected_miss",
+        "expected_miss",
+        "expected_miss"
+      ],
+      "latency_s": 9.07,
+      "final_text": "Chiffre d’affaires total calculé : 13128.69\n\nREPONSE: 13128.69",
+      "usage": {
+        "prompt_tokens": 8180,
+        "completion_tokens": 568
+      }
+    },
+    {
+      "task_id": "D-01",
+      "band": "D_composite",
+      "depth": 18,
+      "min_steps": 18,
+      "rep": 3,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "13128.69",
+      "expected": 13128.69,
+      "steps": 21,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [
+        "expected_miss",
+        "expected_miss",
+        "expected_miss",
+        "expected_miss",
+        "expected_miss"
+      ],
+      "latency_s": 9.13,
+      "final_text": "REPONSE: 13128.69",
+      "usage": {
+        "prompt_tokens": 8180,
+        "completion_tokens": 553
+      }
+    },
+    {
+      "task_id": "D-02",
+      "band": "D_composite",
+      "depth": 18,
+      "min_steps": 18,
+      "rep": 1,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "9813.93",
+      "expected": 9813.93,
+      "steps": 21,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [
+        "expected_miss",
+        "expected_miss",
+        "expected_miss",
+        "expected_miss",
+        "expected_miss"
+      ],
+      "latency_s": 10.37,
+      "final_text": "Chiffre d’affaires total calculé sur les commandes de MAG-102 : 9813.93\n\nREPONSE: 9813.93",
+      "usage": {
+        "prompt_tokens": 8173,
+        "completion_tokens": 575
+      }
+    },
+    {
+      "task_id": "D-02",
+      "band": "D_composite",
+      "depth": 18,
+      "min_steps": 18,
+      "rep": 2,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "9813.93",
+      "expected": 9813.93,
+      "steps": 21,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [
+        "expected_miss",
+        "expected_miss",
+        "expected_miss",
+        "expected_miss",
+        "expected_miss"
+      ],
+      "latency_s": 11.64,
+      "final_text": "REPONSE: 9813.93",
+      "usage": {
+        "prompt_tokens": 8173,
+        "completion_tokens": 553
+      }
+    },
+    {
+      "task_id": "D-02",
+      "band": "D_composite",
+      "depth": 18,
+      "min_steps": 18,
+      "rep": 3,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "9813.93",
+      "expected": 9813.93,
+      "steps": 21,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [
+        "expected_miss",
+        "expected_miss",
+        "expected_miss",
+        "expected_miss",
+        "expected_miss"
+      ],
+      "latency_s": 8.86,
+      "final_text": "REPONSE: 9813.93",
+      "usage": {
+        "prompt_tokens": 8173,
+        "completion_tokens": 553
+      }
+    },
+    {
+      "task_id": "D-03",
+      "band": "D_composite",
+      "depth": 18,
+      "min_steps": 18,
+      "rep": 1,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "12273.98",
+      "expected": 12273.98,
+      "steps": 21,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [
+        "expected_miss",
+        "expected_miss",
+        "expected_miss",
+        "expected_miss",
+        "expected_miss"
+      ],
+      "latency_s": 9.74,
+      "final_text": "Chiffre d’affaires total calculé sur les trois commandes : 12273.98\n\nREPONSE: 12273.98",
+      "usage": {
+        "prompt_tokens": 8180,
+        "completion_tokens": 572
+      }
+    },
+    {
+      "task_id": "D-03",
+      "band": "D_composite",
+      "depth": 18,
+      "min_steps": 18,
+      "rep": 2,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "12273.98",
+      "expected": 12273.98,
+      "steps": 21,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [
+        "expected_miss",
+        "expected_miss",
+        "expected_miss",
+        "expected_miss",
+        "expected_miss"
+      ],
+      "latency_s": 8.64,
+      "final_text": "Chiffre d’affaires total calculé sur les 3 commandes : 12273.98\n\nREPONSE: 12273.98",
+      "usage": {
+        "prompt_tokens": 8180,
+        "completion_tokens": 573
+      }
+    },
+    {
+      "task_id": "D-03",
+      "band": "D_composite",
+      "depth": 18,
+      "min_steps": 18,
+      "rep": 3,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "12273.98",
+      "expected": 12273.98,
+      "steps": 21,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [
+        "expected_miss",
+        "expected_miss",
+        "expected_miss",
+        "expected_miss",
+        "expected_miss"
+      ],
+      "latency_s": 7.69,
+      "final_text": "REPONSE: 12273.98",
+      "usage": {
+        "prompt_tokens": 8180,
+        "completion_tokens": 553
+      }
+    },
+    {
+      "task_id": "D-04",
+      "band": "D_composite",
+      "depth": 18,
+      "min_steps": 18,
+      "rep": 1,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "8942.37",
+      "expected": 8942.37,
+      "steps": 21,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [
+        "expected_miss",
+        "expected_miss",
+        "expected_miss",
+        "expected_miss",
+        "expected_miss"
+      ],
+      "latency_s": 9.27,
+      "final_text": "Chiffre d’affaires total calculé : 8942.37\n\nREPONSE: 8942.37",
+      "usage": {
+        "prompt_tokens": 8178,
+        "completion_tokens": 568
+      }
+    },
+    {
+      "task_id": "D-04",
+      "band": "D_composite",
+      "depth": 18,
+      "min_steps": 18,
+      "rep": 2,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "8942.37",
+      "expected": 8942.37,
+      "steps": 21,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [
+        "expected_miss",
+        "expected_miss",
+        "expected_miss",
+        "expected_miss",
+        "expected_miss"
+      ],
+      "latency_s": 9.17,
+      "final_text": "REPONSE: 8942.37",
+      "usage": {
+        "prompt_tokens": 8178,
+        "completion_tokens": 553
+      }
+    },
+    {
+      "task_id": "D-04",
+      "band": "D_composite",
+      "depth": 18,
+      "min_steps": 18,
+      "rep": 3,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "8942.37",
+      "expected": 8942.37,
+      "steps": 21,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [
+        "expected_miss",
+        "expected_miss",
+        "expected_miss",
+        "expected_miss",
+        "expected_miss"
+      ],
+      "latency_s": 8.12,
+      "final_text": "REPONSE: 8942.37",
+      "usage": {
+        "prompt_tokens": 8178,
+        "completion_tokens": 553
+      }
+    },
+    {
+      "task_id": "D-05",
+      "band": "D_composite",
+      "depth": 18,
+      "min_steps": 18,
+      "rep": 1,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "12271.19",
+      "expected": 12271.19,
+      "steps": 20,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [
+        "expected_miss",
+        "expected_miss",
+        "expected_miss",
+        "expected_miss",
+        "expected_miss"
+      ],
+      "latency_s": 9.52,
+      "final_text": "Chiffre d’affaires total calculé sur les trois commandes du magasin MAG-105 : 12 271,19.\n\nREPONSE: 12271.19",
+      "usage": {
+        "prompt_tokens": 8044,
+        "completion_tokens": 556
+      }
+    },
+    {
+      "task_id": "D-05",
+      "band": "D_composite",
+      "depth": 18,
+      "min_steps": 18,
+      "rep": 2,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "12271.19",
+      "expected": 12271.19,
+      "steps": 21,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [
+        "expected_miss",
+        "expected_miss",
+        "expected_miss",
+        "expected_miss",
+        "expected_miss"
+      ],
+      "latency_s": 10.96,
+      "final_text": "REPONSE: 12271.19",
+      "usage": {
+        "prompt_tokens": 10477,
+        "completion_tokens": 556
+      }
+    },
+    {
+      "task_id": "D-05",
+      "band": "D_composite",
+      "depth": 18,
+      "min_steps": 18,
+      "rep": 3,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "12271.19",
+      "expected": 12271.19,
+      "steps": 21,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [
+        "expected_miss",
+        "expected_miss",
+        "expected_miss",
+        "expected_miss",
+        "expected_miss"
+      ],
+      "latency_s": 9.62,
+      "final_text": "Chiffre d’affaires total calculé sur les trois commandes du magasin MAG-105 : 12271.19\n\nREPONSE: 12271.19",
+      "usage": {
+        "prompt_tokens": 10477,
+        "completion_tokens": 580
+      }
+    }
+  ]
+}

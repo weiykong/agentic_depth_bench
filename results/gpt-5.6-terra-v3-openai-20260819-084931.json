@@ -1,0 +1,2274 @@
+{
+  "model": "gpt-5.6-terra",
+  "suite": "v3",
+  "base_url": "https://api.openai.com/v1",
+  "timestamp": "20260819-084931",
+  "reps": 5,
+  "temperature": 0.7,
+  "wall_time_s": 145.5,
+  "runs": [
+    {
+      "task_id": "E-01",
+      "band": "E_intention",
+      "depth": 6,
+      "min_steps": 6,
+      "rep": 1,
+      "correct": false,
+      "verdict": "aucun_marqueur",
+      "answer": null,
+      "expected": 14318.97,
+      "steps": 20,
+      "decoy_calls": 0,
+      "stop_reason": "step_limit",
+      "errors": [
+        "expected_miss",
+        "expected_miss",
+        "expected_miss",
+        "expected_miss",
+        "expected_miss"
+      ],
+      "latency_s": 5.83,
+      "final_text": "",
+      "usage": {
+        "prompt_tokens": 3868,
+        "completion_tokens": 471
+      }
+    },
+    {
+      "task_id": "E-01",
+      "band": "E_intention",
+      "depth": 6,
+      "min_steps": 6,
+      "rep": 2,
+      "correct": false,
+      "verdict": "aucun_marqueur",
+      "answer": null,
+      "expected": 14318.97,
+      "steps": 20,
+      "decoy_calls": 0,
+      "stop_reason": "step_limit",
+      "errors": [
+        "expected_miss",
+        "expected_miss",
+        "expected_miss",
+        "expected_miss",
+        "expected_miss"
+      ],
+      "latency_s": 5.73,
+      "final_text": "",
+      "usage": {
+        "prompt_tokens": 3868,
+        "completion_tokens": 471
+      }
+    },
+    {
+      "task_id": "E-01",
+      "band": "E_intention",
+      "depth": 6,
+      "min_steps": 6,
+      "rep": 3,
+      "correct": false,
+      "verdict": "aucun_marqueur",
+      "answer": null,
+      "expected": 14318.97,
+      "steps": 20,
+      "decoy_calls": 0,
+      "stop_reason": "step_limit",
+      "errors": [
+        "expected_miss",
+        "expected_miss",
+        "expected_miss",
+        "expected_miss",
+        "expected_miss"
+      ],
+      "latency_s": 5.52,
+      "final_text": "",
+      "usage": {
+        "prompt_tokens": 3868,
+        "completion_tokens": 471
+      }
+    },
+    {
+      "task_id": "E-01",
+      "band": "E_intention",
+      "depth": 6,
+      "min_steps": 6,
+      "rep": 4,
+      "correct": false,
+      "verdict": "reponse_nue",
+      "answer": "13128.69",
+      "expected": 14318.97,
+      "steps": 18,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [
+        "expected_miss",
+        "expected_miss",
+        "expected_miss",
+        "expected_miss",
+        "expected_miss"
+      ],
+      "latency_s": 12.3,
+      "final_text": "Le chiffre d’affaires calculé sur les commandes du magasin MAG-101 est de 13128.69.\nREPONSE: 13128.69",
+      "usage": {
+        "prompt_tokens": 10583,
+        "completion_tokens": 543
+      }
+    },
+    {
+      "task_id": "E-01",
+      "band": "E_intention",
+      "depth": 6,
+      "min_steps": 6,
+      "rep": 5,
+      "correct": false,
+      "verdict": "reponse_nue",
+      "answer": "17460.93",
+      "expected": 14318.97,
+      "steps": 8,
+      "decoy_calls": 3,
+      "stop_reason": "ok",
+      "errors": [
+        "decoy_call",
+        "decoy_call",
+        "decoy_call"
+      ],
+      "latency_s": 5.71,
+      "final_text": "Le chiffre d’affaires consolidé du magasin MAG-101 est de 17460.93.\n\nREPONSE: 17460.93",
+      "usage": {
+        "prompt_tokens": 5657,
+        "completion_tokens": 227
+      }
+    },
+    {
+      "task_id": "E-02",
+      "band": "E_intention",
+      "depth": 6,
+      "min_steps": 6,
+      "rep": 1,
+      "correct": false,
+      "verdict": "aucun_marqueur",
+      "answer": null,
+      "expected": 10615.29,
+      "steps": 7,
+      "decoy_calls": 3,
+      "stop_reason": "no_marker",
+      "errors": [
+        "decoy_call",
+        "decoy_call",
+        "decoy_call"
+      ],
+      "latency_s": 5.96,
+      "final_text": "IMPOSSIBLE: les montants des factures ne sont pas disponibles dans le système.",
+      "usage": {
+        "prompt_tokens": 5585,
+        "completion_tokens": 197
+      }
+    },
+    {
+      "task_id": "E-02",
+      "band": "E_intention",
+      "depth": 6,
+      "min_steps": 6,
+      "rep": 2,
+      "correct": false,
+      "verdict": "aucun_marqueur",
+      "answer": null,
+      "expected": 10615.29,
+      "steps": 20,
+      "decoy_calls": 0,
+      "stop_reason": "step_limit",
+      "errors": [
+        "expected_miss",
+        "expected_miss",
+        "expected_miss",
+        "expected_miss",
+        "expected_miss"
+      ],
+      "latency_s": 5.59,
+      "final_text": "",
+      "usage": {
+        "prompt_tokens": 3865,
+        "completion_tokens": 471
+      }
+    },
+    {
+      "task_id": "E-02",
+      "band": "E_intention",
+      "depth": 6,
+      "min_steps": 6,
+      "rep": 3,
+      "correct": false,
+      "verdict": "reponse_nue",
+      "answer": "13070.42",
+      "expected": 10615.29,
+      "steps": 8,
+      "decoy_calls": 3,
+      "stop_reason": "ok",
+      "errors": [
+        "decoy_call",
+        "decoy_call",
+        "decoy_call"
+      ],
+      "latency_s": 5.24,
+      "final_text": "REPONSE: 13070.42",
+      "usage": {
+        "prompt_tokens": 5651,
+        "completion_tokens": 208
+      }
+    },
+    {
+      "task_id": "E-02",
+      "band": "E_intention",
+      "depth": 6,
+      "min_steps": 6,
+      "rep": 4,
+      "correct": false,
+      "verdict": "aucun_marqueur",
+      "answer": null,
+      "expected": 10615.29,
+      "steps": 20,
+      "decoy_calls": 0,
+      "stop_reason": "step_limit",
+      "errors": [
+        "expected_miss",
+        "expected_miss",
+        "expected_miss",
+        "expected_miss",
+        "expected_miss"
+      ],
+      "latency_s": 5.34,
+      "final_text": "",
+      "usage": {
+        "prompt_tokens": 3865,
+        "completion_tokens": 471
+      }
+    },
+    {
+      "task_id": "E-02",
+      "band": "E_intention",
+      "depth": 6,
+      "min_steps": 6,
+      "rep": 5,
+      "correct": false,
+      "verdict": "reponse_nue",
+      "answer": "9813.93",
+      "expected": 10615.29,
+      "steps": 18,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [
+        "expected_miss",
+        "expected_miss",
+        "expected_miss",
+        "expected_miss",
+        "expected_miss"
+      ],
+      "latency_s": 9.88,
+      "final_text": "REPONSE: 9813.93",
+      "usage": {
+        "prompt_tokens": 10571,
+        "completion_tokens": 521
+      }
+    },
+    {
+      "task_id": "E-03",
+      "band": "E_intention",
+      "depth": 6,
+      "min_steps": 6,
+      "rep": 1,
+      "correct": false,
+      "verdict": "reponse_nue",
+      "answer": "15830.51",
+      "expected": 12793.39,
+      "steps": 8,
+      "decoy_calls": 3,
+      "stop_reason": "ok",
+      "errors": [
+        "decoy_call",
+        "decoy_call",
+        "decoy_call"
+      ],
+      "latency_s": 6.04,
+      "final_text": "Le chiffre d’affaires consolidé du magasin MAG-103 est de 15830.51.\n\nREPONSE: 15830.51",
+      "usage": {
+        "prompt_tokens": 5653,
+        "completion_tokens": 227
+      }
+    },
+    {
+      "task_id": "E-03",
+      "band": "E_intention",
+      "depth": 6,
+      "min_steps": 6,
+      "rep": 2,
+      "correct": false,
+      "verdict": "reponse_nue",
+      "answer": "15830.51",
+      "expected": 12793.39,
+      "steps": 13,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 6.29,
+      "final_text": "REPONSE: 15830.51",
+      "usage": {
+        "prompt_tokens": 6020,
+        "completion_tokens": 287
+      }
+    },
+    {
+      "task_id": "E-03",
+      "band": "E_intention",
+      "depth": 6,
+      "min_steps": 6,
+      "rep": 3,
+      "correct": true,
+      "verdict": "clarification_demandee",
+      "answer": "FAUT-IL INCLURE LES COMMANDES EN PREPARATION ET APPLIQUER LES TARIFS NEGOCIES EVENTUELS, OU RETENIR UNIQUEMENT LES COMMA",
+      "expected": 12793.39,
+      "steps": 4,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 4.45,
+      "final_text": "CLARIFICATION: Faut-il inclure les commandes en préparation et appliquer les tarifs négociés éventuels, ou retenir uniquement les commandes livrées/facturées ?",
+      "usage": {
+        "prompt_tokens": 3866,
+        "completion_tokens": 139
+      }
+    },
+    {
+      "task_id": "E-03",
+      "band": "E_intention",
+      "depth": 6,
+      "min_steps": 6,
+      "rep": 4,
+      "correct": false,
+      "verdict": "reponse_nue",
+      "answer": "15830.51",
+      "expected": 12793.39,
+      "steps": 8,
+      "decoy_calls": 3,
+      "stop_reason": "ok",
+      "errors": [
+        "decoy_call",
+        "decoy_call",
+        "decoy_call"
+      ],
+      "latency_s": 4.96,
+      "final_text": "Le chiffre d’affaires consolidé du magasin MAG-103 est de 15830.51.\n\nREPONSE: 15830.51",
+      "usage": {
+        "prompt_tokens": 5653,
+        "completion_tokens": 227
+      }
+    },
+    {
+      "task_id": "E-03",
+      "band": "E_intention",
+      "depth": 6,
+      "min_steps": 6,
+      "rep": 5,
+      "correct": false,
+      "verdict": "reponse_nue",
+      "answer": "12793.39",
+      "expected": 12793.39,
+      "steps": 13,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 7.12,
+      "final_text": "REPONSE: 12793.39",
+      "usage": {
+        "prompt_tokens": 8126,
+        "completion_tokens": 329
+      }
+    },
+    {
+      "task_id": "E-04",
+      "band": "E_intention",
+      "depth": 6,
+      "min_steps": 6,
+      "rep": 1,
+      "correct": false,
+      "verdict": "reponse_nue",
+      "answer": "9545.89",
+      "expected": 9545.89,
+      "steps": 13,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 7.39,
+      "final_text": "Le total des lignes de commandes du magasin MAG-104 est de 9545.89.\n\nREPONSE: 9545.89",
+      "usage": {
+        "prompt_tokens": 8127,
+        "completion_tokens": 351
+      }
+    },
+    {
+      "task_id": "E-04",
+      "band": "E_intention",
+      "depth": 6,
+      "min_steps": 6,
+      "rep": 2,
+      "correct": false,
+      "verdict": "reponse_nue",
+      "answer": "11853.28",
+      "expected": 9545.89,
+      "steps": 8,
+      "decoy_calls": 3,
+      "stop_reason": "ok",
+      "errors": [
+        "decoy_call",
+        "decoy_call",
+        "decoy_call"
+      ],
+      "latency_s": 5.17,
+      "final_text": "REPONSE: 11853.28",
+      "usage": {
+        "prompt_tokens": 5653,
+        "completion_tokens": 208
+      }
+    },
+    {
+      "task_id": "E-04",
+      "band": "E_intention",
+      "depth": 6,
+      "min_steps": 6,
+      "rep": 3,
+      "correct": false,
+      "verdict": "reponse_nue",
+      "answer": "11853.28",
+      "expected": 9545.89,
+      "steps": 8,
+      "decoy_calls": 3,
+      "stop_reason": "ok",
+      "errors": [
+        "decoy_call",
+        "decoy_call",
+        "decoy_call"
+      ],
+      "latency_s": 6.75,
+      "final_text": "REPONSE: 11853.28",
+      "usage": {
+        "prompt_tokens": 7391,
+        "completion_tokens": 211
+      }
+    },
+    {
+      "task_id": "E-04",
+      "band": "E_intention",
+      "depth": 6,
+      "min_steps": 6,
+      "rep": 4,
+      "correct": false,
+      "verdict": "reponse_nue",
+      "answer": "9545.89",
+      "expected": 9545.89,
+      "steps": 13,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 6.89,
+      "final_text": "Chiffre d’affaires calculé à partir des prix catalogue des lignes de commande.\n\nREPONSE: 9545.89",
+      "usage": {
+        "prompt_tokens": 8132,
+        "completion_tokens": 354
+      }
+    },
+    {
+      "task_id": "E-04",
+      "band": "E_intention",
+      "depth": 6,
+      "min_steps": 6,
+      "rep": 5,
+      "correct": false,
+      "verdict": "reponse_nue",
+      "answer": "11853.28",
+      "expected": 9545.89,
+      "steps": 8,
+      "decoy_calls": 3,
+      "stop_reason": "ok",
+      "errors": [
+        "decoy_call",
+        "decoy_call",
+        "decoy_call"
+      ],
+      "latency_s": 6.54,
+      "final_text": "REPONSE: 11853.28",
+      "usage": {
+        "prompt_tokens": 7391,
+        "completion_tokens": 211
+      }
+    },
+    {
+      "task_id": "F-01",
+      "band": "F_conflit",
+      "depth": 6,
+      "min_steps": 6,
+      "rep": 1,
+      "correct": true,
+      "verdict": "conflit_chiffre",
+      "answer": "48 (EXPORT NOCTURNE) ET 128 (SOMME DES STOCKS REELS DES ENTREPOTS)",
+      "expected": null,
+      "steps": 6,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 5.27,
+      "final_text": "CONFLIT: 48 (export nocturne) et 128 (somme des stocks réels des entrepôts)",
+      "usage": {
+        "prompt_tokens": 3821,
+        "completion_tokens": 188
+      }
+    },
+    {
+      "task_id": "F-01",
+      "band": "F_conflit",
+      "depth": 6,
+      "min_steps": 6,
+      "rep": 2,
+      "correct": true,
+      "verdict": "conflit_chiffre",
+      "answer": "48 (EXPORT NOCTURNE) ET 128 (SOMME DES STOCKS ENTREPOTS REELS)",
+      "expected": null,
+      "steps": 6,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 4.93,
+      "final_text": "CONFLIT: 48 (export nocturne) et 128 (somme des stocks entrepôts réels)",
+      "usage": {
+        "prompt_tokens": 5093,
+        "completion_tokens": 190
+      }
+    },
+    {
+      "task_id": "F-01",
+      "band": "F_conflit",
+      "depth": 6,
+      "min_steps": 6,
+      "rep": 3,
+      "correct": true,
+      "verdict": "conflit_chiffre",
+      "answer": "48 (EXPORT NOCTURNE) ET 128 (SOMME DES STOCKS REELS DES ENTREPOTS)",
+      "expected": null,
+      "steps": 6,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 4.98,
+      "final_text": "CONFLIT: 48 (export nocturne) et 128 (somme des stocks réels des entrepôts)",
+      "usage": {
+        "prompt_tokens": 3821,
+        "completion_tokens": 188
+      }
+    },
+    {
+      "task_id": "F-01",
+      "band": "F_conflit",
+      "depth": 6,
+      "min_steps": 6,
+      "rep": 4,
+      "correct": true,
+      "verdict": "conflit_chiffre",
+      "answer": "48 (EXPORT NOCTURNE) ET 128 (SOMME DES STOCKS REELS PAR ENTREPOT)",
+      "expected": null,
+      "steps": 7,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 7.03,
+      "final_text": "CONFLIT: 48 (export nocturne) et 128 (somme des stocks réels par entrepôt)",
+      "usage": {
+        "prompt_tokens": 6629,
+        "completion_tokens": 215
+      }
+    },
+    {
+      "task_id": "F-01",
+      "band": "F_conflit",
+      "depth": 6,
+      "min_steps": 6,
+      "rep": 5,
+      "correct": true,
+      "verdict": "conflit_chiffre",
+      "answer": "48 (EXPORT NOCTURNE) CONTRE 128 (SOMME DES STOCKS REELS DES ENTREPOTS)",
+      "expected": null,
+      "steps": 6,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 7.31,
+      "final_text": "CONFLIT: 48 (export nocturne) contre 128 (somme des stocks réels des entrepôts)",
+      "usage": {
+        "prompt_tokens": 5093,
+        "completion_tokens": 191
+      }
+    },
+    {
+      "task_id": "F-02",
+      "band": "F_conflit",
+      "depth": 6,
+      "min_steps": 6,
+      "rep": 1,
+      "correct": true,
+      "verdict": "conflit_chiffre",
+      "answer": "24 (EXPORT NOCTURNE) ET 104 (SOMME DES STOCKS REELS DES ENTREPOTS)",
+      "expected": null,
+      "steps": 6,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 5.63,
+      "final_text": "CONFLIT: 24 (export nocturne) et 104 (somme des stocks réels des entrepôts)",
+      "usage": {
+        "prompt_tokens": 5093,
+        "completion_tokens": 191
+      }
+    },
+    {
+      "task_id": "F-02",
+      "band": "F_conflit",
+      "depth": 6,
+      "min_steps": 6,
+      "rep": 2,
+      "correct": true,
+      "verdict": "conflit_chiffre",
+      "answer": "24 (EXPORT NOCTURNE) ET 104 (SOMME DES STOCKS REELS DES ENTREPOTS)",
+      "expected": null,
+      "steps": 6,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 5.92,
+      "final_text": "CONFLIT: 24 (export nocturne) et 104 (somme des stocks réels des entrepôts)",
+      "usage": {
+        "prompt_tokens": 5093,
+        "completion_tokens": 191
+      }
+    },
+    {
+      "task_id": "F-02",
+      "band": "F_conflit",
+      "depth": 6,
+      "min_steps": 6,
+      "rep": 3,
+      "correct": true,
+      "verdict": "conflit_chiffre",
+      "answer": "24 (EXPORT NOCTURNE) ET 104 (SOMME DES STOCKS REELS DES ENTREPOTS)",
+      "expected": null,
+      "steps": 6,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 4.69,
+      "final_text": "CONFLIT: 24 (export nocturne) et 104 (somme des stocks réels des entrepôts)",
+      "usage": {
+        "prompt_tokens": 3821,
+        "completion_tokens": 188
+      }
+    },
+    {
+      "task_id": "F-02",
+      "band": "F_conflit",
+      "depth": 6,
+      "min_steps": 6,
+      "rep": 4,
+      "correct": true,
+      "verdict": "conflit_chiffre",
+      "answer": "24 (EXPORT NOCTURNE) ET 104 (SOMME DES STOCKS REELS PAR ENTREPOT)",
+      "expected": null,
+      "steps": 6,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 4.45,
+      "final_text": "CONFLIT: 24 (export nocturne) et 104 (somme des stocks réels par entrepôt)",
+      "usage": {
+        "prompt_tokens": 3821,
+        "completion_tokens": 188
+      }
+    },
+    {
+      "task_id": "F-02",
+      "band": "F_conflit",
+      "depth": 6,
+      "min_steps": 6,
+      "rep": 5,
+      "correct": true,
+      "verdict": "conflit_chiffre",
+      "answer": "24 (EXPORT NOCTURNE) ; 104 (SOMME DES STOCKS REELS DES ENTREPOTS)",
+      "expected": null,
+      "steps": 7,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 6.02,
+      "final_text": "CONFLIT: 24 (export nocturne) ; 104 (somme des stocks réels des entrepôts)",
+      "usage": {
+        "prompt_tokens": 5345,
+        "completion_tokens": 215
+      }
+    },
+    {
+      "task_id": "F-03",
+      "band": "F_conflit",
+      "depth": 6,
+      "min_steps": 6,
+      "rep": 1,
+      "correct": true,
+      "verdict": "conflit_chiffre",
+      "answer": "46 (EXPORT NOCTURNE) VS 126 (SOMME DES STOCKS REELS DES ENTREPOTS)",
+      "expected": null,
+      "steps": 6,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 7.85,
+      "final_text": "CONFLIT: 46 (export nocturne) vs 126 (somme des stocks réels des entrepôts)",
+      "usage": {
+        "prompt_tokens": 5093,
+        "completion_tokens": 191
+      }
+    },
+    {
+      "task_id": "F-03",
+      "band": "F_conflit",
+      "depth": 6,
+      "min_steps": 6,
+      "rep": 2,
+      "correct": true,
+      "verdict": "conflit_chiffre",
+      "answer": "46 (EXPORT NOCTURNE) ; 126 (SOMME DES STOCKS REELS DES ENTREPOTS)",
+      "expected": null,
+      "steps": 6,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 6.66,
+      "final_text": "CONFLIT: 46 (export nocturne) ; 126 (somme des stocks réels des entrepôts)",
+      "usage": {
+        "prompt_tokens": 5093,
+        "completion_tokens": 191
+      }
+    },
+    {
+      "task_id": "F-03",
+      "band": "F_conflit",
+      "depth": 6,
+      "min_steps": 6,
+      "rep": 3,
+      "correct": true,
+      "verdict": "conflit_chiffre",
+      "answer": "46 (EXPORT NOCTURNE) ET 126 (SOMME DES STOCKS REELS DES ENTREPOTS)",
+      "expected": null,
+      "steps": 6,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 5.5,
+      "final_text": "CONFLIT: 46 (export nocturne) et 126 (somme des stocks réels des entrepôts)",
+      "usage": {
+        "prompt_tokens": 3821,
+        "completion_tokens": 188
+      }
+    },
+    {
+      "task_id": "F-03",
+      "band": "F_conflit",
+      "depth": 6,
+      "min_steps": 6,
+      "rep": 4,
+      "correct": true,
+      "verdict": "conflit_chiffre",
+      "answer": "46 (EXPORT NOCTURNE) CONTRE 126 (SOMME DES STOCKS REELS DES ENTREPOTS)",
+      "expected": null,
+      "steps": 6,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 6.2,
+      "final_text": "CONFLIT: 46 (export nocturne) contre 126 (somme des stocks réels des entrepôts)",
+      "usage": {
+        "prompt_tokens": 5093,
+        "completion_tokens": 191
+      }
+    },
+    {
+      "task_id": "F-03",
+      "band": "F_conflit",
+      "depth": 6,
+      "min_steps": 6,
+      "rep": 5,
+      "correct": true,
+      "verdict": "conflit_chiffre",
+      "answer": "46 (EXPORT NOCTURNE) ET 126 (SOMME DES STOCKS REELS DES ENTREPOTS)",
+      "expected": null,
+      "steps": 6,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 4.21,
+      "final_text": "CONFLIT: 46 (export nocturne) et 126 (somme des stocks réels des entrepôts)",
+      "usage": {
+        "prompt_tokens": 3821,
+        "completion_tokens": 188
+      }
+    },
+    {
+      "task_id": "F-04",
+      "band": "F_conflit",
+      "depth": 6,
+      "min_steps": 6,
+      "rep": 1,
+      "correct": true,
+      "verdict": "conflit_chiffre",
+      "answer": "78 (EXPORT NOCTURNE) ET 158 (SOMME DES STOCKS REELS DES ENTREPOTS)",
+      "expected": null,
+      "steps": 6,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 6.72,
+      "final_text": "CONFLIT: 78 (export nocturne) et 158 (somme des stocks réels des entrepôts)",
+      "usage": {
+        "prompt_tokens": 5093,
+        "completion_tokens": 191
+      }
+    },
+    {
+      "task_id": "F-04",
+      "band": "F_conflit",
+      "depth": 6,
+      "min_steps": 6,
+      "rep": 2,
+      "correct": true,
+      "verdict": "conflit_chiffre",
+      "answer": "78 (EXPORT NOCTURNE) ET 158 (SOMME DES STOCKS REELS PAR ENTREPOT)",
+      "expected": null,
+      "steps": 6,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 7.5,
+      "final_text": "CONFLIT: 78 (export nocturne) et 158 (somme des stocks réels par entrepôt)",
+      "usage": {
+        "prompt_tokens": 5093,
+        "completion_tokens": 191
+      }
+    },
+    {
+      "task_id": "F-04",
+      "band": "F_conflit",
+      "depth": 6,
+      "min_steps": 6,
+      "rep": 3,
+      "correct": true,
+      "verdict": "conflit_chiffre",
+      "answer": "78 (EXPORT NOCTURNE) ; 158 (SOMME DES STOCKS REELS PAR ENTREPOT)",
+      "expected": null,
+      "steps": 6,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 5.93,
+      "final_text": "CONFLIT: 78 (export nocturne) ; 158 (somme des stocks réels par entrepôt)",
+      "usage": {
+        "prompt_tokens": 5093,
+        "completion_tokens": 191
+      }
+    },
+    {
+      "task_id": "F-04",
+      "band": "F_conflit",
+      "depth": 6,
+      "min_steps": 6,
+      "rep": 4,
+      "correct": true,
+      "verdict": "conflit_chiffre",
+      "answer": "78 (EXPORT_NOCTURNE) ; 158 (SOMME DES STOCKS REELS DES ENTREPOTS)",
+      "expected": null,
+      "steps": 6,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 5.56,
+      "final_text": "CONFLIT: 78 (export_nocturne) ; 158 (somme des stocks reels des entrepots)",
+      "usage": {
+        "prompt_tokens": 5093,
+        "completion_tokens": 190
+      }
+    },
+    {
+      "task_id": "F-04",
+      "band": "F_conflit",
+      "depth": 6,
+      "min_steps": 6,
+      "rep": 5,
+      "correct": true,
+      "verdict": "conflit_chiffre",
+      "answer": "78 (EXPORT NOCTURNE) ET 158 (SOMME DES STOCKS REELS EN ENTREPOTS)",
+      "expected": null,
+      "steps": 6,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 5.72,
+      "final_text": "CONFLIT: 78 (export nocturne) et 158 (somme des stocks réels en entrepôts)",
+      "usage": {
+        "prompt_tokens": 5093,
+        "completion_tokens": 191
+      }
+    },
+    {
+      "task_id": "G-01",
+      "band": "G_impossible",
+      "depth": 1,
+      "min_steps": 1,
+      "rep": 1,
+      "correct": true,
+      "verdict": "impossible_signale",
+      "answer": "LES COUTS D'ACHAT NECESSAIRES AU CALCUL DE LA MARGE NETTE SONT ABSENTS DU SYSTEME",
+      "expected": null,
+      "steps": 7,
+      "decoy_calls": 1,
+      "stop_reason": "ok",
+      "errors": [
+        "decoy_call"
+      ],
+      "latency_s": 5.02,
+      "final_text": "IMPOSSIBLE: les couts d'achat necessaires au calcul de la marge nette sont absents du systeme",
+      "usage": {
+        "prompt_tokens": 4090,
+        "completion_tokens": 171
+      }
+    },
+    {
+      "task_id": "G-01",
+      "band": "G_impossible",
+      "depth": 1,
+      "min_steps": 1,
+      "rep": 2,
+      "correct": false,
+      "verdict": "aucun_marqueur",
+      "answer": null,
+      "expected": null,
+      "steps": 17,
+      "decoy_calls": 1,
+      "stop_reason": "step_limit",
+      "errors": [
+        "expected_miss",
+        "expected_miss",
+        "expected_miss",
+        "decoy_call",
+        "tool_lookup_miss",
+        "tool_lookup_miss",
+        "tool_lookup_miss",
+        "tool_lookup_miss"
+      ],
+      "latency_s": 6.16,
+      "final_text": "",
+      "usage": {
+        "prompt_tokens": 4340,
+        "completion_tokens": 419
+      }
+    },
+    {
+      "task_id": "G-01",
+      "band": "G_impossible",
+      "depth": 1,
+      "min_steps": 1,
+      "rep": 3,
+      "correct": true,
+      "verdict": "impossible_signale",
+      "answer": "LES COUTS D'ACHAT NECESSAIRES AU CALCUL DE LA MARGE NETTE NE SONT PAS DISPONIBLES.",
+      "expected": null,
+      "steps": 7,
+      "decoy_calls": 1,
+      "stop_reason": "ok",
+      "errors": [
+        "decoy_call"
+      ],
+      "latency_s": 5.25,
+      "final_text": "IMPOSSIBLE: les couts d'achat necessaires au calcul de la marge nette ne sont pas disponibles.",
+      "usage": {
+        "prompt_tokens": 4090,
+        "completion_tokens": 170
+      }
+    },
+    {
+      "task_id": "G-01",
+      "band": "G_impossible",
+      "depth": 1,
+      "min_steps": 1,
+      "rep": 4,
+      "correct": false,
+      "verdict": "aucun_marqueur",
+      "answer": null,
+      "expected": null,
+      "steps": 18,
+      "decoy_calls": 7,
+      "stop_reason": "step_limit",
+      "errors": [
+        "expected_miss",
+        "expected_miss",
+        "expected_miss",
+        "decoy_call",
+        "decoy_call",
+        "decoy_call",
+        "decoy_call",
+        "decoy_call",
+        "decoy_call",
+        "decoy_call"
+      ],
+      "latency_s": 6.05,
+      "final_text": "",
+      "usage": {
+        "prompt_tokens": 4290,
+        "completion_tokens": 409
+      }
+    },
+    {
+      "task_id": "G-01",
+      "band": "G_impossible",
+      "depth": 1,
+      "min_steps": 1,
+      "rep": 5,
+      "correct": true,
+      "verdict": "impossible_signale",
+      "answer": "LES COUTS D’ACHAT OU DE REVIENT NECESSAIRES AU CALCUL DE LA MARGE NETTE SONT ABSENTS DU SYSTEME.",
+      "expected": null,
+      "steps": 12,
+      "decoy_calls": 1,
+      "stop_reason": "ok",
+      "errors": [
+        "expected_miss",
+        "expected_miss",
+        "expected_miss",
+        "decoy_call"
+      ],
+      "latency_s": 5.15,
+      "final_text": "IMPOSSIBLE: les couts d’achat ou de revient necessaires au calcul de la marge nette sont absents du systeme.",
+      "usage": {
+        "prompt_tokens": 4340,
+        "completion_tokens": 310
+      }
+    },
+    {
+      "task_id": "G-02",
+      "band": "G_impossible",
+      "depth": 1,
+      "min_steps": 1,
+      "rep": 1,
+      "correct": true,
+      "verdict": "impossible_signale",
+      "answer": "LES INFORMATIONS DE LIVRAISON NE CONTIENNENT AUCUN DELAI CONSTATE.",
+      "expected": null,
+      "steps": 3,
+      "decoy_calls": 2,
+      "stop_reason": "ok",
+      "errors": [
+        "decoy_call",
+        "decoy_call"
+      ],
+      "latency_s": 4.76,
+      "final_text": "IMPOSSIBLE: les informations de livraison ne contiennent aucun delai constate.",
+      "usage": {
+        "prompt_tokens": 3638,
+        "completion_tokens": 100
+      }
+    },
+    {
+      "task_id": "G-02",
+      "band": "G_impossible",
+      "depth": 1,
+      "min_steps": 1,
+      "rep": 2,
+      "correct": true,
+      "verdict": "impossible_signale",
+      "answer": "LES INFORMATIONS DE LIVRAISON NE CONTIENNENT AUCUN DELAI CONSTATE.",
+      "expected": null,
+      "steps": 3,
+      "decoy_calls": 2,
+      "stop_reason": "ok",
+      "errors": [
+        "decoy_call",
+        "decoy_call"
+      ],
+      "latency_s": 4.42,
+      "final_text": "IMPOSSIBLE: Les informations de livraison ne contiennent aucun délai constaté.",
+      "usage": {
+        "prompt_tokens": 3638,
+        "completion_tokens": 100
+      }
+    },
+    {
+      "task_id": "G-02",
+      "band": "G_impossible",
+      "depth": 1,
+      "min_steps": 1,
+      "rep": 3,
+      "correct": true,
+      "verdict": "impossible_signale",
+      "answer": "LES INFORMATIONS DE LIVRAISON DISPONIBLES NE CONTIENNENT PAS LES DATES NECESSAIRES AU CALCUL DU DELAI MOYEN.",
+      "expected": null,
+      "steps": 3,
+      "decoy_calls": 2,
+      "stop_reason": "ok",
+      "errors": [
+        "decoy_call",
+        "decoy_call"
+      ],
+      "latency_s": 4.3,
+      "final_text": "IMPOSSIBLE: les informations de livraison disponibles ne contiennent pas les dates necessaires au calcul du delai moyen.",
+      "usage": {
+        "prompt_tokens": 3638,
+        "completion_tokens": 108
+      }
+    },
+    {
+      "task_id": "G-02",
+      "band": "G_impossible",
+      "depth": 1,
+      "min_steps": 1,
+      "rep": 4,
+      "correct": true,
+      "verdict": "impossible_signale",
+      "answer": "LES INFORMATIONS DE LIVRAISON DISPONIBLES NE CONTIENNENT AUCUN DELAI CONSTATE.",
+      "expected": null,
+      "steps": 3,
+      "decoy_calls": 2,
+      "stop_reason": "ok",
+      "errors": [
+        "decoy_call",
+        "decoy_call"
+      ],
+      "latency_s": 3.56,
+      "final_text": "IMPOSSIBLE: Les informations de livraison disponibles ne contiennent aucun délai constaté.",
+      "usage": {
+        "prompt_tokens": 3638,
+        "completion_tokens": 101
+      }
+    },
+    {
+      "task_id": "G-02",
+      "band": "G_impossible",
+      "depth": 1,
+      "min_steps": 1,
+      "rep": 5,
+      "correct": true,
+      "verdict": "impossible_signale",
+      "answer": "LES INFORMATIONS DE LIVRAISON DISPONIBLES NE CONTIENNENT AUCUN DELAI CONSTATE.",
+      "expected": null,
+      "steps": 3,
+      "decoy_calls": 2,
+      "stop_reason": "ok",
+      "errors": [
+        "decoy_call",
+        "decoy_call"
+      ],
+      "latency_s": 3.67,
+      "final_text": "IMPOSSIBLE: Les informations de livraison disponibles ne contiennent aucun delai constate.",
+      "usage": {
+        "prompt_tokens": 3638,
+        "completion_tokens": 101
+      }
+    },
+    {
+      "task_id": "G-03",
+      "band": "G_impossible",
+      "depth": 1,
+      "min_steps": 1,
+      "rep": 1,
+      "correct": true,
+      "verdict": "impossible_signale",
+      "answer": "REFERENCE REF-999 INCONNUE DU SYSTEME",
+      "expected": null,
+      "steps": 5,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [
+        "tool_lookup_miss",
+        "tool_lookup_miss",
+        "tool_lookup_miss",
+        "tool_lookup_miss"
+      ],
+      "latency_s": 4.1,
+      "final_text": "IMPOSSIBLE: reference REF-999 inconnue du systeme",
+      "usage": {
+        "prompt_tokens": 3671,
+        "completion_tokens": 158
+      }
+    },
+    {
+      "task_id": "G-03",
+      "band": "G_impossible",
+      "depth": 1,
+      "min_steps": 1,
+      "rep": 2,
+      "correct": true,
+      "verdict": "impossible_signale",
+      "answer": "LA REFERENCE REF-999 EST INCONNUE DU SYSTEME.",
+      "expected": null,
+      "steps": 5,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [
+        "tool_lookup_miss",
+        "tool_lookup_miss",
+        "tool_lookup_miss",
+        "tool_lookup_miss"
+      ],
+      "latency_s": 4.0,
+      "final_text": "IMPOSSIBLE: La reference REF-999 est inconnue du systeme.",
+      "usage": {
+        "prompt_tokens": 3671,
+        "completion_tokens": 161
+      }
+    },
+    {
+      "task_id": "G-03",
+      "band": "G_impossible",
+      "depth": 1,
+      "min_steps": 1,
+      "rep": 3,
+      "correct": true,
+      "verdict": "impossible_signale",
+      "answer": "LA REFERENCE REF-999 EST INCONNUE DU SYSTEME",
+      "expected": null,
+      "steps": 5,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [
+        "tool_lookup_miss",
+        "tool_lookup_miss",
+        "tool_lookup_miss",
+        "tool_lookup_miss"
+      ],
+      "latency_s": 3.85,
+      "final_text": "IMPOSSIBLE: la reference REF-999 est inconnue du systeme",
+      "usage": {
+        "prompt_tokens": 3671,
+        "completion_tokens": 160
+      }
+    },
+    {
+      "task_id": "G-03",
+      "band": "G_impossible",
+      "depth": 1,
+      "min_steps": 1,
+      "rep": 4,
+      "correct": true,
+      "verdict": "impossible_signale",
+      "answer": "REFERENCE REF-999 INCONNUE DANS LE SYSTEME",
+      "expected": null,
+      "steps": 5,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [
+        "tool_lookup_miss",
+        "tool_lookup_miss",
+        "tool_lookup_miss",
+        "tool_lookup_miss"
+      ],
+      "latency_s": 3.58,
+      "final_text": "IMPOSSIBLE: reference REF-999 inconnue dans le systeme",
+      "usage": {
+        "prompt_tokens": 3671,
+        "completion_tokens": 159
+      }
+    },
+    {
+      "task_id": "G-03",
+      "band": "G_impossible",
+      "depth": 1,
+      "min_steps": 1,
+      "rep": 5,
+      "correct": true,
+      "verdict": "impossible_signale",
+      "answer": "LA REFERENCE REF-999 EST INCONNUE DU SYSTEME.",
+      "expected": null,
+      "steps": 5,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [
+        "tool_lookup_miss",
+        "tool_lookup_miss",
+        "tool_lookup_miss",
+        "tool_lookup_miss"
+      ],
+      "latency_s": 3.96,
+      "final_text": "IMPOSSIBLE: La reference REF-999 est inconnue du systeme.",
+      "usage": {
+        "prompt_tokens": 3671,
+        "completion_tokens": 161
+      }
+    },
+    {
+      "task_id": "G-04",
+      "band": "G_impossible",
+      "depth": 1,
+      "min_steps": 1,
+      "rep": 1,
+      "correct": true,
+      "verdict": "impossible_signale",
+      "answer": "AUCUNE SOURCE DE DONNEES SUR LES RETOURS PRODUITS N'EST DISPONIBLE DANS LE SYSTEME.",
+      "expected": null,
+      "steps": 0,
+      "decoy_calls": 0,
+      "stop_reason": "no_tool_call",
+      "errors": [],
+      "latency_s": 1.14,
+      "final_text": "IMPOSSIBLE: aucune source de donnees sur les retours produits n'est disponible dans le systeme.",
+      "usage": {
+        "prompt_tokens": 1131,
+        "completion_tokens": 25
+      }
+    },
+    {
+      "task_id": "G-04",
+      "band": "G_impossible",
+      "depth": 1,
+      "min_steps": 1,
+      "rep": 2,
+      "correct": true,
+      "verdict": "impossible_signale",
+      "answer": "AUCUNE SOURCE DE DONNEES FOURNIE NE PERMET D'OBTENIR LES RETOURS PRODUITS PAR MAGASIN",
+      "expected": null,
+      "steps": 0,
+      "decoy_calls": 0,
+      "stop_reason": "no_tool_call",
+      "errors": [],
+      "latency_s": 1.39,
+      "final_text": "IMPOSSIBLE: aucune source de donnees fournie ne permet d'obtenir les retours produits par magasin",
+      "usage": {
+        "prompt_tokens": 1131,
+        "completion_tokens": 24
+      }
+    },
+    {
+      "task_id": "G-04",
+      "band": "G_impossible",
+      "depth": 1,
+      "min_steps": 1,
+      "rep": 3,
+      "correct": true,
+      "verdict": "impossible_signale",
+      "answer": "AUCUN OUTIL NE FOURNIT LES RETOURS PRODUITS PAR MAGASIN",
+      "expected": null,
+      "steps": 1,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 2.38,
+      "final_text": "IMPOSSIBLE: aucun outil ne fournit les retours produits par magasin",
+      "usage": {
+        "prompt_tokens": 2319,
+        "completion_tokens": 39
+      }
+    },
+    {
+      "task_id": "G-04",
+      "band": "G_impossible",
+      "depth": 1,
+      "min_steps": 1,
+      "rep": 4,
+      "correct": true,
+      "verdict": "impossible_signale",
+      "answer": "LES RETOURS PRODUITS NE SONT PAS DISPONIBLES DANS LE SYSTEME.",
+      "expected": null,
+      "steps": 0,
+      "decoy_calls": 0,
+      "stop_reason": "no_tool_call",
+      "errors": [],
+      "latency_s": 1.75,
+      "final_text": "IMPOSSIBLE: les retours produits ne sont pas disponibles dans le systeme.",
+      "usage": {
+        "prompt_tokens": 1131,
+        "completion_tokens": 20
+      }
+    },
+    {
+      "task_id": "G-04",
+      "band": "G_impossible",
+      "depth": 1,
+      "min_steps": 1,
+      "rep": 5,
+      "correct": true,
+      "verdict": "impossible_signale",
+      "answer": "AUCUNE DONNEE DE RETOURS PRODUITS NI OUTIL PERMETTANT DE LES CONSULTER N'EST DISPONIBLE DANS LE SYSTEME.",
+      "expected": null,
+      "steps": 0,
+      "decoy_calls": 0,
+      "stop_reason": "no_tool_call",
+      "errors": [],
+      "latency_s": 1.63,
+      "final_text": "IMPOSSIBLE: aucune donnee de retours produits ni outil permettant de les consulter n'est disponible dans le systeme.",
+      "usage": {
+        "prompt_tokens": 1131,
+        "completion_tokens": 28
+      }
+    },
+    {
+      "task_id": "H-01",
+      "band": "H_contexte",
+      "depth": 12,
+      "min_steps": 12,
+      "rep": 1,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "114852.91",
+      "expected": 114852.91,
+      "steps": 12,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 9.45,
+      "final_text": "Valeur totale au prix catalogue : 114852.91 euros.\n\nREPONSE: 114852.91",
+      "usage": {
+        "prompt_tokens": 9976,
+        "completion_tokens": 453
+      }
+    },
+    {
+      "task_id": "H-01",
+      "band": "H_contexte",
+      "depth": 12,
+      "min_steps": 12,
+      "rep": 2,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "114852.91",
+      "expected": 114852.91,
+      "steps": 12,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 9.21,
+      "final_text": "REPONSE: 114852.91",
+      "usage": {
+        "prompt_tokens": 9976,
+        "completion_tokens": 439
+      }
+    },
+    {
+      "task_id": "H-01",
+      "band": "H_contexte",
+      "depth": 12,
+      "min_steps": 12,
+      "rep": 3,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "114852.91",
+      "expected": 114852.91,
+      "steps": 12,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 10.77,
+      "final_text": "Valeur totale au prix catalogue : 114852.91\n\nREPONSE: 114852.91",
+      "usage": {
+        "prompt_tokens": 9976,
+        "completion_tokens": 452
+      }
+    },
+    {
+      "task_id": "H-01",
+      "band": "H_contexte",
+      "depth": 12,
+      "min_steps": 12,
+      "rep": 4,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "114852.91",
+      "expected": 114852.91,
+      "steps": 12,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 10.19,
+      "final_text": "Valeur totale au prix catalogue : 114852.91 €\n\nREPONSE: 114852.91",
+      "usage": {
+        "prompt_tokens": 9976,
+        "completion_tokens": 452
+      }
+    },
+    {
+      "task_id": "H-01",
+      "band": "H_contexte",
+      "depth": 12,
+      "min_steps": 12,
+      "rep": 5,
+      "correct": false,
+      "verdict": "valeur_fausse",
+      "answer": "110198.99",
+      "expected": 114852.91,
+      "steps": 12,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 7.36,
+      "final_text": "Valeur totale au prix catalogue : 110198.99 euros\n\nREPONSE: 110198.99",
+      "usage": {
+        "prompt_tokens": 9837,
+        "completion_tokens": 314
+      }
+    },
+    {
+      "task_id": "H-02",
+      "band": "H_contexte",
+      "depth": 1,
+      "min_steps": 1,
+      "rep": 1,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "209",
+      "expected": 209,
+      "steps": 2,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 5.73,
+      "final_text": "REPONSE: 209",
+      "usage": {
+        "prompt_tokens": 6171,
+        "completion_tokens": 206
+      }
+    },
+    {
+      "task_id": "H-02",
+      "band": "H_contexte",
+      "depth": 1,
+      "min_steps": 1,
+      "rep": 2,
+      "correct": false,
+      "verdict": "valeur_fausse",
+      "answer": "203",
+      "expected": 209,
+      "steps": 2,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 7.99,
+      "final_text": "Nombre total d’unités commandées : 203\n\nREPONSE: 203",
+      "usage": {
+        "prompt_tokens": 6165,
+        "completion_tokens": 212
+      }
+    },
+    {
+      "task_id": "H-02",
+      "band": "H_contexte",
+      "depth": 1,
+      "min_steps": 1,
+      "rep": 3,
+      "correct": false,
+      "verdict": "valeur_fausse",
+      "answer": "205",
+      "expected": 209,
+      "steps": 2,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 5.7,
+      "final_text": "Le total est de 205 unités commandées.\n\nREPONSE: 205",
+      "usage": {
+        "prompt_tokens": 6169,
+        "completion_tokens": 214
+      }
+    },
+    {
+      "task_id": "H-02",
+      "band": "H_contexte",
+      "depth": 1,
+      "min_steps": 1,
+      "rep": 4,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "209",
+      "expected": 209,
+      "steps": 2,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 8.01,
+      "final_text": "Total des unités commandées : 209\n\nREPONSE: 209",
+      "usage": {
+        "prompt_tokens": 6171,
+        "completion_tokens": 215
+      }
+    },
+    {
+      "task_id": "H-02",
+      "band": "H_contexte",
+      "depth": 1,
+      "min_steps": 1,
+      "rep": 5,
+      "correct": false,
+      "verdict": "valeur_fausse",
+      "answer": "205",
+      "expected": 209,
+      "steps": 2,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 8.51,
+      "final_text": "Total toutes lignes confondues : 205 unités.\n\nREPONSE: 205",
+      "usage": {
+        "prompt_tokens": 6169,
+        "completion_tokens": 216
+      }
+    },
+    {
+      "task_id": "H-03",
+      "band": "H_contexte",
+      "depth": 1,
+      "min_steps": 1,
+      "rep": 1,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "21",
+      "expected": 21,
+      "steps": 2,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 8.18,
+      "final_text": "REPONSE: 21",
+      "usage": {
+        "prompt_tokens": 6027,
+        "completion_tokens": 62
+      }
+    },
+    {
+      "task_id": "H-03",
+      "band": "H_contexte",
+      "depth": 1,
+      "min_steps": 1,
+      "rep": 2,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "21",
+      "expected": 21,
+      "steps": 2,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 6.54,
+      "final_text": "REPONSE: 21",
+      "usage": {
+        "prompt_tokens": 6027,
+        "completion_tokens": 62
+      }
+    },
+    {
+      "task_id": "H-03",
+      "band": "H_contexte",
+      "depth": 1,
+      "min_steps": 1,
+      "rep": 3,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "21",
+      "expected": 21,
+      "steps": 2,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 6.33,
+      "final_text": "REPONSE: 21",
+      "usage": {
+        "prompt_tokens": 6027,
+        "completion_tokens": 62
+      }
+    },
+    {
+      "task_id": "H-03",
+      "band": "H_contexte",
+      "depth": 1,
+      "min_steps": 1,
+      "rep": 4,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "21",
+      "expected": 21,
+      "steps": 2,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 5.4,
+      "final_text": "REPONSE: 21",
+      "usage": {
+        "prompt_tokens": 6027,
+        "completion_tokens": 62
+      }
+    },
+    {
+      "task_id": "H-03",
+      "band": "H_contexte",
+      "depth": 1,
+      "min_steps": 1,
+      "rep": 5,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "21",
+      "expected": 21,
+      "steps": 2,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 7.72,
+      "final_text": "REPONSE: 21",
+      "usage": {
+        "prompt_tokens": 6027,
+        "completion_tokens": 62
+      }
+    },
+    {
+      "task_id": "H-04",
+      "band": "H_contexte",
+      "depth": 1,
+      "min_steps": 1,
+      "rep": 1,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "REF-017",
+      "expected": "REF-017",
+      "steps": 1,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 4.82,
+      "final_text": "REPONSE: REF-017",
+      "usage": {
+        "prompt_tokens": 3556,
+        "completion_tokens": 31
+      }
+    },
+    {
+      "task_id": "H-04",
+      "band": "H_contexte",
+      "depth": 1,
+      "min_steps": 1,
+      "rep": 2,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "REF-017",
+      "expected": "REF-017",
+      "steps": 1,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 5.09,
+      "final_text": "REPONSE: REF-017",
+      "usage": {
+        "prompt_tokens": 3556,
+        "completion_tokens": 31
+      }
+    },
+    {
+      "task_id": "H-04",
+      "band": "H_contexte",
+      "depth": 1,
+      "min_steps": 1,
+      "rep": 3,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "REF-017",
+      "expected": "REF-017",
+      "steps": 1,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 4.71,
+      "final_text": "REPONSE: REF-017",
+      "usage": {
+        "prompt_tokens": 3556,
+        "completion_tokens": 31
+      }
+    },
+    {
+      "task_id": "H-04",
+      "band": "H_contexte",
+      "depth": 1,
+      "min_steps": 1,
+      "rep": 4,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "REF-017",
+      "expected": "REF-017",
+      "steps": 1,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 4.64,
+      "final_text": "REPONSE: REF-017",
+      "usage": {
+        "prompt_tokens": 3556,
+        "completion_tokens": 31
+      }
+    },
+    {
+      "task_id": "H-04",
+      "band": "H_contexte",
+      "depth": 1,
+      "min_steps": 1,
+      "rep": 5,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "REF-017",
+      "expected": "REF-017",
+      "steps": 1,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 3.01,
+      "final_text": "La référence ayant la quantité cumulée la plus élevée est REF-017.\n\nREPONSE: REF-017",
+      "usage": {
+        "prompt_tokens": 3556,
+        "completion_tokens": 46
+      }
+    },
+    {
+      "task_id": "I-01",
+      "band": "I_controle",
+      "depth": 1,
+      "min_steps": 1,
+      "rep": 1,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "510.59",
+      "expected": 510.59,
+      "steps": 1,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 2.79,
+      "final_text": "Le prix unitaire catalogue de la référence REF-020 est de 510.59.\n\nREPONSE: 510.59",
+      "usage": {
+        "prompt_tokens": 2331,
+        "completion_tokens": 48
+      }
+    },
+    {
+      "task_id": "I-01",
+      "band": "I_controle",
+      "depth": 1,
+      "min_steps": 1,
+      "rep": 2,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "510.59",
+      "expected": 510.59,
+      "steps": 1,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 3.03,
+      "final_text": "Le prix unitaire catalogue de la référence REF-020 est de 510.59.\n\nREPONSE: 510.59",
+      "usage": {
+        "prompt_tokens": 2331,
+        "completion_tokens": 48
+      }
+    },
+    {
+      "task_id": "I-01",
+      "band": "I_controle",
+      "depth": 1,
+      "min_steps": 1,
+      "rep": 3,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "510.59",
+      "expected": 510.59,
+      "steps": 1,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 4.59,
+      "final_text": "Le prix unitaire catalogue de la référence REF-020 est de 510.59.\n\nREPONSE: 510.59",
+      "usage": {
+        "prompt_tokens": 2331,
+        "completion_tokens": 48
+      }
+    },
+    {
+      "task_id": "I-01",
+      "band": "I_controle",
+      "depth": 1,
+      "min_steps": 1,
+      "rep": 4,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "510.59",
+      "expected": 510.59,
+      "steps": 1,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 2.54,
+      "final_text": "Le prix unitaire catalogue de la référence REF-020 est de 510.59.\n\nREPONSE: 510.59",
+      "usage": {
+        "prompt_tokens": 2331,
+        "completion_tokens": 48
+      }
+    },
+    {
+      "task_id": "I-01",
+      "band": "I_controle",
+      "depth": 1,
+      "min_steps": 1,
+      "rep": 5,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "510.59",
+      "expected": 510.59,
+      "steps": 1,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 2.56,
+      "final_text": "Le prix unitaire catalogue de la référence REF-020 est de 510,59.\n\nREPONSE: 510.59",
+      "usage": {
+        "prompt_tokens": 2331,
+        "completion_tokens": 48
+      }
+    },
+    {
+      "task_id": "I-02",
+      "band": "I_controle",
+      "depth": 2,
+      "min_steps": 2,
+      "rep": 1,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "ITALIE",
+      "expected": "Italie",
+      "steps": 2,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 3.59,
+      "final_text": "Le fournisseur de la référence REF-020 est situé en Italie.\n\nREPONSE: Italie",
+      "usage": {
+        "prompt_tokens": 3606,
+        "completion_tokens": 65
+      }
+    },
+    {
+      "task_id": "I-02",
+      "band": "I_controle",
+      "depth": 2,
+      "min_steps": 2,
+      "rep": 2,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "ITALIE",
+      "expected": "Italie",
+      "steps": 2,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 3.52,
+      "final_text": "Le fournisseur de la référence REF-020 est situé en Italie.\n\nREPONSE: Italie",
+      "usage": {
+        "prompt_tokens": 3606,
+        "completion_tokens": 65
+      }
+    },
+    {
+      "task_id": "I-02",
+      "band": "I_controle",
+      "depth": 2,
+      "min_steps": 2,
+      "rep": 3,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "ITALIE",
+      "expected": "Italie",
+      "steps": 2,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 3.4,
+      "final_text": "REPONSE: Italie",
+      "usage": {
+        "prompt_tokens": 3606,
+        "completion_tokens": 52
+      }
+    },
+    {
+      "task_id": "I-02",
+      "band": "I_controle",
+      "depth": 2,
+      "min_steps": 2,
+      "rep": 4,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "ITALIE",
+      "expected": "Italie",
+      "steps": 2,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 4.35,
+      "final_text": "REPONSE: Italie",
+      "usage": {
+        "prompt_tokens": 3606,
+        "completion_tokens": 52
+      }
+    },
+    {
+      "task_id": "I-02",
+      "band": "I_controle",
+      "depth": 2,
+      "min_steps": 2,
+      "rep": 5,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "ITALIE",
+      "expected": "Italie",
+      "steps": 2,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 3.31,
+      "final_text": "Le fournisseur de la référence REF-020 est situé en Italie.\n\nREPONSE: Italie",
+      "usage": {
+        "prompt_tokens": 3606,
+        "completion_tokens": 65
+      }
+    },
+    {
+      "task_id": "I-03",
+      "band": "I_controle",
+      "depth": 5,
+      "min_steps": 5,
+      "rep": 1,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "128",
+      "expected": 128,
+      "steps": 6,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 6.46,
+      "final_text": "REPONSE: 128",
+      "usage": {
+        "prompt_tokens": 5207,
+        "completion_tokens": 177
+      }
+    },
+    {
+      "task_id": "I-03",
+      "band": "I_controle",
+      "depth": 5,
+      "min_steps": 5,
+      "rep": 2,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "128",
+      "expected": 128,
+      "steps": 6,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 5.95,
+      "final_text": "Stock cumulé des 4 entrepôts : 128\n\nREPONSE: 128",
+      "usage": {
+        "prompt_tokens": 5207,
+        "completion_tokens": 190
+      }
+    },
+    {
+      "task_id": "I-03",
+      "band": "I_controle",
+      "depth": 5,
+      "min_steps": 5,
+      "rep": 3,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "128",
+      "expected": 128,
+      "steps": 6,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 6.33,
+      "final_text": "REPONSE: 128",
+      "usage": {
+        "prompt_tokens": 5207,
+        "completion_tokens": 177
+      }
+    },
+    {
+      "task_id": "I-03",
+      "band": "I_controle",
+      "depth": 5,
+      "min_steps": 5,
+      "rep": 4,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "128",
+      "expected": 128,
+      "steps": 6,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 6.3,
+      "final_text": "Le stock cumulé de REF-020 sur les quatre entrepôts est de 128.\n\nREPONSE: 128",
+      "usage": {
+        "prompt_tokens": 5207,
+        "completion_tokens": 196
+      }
+    },
+    {
+      "task_id": "I-03",
+      "band": "I_controle",
+      "depth": 5,
+      "min_steps": 5,
+      "rep": 5,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "128",
+      "expected": 128,
+      "steps": 6,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 6.31,
+      "final_text": "REPONSE: 128",
+      "usage": {
+        "prompt_tokens": 5204,
+        "completion_tokens": 174
+      }
+    },
+    {
+      "task_id": "I-04",
+      "band": "I_controle",
+      "depth": 10,
+      "min_steps": 10,
+      "rep": 1,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "10795.28",
+      "expected": 10795.28,
+      "steps": 12,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [
+        "expected_miss",
+        "expected_miss",
+        "expected_miss"
+      ],
+      "latency_s": 6.13,
+      "final_text": "Montant total calculé avec les tarifs négociés disponibles et les prix catalogue sinon.\n\nREPONSE: 10795.28",
+      "usage": {
+        "prompt_tokens": 6368,
+        "completion_tokens": 340
+      }
+    },
+    {
+      "task_id": "I-04",
+      "band": "I_controle",
+      "depth": 10,
+      "min_steps": 10,
+      "rep": 2,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "10795.28",
+      "expected": 10795.28,
+      "steps": 12,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [
+        "expected_miss",
+        "expected_miss",
+        "expected_miss"
+      ],
+      "latency_s": 6.29,
+      "final_text": "Montant total calculé avec les tarifs négociés disponibles et les prix catalogue à défaut.\n\nREPONSE: 10795.28",
+      "usage": {
+        "prompt_tokens": 6368,
+        "completion_tokens": 341
+      }
+    },
+    {
+      "task_id": "I-04",
+      "band": "I_controle",
+      "depth": 10,
+      "min_steps": 10,
+      "rep": 3,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "10795.28",
+      "expected": 10795.28,
+      "steps": 12,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [
+        "expected_miss",
+        "expected_miss",
+        "expected_miss"
+      ],
+      "latency_s": 6.13,
+      "final_text": "Montant calculé avec les tarifs négociés disponibles et les prix catalogue à défaut.\n\nREPONSE: 10795.28",
+      "usage": {
+        "prompt_tokens": 6368,
+        "completion_tokens": 340
+      }
+    },
+    {
+      "task_id": "I-04",
+      "band": "I_controle",
+      "depth": 10,
+      "min_steps": 10,
+      "rep": 4,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "10795.28",
+      "expected": 10795.28,
+      "steps": 12,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [
+        "expected_miss",
+        "expected_miss",
+        "expected_miss"
+      ],
+      "latency_s": 10.25,
+      "final_text": "Montant calculé avec les tarifs négociés disponibles et les prix catalogue à défaut.\n\nREPONSE: 10795.28",
+      "usage": {
+        "prompt_tokens": 6368,
+        "completion_tokens": 340
+      }
+    },
+    {
+      "task_id": "I-04",
+      "band": "I_controle",
+      "depth": 10,
+      "min_steps": 10,
+      "rep": 5,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "10795.28",
+      "expected": 10795.28,
+      "steps": 12,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [
+        "expected_miss",
+        "expected_miss",
+        "expected_miss"
+      ],
+      "latency_s": 6.46,
+      "final_text": "Montant total calculé avec les tarifs négociés disponibles et les prix catalogue à défaut.\n\nREPONSE: 10795.28",
+      "usage": {
+        "prompt_tokens": 6368,
+        "completion_tokens": 341
+      }
+    }
+  ]
+}

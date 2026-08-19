@@ -206,14 +206,22 @@ def score_run(task: dict, final_text: str) -> tuple[bool, str, str | None]:
 
 def chat(base_url: str, api_key: str, model: str, messages: list, tools: list,
          timeout: int, max_tokens: int, temperature: float) -> dict:
-    body = json.dumps({
+    payload = {
         "model": model,
         "messages": messages,
         "tools": tools,
         "tool_choice": "auto",
-        "temperature": temperature,
-        "max_tokens": max_tokens,
-    }).encode()
+    }
+    if "api.openai.com" in base_url:
+        # Reasoning models (gpt-5.6-*) reject 'temperature' and 'max_tokens':
+        # same accommodation as vba_benchmark/models.py, so the comparison
+        # uses the campaign's own convention (reasoning_effort=none by default).
+        payload["max_completion_tokens"] = max_tokens
+        payload["reasoning_effort"] = os.environ.get("OPENAI_REASONING_EFFORT", "none")
+    else:
+        payload["temperature"] = temperature
+        payload["max_tokens"] = max_tokens
+    body = json.dumps(payload).encode()
     req = urllib.request.Request(
         f"{base_url.rstrip('/')}/chat/completions",
         data=body,
@@ -237,6 +245,7 @@ def run_task(task: dict, rep: int, cfg) -> dict:
     steps = decoy_calls = 0
     started = time.time()
     final_text, stop_reason = "", "ok"
+    usage_totals = {"prompt_tokens": 0, "completion_tokens": 0}
 
     for _ in range(max_steps + 1):
         try:
@@ -254,6 +263,9 @@ def run_task(task: dict, rep: int, cfg) -> dict:
             errors.append(f"transport:{type(exc).__name__}")
             trace.append({"type": "transport_error", "detail": str(exc)[:400]})
             break
+
+        for key in usage_totals:
+            usage_totals[key] += (data.get("usage") or {}).get(key, 0) or 0
 
         msg = data["choices"][0]["message"]
         calls = msg.get("tool_calls") or []
@@ -314,6 +326,7 @@ def run_task(task: dict, rep: int, cfg) -> dict:
         "errors": errors,
         "latency_s": round(time.time() - started, 2),
         "final_text": final_text[:1200],
+        "usage": usage_totals,
         "trace": trace,
     }
 

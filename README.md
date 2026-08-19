@@ -144,6 +144,52 @@ de la tâche. Ce qui a une conséquence directe sur le choix des cas d'usage :
 un pipeline dont la règle métier est écrite quelque part est faisable en local ;
 un agent censé deviner ce que veut l'utilisateur ne l'est pas.
 
+## Comparaison locale vs API OpenAI (2026-08-19)
+
+Mêmes trois suites, sur `gpt-5.6-terra` (API OpenAI, `reasoning_effort=none`
+pour rester comparable à la convention déjà utilisée par `vba_benchmark`).
+Coût réel mesuré sur les traces (`usage` des réponses) : **$3,01** pour les
+180 runs — v1 $0,19, v2 $1,26, v3 $1,55.
+
+| Bande | gemma-4-12b (local) | gpt-5.6-terra (API) |
+|---|---|---|
+| v1 (toutes profondeurs) | 100 % | 100 % |
+| v2 (toutes bandes) | 100 % | 100 % |
+| G_impossible | 75 % | 90 % |
+| H_contexte | 40 % | 80 % |
+| I_controle | 100 % | 100 % |
+| F_conflit | 100 % | 100 % |
+| **E_intention** | **0 %** | **5 %** |
+
+Deux enseignements :
+
+- **La mécanique agentique ne distingue pas les modèles ici** : v1 et v2 sont
+  à 100 % des deux côtés, chaînage à 19+ étapes compris. Payer pour l'API
+  n'achète rien sur ce terrain — le 12B local avait déjà atteint le plafond
+  mesurable.
+- **Le modèle frontière encaisse mieux la dérive de contexte long**
+  (H_contexte 80 % contre 40 %) et l'insoluble (G_impossible 90 % contre
+  75 %) — c'est là que la puissance brute paie.
+- **E_intention ne bouge presque pas : 5 % contre 0 %.** Un modèle bien plus
+  cher et plus récent tombe quasiment dans le même trou. Ce n'est donc pas un
+  artefact de taille de modèle ni un problème que l'argent résout : le défaut
+  de signalement d'hypothèse implicite semble être une propriété de classe,
+  pas une limite du 12B. Ça renforce la conclusion du run initial — la
+  spécification de la tâche est le goulot, pas la capacité du modèle, quel
+  que soit son prix.
+
+v1 mesuré ici avec `--reps 1` (n=5/profondeur) contre `--reps 3` (n=15) pour
+gemma — comparaison qualitative valable (100 % des deux côtés reste 100 %
+avec moins de reps), mais un intervalle de confiance comparable demanderait
+de relancer avec `--reps 3`.
+
+Bug de plateforme rencontré : `gpt-5.6-terra` est un modèle de raisonnement,
+il rejette `temperature`/`max_tokens` (HTTP 400). `runner.py` détecte
+désormais `api.openai.com` dans `--base-url` et bascule automatiquement sur
+`max_completion_tokens` + `reasoning_effort` (même convention que
+`vba_benchmark/models.py`), et journalise `usage` pour permettre le chiffrage
+a posteriori.
+
 ## Ce qui reste hors périmètre
 
 - le **jugement** — aucune tâche n'a de réponse discutable ;
@@ -221,7 +267,8 @@ déterministe, et son absence est comptée séparément (`no_marker`).
 
 Le banc a trouvé où ça casse. Deux directions, par ordre de valeur :
 
-1. **Comparer les modèles.** Rejouer v1+v2+v3 sur le fine-tune agentique GGUF et
+1. **Comparer les modèles.** Fait pour l'API OpenAI (`gpt-5.6-terra`, voir
+   ci-dessus) — reste à rejouer v1+v2+v3 sur le fine-tune agentique GGUF et
    sur le Qwen3.6-27B en IQ3 (hypothèse à tester : l'IQ3 dégrade la précision
    d'appel d'outils bien plus que la fluidité, donc le 27B pourrait perdre contre
    ce 12B). Une commande par modèle via `--base-url`.

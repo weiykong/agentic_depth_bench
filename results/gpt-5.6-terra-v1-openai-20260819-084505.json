@@ -1,0 +1,431 @@
+{
+  "model": "gpt-5.6-terra",
+  "suite": "v1",
+  "base_url": "https://api.openai.com/v1",
+  "timestamp": "20260819-084505",
+  "reps": 1,
+  "temperature": 0.0,
+  "wall_time_s": 30.3,
+  "runs": [
+    {
+      "task_id": "d1-01",
+      "band": "d1",
+      "depth": 1,
+      "min_steps": 1,
+      "rep": 1,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "125",
+      "expected": 125,
+      "steps": 1,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 1.95,
+      "final_text": "Le stock de la référence REF-007 est de 125.\n\nREPONSE: 125",
+      "usage": {
+        "prompt_tokens": 1104,
+        "completion_tokens": 41
+      }
+    },
+    {
+      "task_id": "d1-02",
+      "band": "d1",
+      "depth": 1,
+      "min_steps": 1,
+      "rep": 1,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "545.98",
+      "expected": 545.98,
+      "steps": 1,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 2.23,
+      "final_text": "Le prix unitaire est de 545,98 euros.\n\nREPONSE: 545.98",
+      "usage": {
+        "prompt_tokens": 1113,
+        "completion_tokens": 42
+      }
+    },
+    {
+      "task_id": "d1-03",
+      "band": "d1",
+      "depth": 1,
+      "min_steps": 1,
+      "rep": 1,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "PLAN DE TRAVAIL",
+      "expected": "Plan de travail",
+      "steps": 1,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 2.35,
+      "final_text": "La famille est « Plan de travail ».\n\nREPONSE: Plan de travail",
+      "usage": {
+        "prompt_tokens": 1105,
+        "completion_tokens": 37
+      }
+    },
+    {
+      "task_id": "d1-04",
+      "band": "d1",
+      "depth": 1,
+      "min_steps": 1,
+      "rep": 1,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "290",
+      "expected": 290,
+      "steps": 1,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 2.74,
+      "final_text": "Le stock de la référence REF-044 est de 290.\n\nREPONSE: 290",
+      "usage": {
+        "prompt_tokens": 1105,
+        "completion_tokens": 41
+      }
+    },
+    {
+      "task_id": "d1-05",
+      "band": "d1",
+      "depth": 1,
+      "min_steps": 1,
+      "rep": 1,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "82.6",
+      "expected": 82.6,
+      "steps": 1,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 2.27,
+      "final_text": "Le prix unitaire est de 82.6 euros.\n\nREPONSE: 82.6",
+      "usage": {
+        "prompt_tokens": 1113,
+        "completion_tokens": 42
+      }
+    },
+    {
+      "task_id": "d3-01",
+      "band": "d3",
+      "depth": 3,
+      "min_steps": 3,
+      "rep": 1,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "21",
+      "expected": 21,
+      "steps": 3,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 4.42,
+      "final_text": "REPONSE: 21",
+      "usage": {
+        "prompt_tokens": 2607,
+        "completion_tokens": 75
+      }
+    },
+    {
+      "task_id": "d3-02",
+      "band": "d3",
+      "depth": 3,
+      "min_steps": 3,
+      "rep": 1,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "ALLEMAGNE",
+      "expected": "Allemagne",
+      "steps": 3,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 4.87,
+      "final_text": "REPONSE: Allemagne",
+      "usage": {
+        "prompt_tokens": 2630,
+        "completion_tokens": 74
+      }
+    },
+    {
+      "task_id": "d3-03",
+      "band": "d3",
+      "depth": 3,
+      "min_steps": 3,
+      "rep": 1,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "44",
+      "expected": 44,
+      "steps": 3,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 5.32,
+      "final_text": "REPONSE: 44",
+      "usage": {
+        "prompt_tokens": 2606,
+        "completion_tokens": 75
+      }
+    },
+    {
+      "task_id": "d3-04",
+      "band": "d3",
+      "depth": 3,
+      "min_steps": 3,
+      "rep": 1,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "ESPAGNE",
+      "expected": "Espagne",
+      "steps": 3,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 5.12,
+      "final_text": "Le pays du fournisseur est l’Espagne.\n\nREPONSE: Espagne",
+      "usage": {
+        "prompt_tokens": 2678,
+        "completion_tokens": 83
+      }
+    },
+    {
+      "task_id": "d3-05",
+      "band": "d3",
+      "depth": 3,
+      "min_steps": 3,
+      "rep": 1,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "34",
+      "expected": 34,
+      "steps": 3,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 4.51,
+      "final_text": "Le délai de livraison est de 34 jours.  \nREPONSE: 34",
+      "usage": {
+        "prompt_tokens": 2603,
+        "completion_tokens": 86
+      }
+    },
+    {
+      "task_id": "d6-01",
+      "band": "d6",
+      "depth": 6,
+      "min_steps": 6,
+      "rep": 1,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "1602.99",
+      "expected": 1602.99,
+      "steps": 6,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 6.54,
+      "final_text": "La somme des prix unitaires est 1602.99.\n\nREPONSE: 1602.99",
+      "usage": {
+        "prompt_tokens": 3775,
+        "completion_tokens": 180
+      }
+    },
+    {
+      "task_id": "d6-02",
+      "band": "d6",
+      "depth": 6,
+      "min_steps": 6,
+      "rep": 1,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "265.95",
+      "expected": 265.95,
+      "steps": 6,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 6.88,
+      "final_text": "La somme des prix unitaires est de 265.95.\n\nREPONSE: 265.95",
+      "usage": {
+        "prompt_tokens": 3774,
+        "completion_tokens": 179
+      }
+    },
+    {
+      "task_id": "d6-03",
+      "band": "d6",
+      "depth": 6,
+      "min_steps": 6,
+      "rep": 1,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "1505.2",
+      "expected": 1505.2,
+      "steps": 6,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 7.74,
+      "final_text": "La somme des prix unitaires est de 1505.20.\n\nREPONSE: 1505.2",
+      "usage": {
+        "prompt_tokens": 3772,
+        "completion_tokens": 181
+      }
+    },
+    {
+      "task_id": "d6-04",
+      "band": "d6",
+      "depth": 6,
+      "min_steps": 6,
+      "rep": 1,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "784.27",
+      "expected": 784.27,
+      "steps": 6,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 6.33,
+      "final_text": "REPONSE: 784.27",
+      "usage": {
+        "prompt_tokens": 3777,
+        "completion_tokens": 166
+      }
+    },
+    {
+      "task_id": "d6-05",
+      "band": "d6",
+      "depth": 6,
+      "min_steps": 6,
+      "rep": 1,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "1328.07",
+      "expected": 1328.07,
+      "steps": 6,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 6.6,
+      "final_text": "La somme des prix unitaires est 1328.07.\n\nREPONSE: 1328.07",
+      "usage": {
+        "prompt_tokens": 3767,
+        "completion_tokens": 180
+      }
+    },
+    {
+      "task_id": "d10-01",
+      "band": "d10",
+      "depth": 10,
+      "min_steps": 10,
+      "rep": 1,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "4671.99",
+      "expected": 4671.99,
+      "steps": 10,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 6.74,
+      "final_text": "REPONSE: 4671.99",
+      "usage": {
+        "prompt_tokens": 4552,
+        "completion_tokens": 263
+      }
+    },
+    {
+      "task_id": "d10-02",
+      "band": "d10",
+      "depth": 10,
+      "min_steps": 10,
+      "rep": 1,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "7551.44",
+      "expected": 7551.44,
+      "steps": 10,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 6.89,
+      "final_text": "REPONSE: 7551.44",
+      "usage": {
+        "prompt_tokens": 4550,
+        "completion_tokens": 263
+      }
+    },
+    {
+      "task_id": "d10-03",
+      "band": "d10",
+      "depth": 10,
+      "min_steps": 10,
+      "rep": 1,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "11623.09",
+      "expected": 11623.09,
+      "steps": 10,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 6.36,
+      "final_text": "REPONSE: 11623.09",
+      "usage": {
+        "prompt_tokens": 4559,
+        "completion_tokens": 263
+      }
+    },
+    {
+      "task_id": "d10-04",
+      "band": "d10",
+      "depth": 10,
+      "min_steps": 10,
+      "rep": 1,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "3165.55",
+      "expected": 3165.55,
+      "steps": 10,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 9.89,
+      "final_text": "REPONSE: 3165.55",
+      "usage": {
+        "prompt_tokens": 4556,
+        "completion_tokens": 263
+      }
+    },
+    {
+      "task_id": "d10-05",
+      "band": "d10",
+      "depth": 10,
+      "min_steps": 10,
+      "rep": 1,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "6954.89",
+      "expected": 6954.89,
+      "steps": 10,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 6.75,
+      "final_text": "REPONSE: 6954.89",
+      "usage": {
+        "prompt_tokens": 4560,
+        "completion_tokens": 263
+      }
+    }
+  ]
+}
