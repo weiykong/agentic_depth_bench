@@ -1,0 +1,1421 @@
+{
+  "model": "qwen3.8-27b-iq3",
+  "suite": "v2",
+  "base_url": "http://127.0.0.1:9292/v1",
+  "timestamp": "20260821-111508",
+  "reps": 3,
+  "temperature": 0.0,
+  "wall_time_s": 1164.1,
+  "runs": [
+    {
+      "task_id": "A-01",
+      "band": "A_selection",
+      "depth": 3,
+      "min_steps": 3,
+      "rep": 1,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "FRANCE",
+      "expected": "France",
+      "steps": 8,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 15.14,
+      "final_text": "Le produit \"Lumia 2\" (REF-002) est le seul de la famille \"Plan de travail\". Son fournisseur (FRN-016) est en France.\n\nREPONSE: France",
+      "usage": {
+        "prompt_tokens": 9981,
+        "completion_tokens": 426
+      }
+    },
+    {
+      "task_id": "A-01",
+      "band": "A_selection",
+      "depth": 3,
+      "min_steps": 3,
+      "rep": 2,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "FRANCE",
+      "expected": "France",
+      "steps": 8,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 16.68,
+      "final_text": "Le produit \"Lumia 2\" (REF-002) est le seul de la famille \"Plan de travail\". Son fournisseur (FRN-016) est en France.\n\nREPONSE: France",
+      "usage": {
+        "prompt_tokens": 9981,
+        "completion_tokens": 426
+      }
+    },
+    {
+      "task_id": "A-01",
+      "band": "A_selection",
+      "depth": 3,
+      "min_steps": 3,
+      "rep": 3,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "FRANCE",
+      "expected": "France",
+      "steps": 8,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 17.08,
+      "final_text": "Le produit \"Lumia 2\" (REF-002) est le seul de la famille \"Plan de travail\". Son fournisseur (FRN-016) est en France.\n\nREPONSE: France",
+      "usage": {
+        "prompt_tokens": 9981,
+        "completion_tokens": 426
+      }
+    },
+    {
+      "task_id": "A-02",
+      "band": "A_selection",
+      "depth": 3,
+      "min_steps": 3,
+      "rep": 1,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "ITALIE",
+      "expected": "Italie",
+      "steps": 8,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 17.72,
+      "final_text": "Le produit \"Vela 5\" (REF-017) est le seul de la famille \"Plan de travail\". Son fournisseur (FRN-010) est en Italie.\n\nREPONSE: Italie",
+      "usage": {
+        "prompt_tokens": 9947,
+        "completion_tokens": 412
+      }
+    },
+    {
+      "task_id": "A-02",
+      "band": "A_selection",
+      "depth": 3,
+      "min_steps": 3,
+      "rep": 2,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "ITALIE",
+      "expected": "Italie",
+      "steps": 8,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 15.16,
+      "final_text": "Le produit \"Vela 5\" (REF-017) est le seul de la famille \"Plan de travail\". Son fournisseur (FRN-010) est en Italie.\n\nREPONSE: Italie",
+      "usage": {
+        "prompt_tokens": 9947,
+        "completion_tokens": 412
+      }
+    },
+    {
+      "task_id": "A-02",
+      "band": "A_selection",
+      "depth": 3,
+      "min_steps": 3,
+      "rep": 3,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "ITALIE",
+      "expected": "Italie",
+      "steps": 8,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 14.35,
+      "final_text": "Le produit \"Vela 5\" (REF-017) est le seul de la famille \"Plan de travail\". Son fournisseur (FRN-010) est en Italie.\n\nREPONSE: Italie",
+      "usage": {
+        "prompt_tokens": 9947,
+        "completion_tokens": 412
+      }
+    },
+    {
+      "task_id": "A-03",
+      "band": "A_selection",
+      "depth": 3,
+      "min_steps": 3,
+      "rep": 1,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "POLOGNE",
+      "expected": "Pologne",
+      "steps": 8,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 15.17,
+      "final_text": "Le seul produit \"Kalix\" de la famille \"Electromenager\" est le **Kalix 1 (REF-031)**, dont le fournisseur est FRN-002, situé en Pologne.\n\nREPONSE: Pologne",
+      "usage": {
+        "prompt_tokens": 9953,
+        "completion_tokens": 430
+      }
+    },
+    {
+      "task_id": "A-03",
+      "band": "A_selection",
+      "depth": 3,
+      "min_steps": 3,
+      "rep": 2,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "POLOGNE",
+      "expected": "Pologne",
+      "steps": 8,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 15.41,
+      "final_text": "Le seul produit \"Kalix\" de la famille \"Electromenager\" est le **Kalix 1 (REF-031)**, dont le fournisseur est FRN-002, situé en Pologne.\n\nREPONSE: Pologne",
+      "usage": {
+        "prompt_tokens": 9953,
+        "completion_tokens": 430
+      }
+    },
+    {
+      "task_id": "A-03",
+      "band": "A_selection",
+      "depth": 3,
+      "min_steps": 3,
+      "rep": 3,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "POLOGNE",
+      "expected": "Pologne",
+      "steps": 8,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 17.41,
+      "final_text": "Le seul produit \"Kalix\" de la famille \"Electromenager\" est le **Kalix 1 (REF-031)**, fourni par FRN-002, dont le pays est la Pologne.\n\nREPONSE: Pologne",
+      "usage": {
+        "prompt_tokens": 9953,
+        "completion_tokens": 431
+      }
+    },
+    {
+      "task_id": "A-04",
+      "band": "A_selection",
+      "depth": 3,
+      "min_steps": 3,
+      "rep": 1,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "ESPAGNE",
+      "expected": "Espagne",
+      "steps": 8,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 18.04,
+      "final_text": "Le produit \"Solis 4\" (REF-046) est le seul de la famille \"Caisson\". Son fournisseur (FRN-020) est en Espagne.\n\nREPONSE: Espagne",
+      "usage": {
+        "prompt_tokens": 9957,
+        "completion_tokens": 426
+      }
+    },
+    {
+      "task_id": "A-04",
+      "band": "A_selection",
+      "depth": 3,
+      "min_steps": 3,
+      "rep": 2,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "ESPAGNE",
+      "expected": "Espagne",
+      "steps": 8,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 15.38,
+      "final_text": "Le produit \"Solis 4\" (REF-046) est le seul de la famille \"Caisson\". Son fournisseur (FRN-020) est en Espagne.\n\nREPONSE: Espagne",
+      "usage": {
+        "prompt_tokens": 9957,
+        "completion_tokens": 426
+      }
+    },
+    {
+      "task_id": "A-04",
+      "band": "A_selection",
+      "depth": 3,
+      "min_steps": 3,
+      "rep": 3,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "ESPAGNE",
+      "expected": "Espagne",
+      "steps": 8,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 14.57,
+      "final_text": "Le produit \"Solis 4\" (REF-046) est le seul de la famille \"Caisson\". Son fournisseur (FRN-020) est en Espagne.\n\nREPONSE: Espagne",
+      "usage": {
+        "prompt_tokens": 9957,
+        "completion_tokens": 426
+      }
+    },
+    {
+      "task_id": "A-05",
+      "band": "A_selection",
+      "depth": 3,
+      "min_steps": 3,
+      "rep": 1,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "ALLEMAGNE",
+      "expected": "Allemagne",
+      "steps": 8,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 15.2,
+      "final_text": "Le seul produit \"Onyx\" de la famille \"Electromenager\" est le **REF-073 (Onyx 1)**, dont le fournisseur est FRN-008, situé en Allemagne.\n\nREPONSE: Allemagne",
+      "usage": {
+        "prompt_tokens": 9958,
+        "completion_tokens": 427
+      }
+    },
+    {
+      "task_id": "A-05",
+      "band": "A_selection",
+      "depth": 3,
+      "min_steps": 3,
+      "rep": 2,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "ALLEMAGNE",
+      "expected": "Allemagne",
+      "steps": 8,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 15.24,
+      "final_text": "Le seul produit \"Onyx\" de la famille \"Electromenager\" est le **REF-073 (Onyx 1)**, dont le fournisseur est FRN-008, situé en Allemagne.\n\nREPONSE: Allemagne",
+      "usage": {
+        "prompt_tokens": 9958,
+        "completion_tokens": 427
+      }
+    },
+    {
+      "task_id": "A-05",
+      "band": "A_selection",
+      "depth": 3,
+      "min_steps": 3,
+      "rep": 3,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "ALLEMAGNE",
+      "expected": "Allemagne",
+      "steps": 8,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 17.91,
+      "final_text": "Le seul produit \"Onyx\" de la famille \"Electromenager\" est le **REF-073 (Onyx 1)**, dont le fournisseur est FRN-008, situé en Allemagne.\n\nREPONSE: Allemagne",
+      "usage": {
+        "prompt_tokens": 9958,
+        "completion_tokens": 430
+      }
+    },
+    {
+      "task_id": "B-01",
+      "band": "B_branching",
+      "depth": 7,
+      "min_steps": 7,
+      "rep": 1,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "41",
+      "expected": 41,
+      "steps": 7,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 19.0,
+      "final_text": "Le stock réel cumulé de REF-016 est de 26 + 7 + 4 + 34 = 71, ce qui est strictement inférieur à 100. Il faut donc répondre le délai de livraison du fournisseur FRN-017, soit 41 jours.\n\nREPONSE: 41",
+      "usage": {
+        "prompt_tokens": 9570,
+        "completion_tokens": 504
+      }
+    },
+    {
+      "task_id": "B-01",
+      "band": "B_branching",
+      "depth": 7,
+      "min_steps": 7,
+      "rep": 2,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "41",
+      "expected": 41,
+      "steps": 7,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 17.69,
+      "final_text": "Le stock réel cumulé de REF-016 est de 26 + 7 + 4 + 34 = 71, ce qui est strictement inférieur à 100. Il faut donc répondre le délai de livraison du fournisseur FRN-017, soit 41 jours.\n\nREPONSE: 41",
+      "usage": {
+        "prompt_tokens": 9570,
+        "completion_tokens": 506
+      }
+    },
+    {
+      "task_id": "B-01",
+      "band": "B_branching",
+      "depth": 7,
+      "min_steps": 7,
+      "rep": 3,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "41",
+      "expected": 41,
+      "steps": 7,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 17.08,
+      "final_text": "Le stock réel cumulé de REF-016 est de 26 + 7 + 4 + 34 = 71, ce qui est strictement inférieur à 100. Il faut donc répondre le délai de livraison du fournisseur FRN-017, soit 41 jours.\n\nREPONSE: 41",
+      "usage": {
+        "prompt_tokens": 9570,
+        "completion_tokens": 506
+      }
+    },
+    {
+      "task_id": "B-02",
+      "band": "B_branching",
+      "depth": 6,
+      "min_steps": 6,
+      "rep": 1,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "157.65",
+      "expected": 157.65,
+      "steps": 6,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 14.72,
+      "final_text": "Le stock réel cumulé de REF-003 est de 36 + 39 + 39 + 14 = 128, ce qui n'est pas strictement inférieur à 100. Je dois donc répondre le prix unitaire catalogue du produit, soit 157,65.\n\nREPONSE: 157.65",
+      "usage": {
+        "prompt_tokens": 6909,
+        "completion_tokens": 434
+      }
+    },
+    {
+      "task_id": "B-02",
+      "band": "B_branching",
+      "depth": 6,
+      "min_steps": 6,
+      "rep": 2,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "157.65",
+      "expected": 157.65,
+      "steps": 6,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 15.04,
+      "final_text": "Le stock réel cumulé de REF-003 est de 36 + 39 + 39 + 14 = 128, ce qui n'est pas strictement inférieur à 100. Je dois donc répondre le prix unitaire catalogue du produit, soit 157,65.\n\nREPONSE: 157.65",
+      "usage": {
+        "prompt_tokens": 6909,
+        "completion_tokens": 434
+      }
+    },
+    {
+      "task_id": "B-02",
+      "band": "B_branching",
+      "depth": 6,
+      "min_steps": 6,
+      "rep": 3,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "157.65",
+      "expected": 157.65,
+      "steps": 6,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 15.63,
+      "final_text": "Le stock réel cumulé de REF-003 est de 36 + 39 + 39 + 14 = 128, ce qui n'est pas strictement inférieur à 100. Je dois donc répondre le prix unitaire catalogue du produit, soit 157,65.\n\nREPONSE: 157.65",
+      "usage": {
+        "prompt_tokens": 6909,
+        "completion_tokens": 433
+      }
+    },
+    {
+      "task_id": "B-03",
+      "band": "B_branching",
+      "depth": 7,
+      "min_steps": 7,
+      "rep": 1,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "21",
+      "expected": 21,
+      "steps": 7,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 19.68,
+      "final_text": "Le stock réel cumulé de REF-031 est : 1 (ENT-NORD) + 30 (ENT-SUD) + 13 (ENT-EST) + 46 (ENT-OUEST) = 90.\n\nComme 90 est strictement inférieur à 100, la réponse est le délai de livraison du fournisseur FRN-002 (Fournisseur 2, Pologne), soit 21 jours.\n\nREPONSE: 21",
+      "usage": {
+        "prompt_tokens": 9575,
+        "completion_tokens": 541
+      }
+    },
+    {
+      "task_id": "B-03",
+      "band": "B_branching",
+      "depth": 7,
+      "min_steps": 7,
+      "rep": 2,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "21",
+      "expected": 21,
+      "steps": 7,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 20.0,
+      "final_text": "Le stock réel cumulé de REF-031 est : 1 (ENT-NORD) + 30 (ENT-SUD) + 13 (ENT-EST) + 46 (ENT-OUEST) = 90.\n\nComme 90 est strictement inférieur à 100, la réponse est le délai de livraison du fournisseur FRN-002 (Fournisseur 2, Pologne), soit 21 jours.\n\nREPONSE: 21",
+      "usage": {
+        "prompt_tokens": 9575,
+        "completion_tokens": 541
+      }
+    },
+    {
+      "task_id": "B-03",
+      "band": "B_branching",
+      "depth": 7,
+      "min_steps": 7,
+      "rep": 3,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "21",
+      "expected": 21,
+      "steps": 7,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 20.45,
+      "final_text": "Le stock réel cumulé de REF-031 est : 1 (ENT-NORD) + 30 (ENT-SUD) + 13 (ENT-EST) + 46 (ENT-OUEST) = 90.\n\nComme 90 est strictement inférieur à 100, la réponse est le délai de livraison du fournisseur FRN-002 (Fournisseur 2, Pologne), soit 21 jours.\n\nREPONSE: 21",
+      "usage": {
+        "prompt_tokens": 9575,
+        "completion_tokens": 540
+      }
+    },
+    {
+      "task_id": "B-04",
+      "band": "B_branching",
+      "depth": 6,
+      "min_steps": 6,
+      "rep": 1,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "548.5",
+      "expected": 548.5,
+      "steps": 7,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 19.66,
+      "final_text": "Le stock réel cumulé de REF-004 est de 58 + 2 + 25 + 19 = 104, ce qui n'est pas strictement inférieur à 100. Il faut donc répondre le prix unitaire catalogue du produit, soit 548,5.\n\nREPONSE: 548.5",
+      "usage": {
+        "prompt_tokens": 9542,
+        "completion_tokens": 510
+      }
+    },
+    {
+      "task_id": "B-04",
+      "band": "B_branching",
+      "depth": 6,
+      "min_steps": 6,
+      "rep": 2,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "548.5",
+      "expected": 548.5,
+      "steps": 7,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 20.73,
+      "final_text": "Le stock réel cumulé de REF-004 est de 104 (58 + 2 + 25 + 19), ce qui n'est pas strictement inférieur à 100. Je dois donc répondre le prix unitaire catalogue du produit, soit 548,5.\n\nREPONSE: 548.5",
+      "usage": {
+        "prompt_tokens": 9608,
+        "completion_tokens": 604
+      }
+    },
+    {
+      "task_id": "B-04",
+      "band": "B_branching",
+      "depth": 6,
+      "min_steps": 6,
+      "rep": 3,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "548.5",
+      "expected": 548.5,
+      "steps": 7,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 24.95,
+      "final_text": "Le stock réel cumulé de REF-004 est de 104 (58 + 2 + 25 + 19), ce qui n'est pas strictement inférieur à 100. Je dois donc répondre le prix unitaire catalogue du produit, soit 548,5.\n\nREPONSE: 548.5",
+      "usage": {
+        "prompt_tokens": 9608,
+        "completion_tokens": 711
+      }
+    },
+    {
+      "task_id": "B-05",
+      "band": "B_branching",
+      "depth": 7,
+      "min_steps": 7,
+      "rep": 1,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "21",
+      "expected": 21,
+      "steps": 7,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 23.01,
+      "final_text": "Le stock réel cumulé de REF-036 est de 15 + 18 + 15 + 24 = 72, ce qui est strictement inférieur à 100. Le délai de livraison du fournisseur FRN-002 est donc de 21 jours.\n\nREPONSE: 21",
+      "usage": {
+        "prompt_tokens": 9574,
+        "completion_tokens": 506
+      }
+    },
+    {
+      "task_id": "B-05",
+      "band": "B_branching",
+      "depth": 7,
+      "min_steps": 7,
+      "rep": 2,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "21",
+      "expected": 21,
+      "steps": 7,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 19.26,
+      "final_text": "Le stock réel cumulé de REF-036 est de 15 + 18 + 15 + 24 = 72, ce qui est strictement inférieur à 100. Le délai de livraison du fournisseur FRN-002 est donc de 21 jours.\n\nREPONSE: 21",
+      "usage": {
+        "prompt_tokens": 9574,
+        "completion_tokens": 508
+      }
+    },
+    {
+      "task_id": "B-05",
+      "band": "B_branching",
+      "depth": 7,
+      "min_steps": 7,
+      "rep": 3,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "21",
+      "expected": 21,
+      "steps": 7,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 19.37,
+      "final_text": "Le stock réel cumulé de REF-036 est de 15 + 18 + 15 + 24 = 72, ce qui est strictement inférieur à 100. Le délai de livraison du fournisseur FRN-002 est donc de 21 jours.\n\nREPONSE: 21",
+      "usage": {
+        "prompt_tokens": 9574,
+        "completion_tokens": 511
+      }
+    },
+    {
+      "task_id": "C-01",
+      "band": "C_recovery",
+      "depth": 10,
+      "min_steps": 10,
+      "rep": 1,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "8832.76",
+      "expected": 8832.76,
+      "steps": 10,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [
+        "expected_miss",
+        "expected_miss",
+        "expected_miss"
+      ],
+      "latency_s": 32.76,
+      "final_text": "Calcul du montant total de la commande CMD-0035 :\n\n| Réf | Tarif appliqué | Qté | Sous-total |\n|---|---|---|---|\n| REF-088 | 668,17 (négocié) | 5 | 3 340,85 |\n| REF-058 | 159,88 (négocié) | 4 | 639,52 |\n| REF-005 | 812,31 (catalogue) | 3 | 2 436,93 |\n| REF-069 | 827,15 (catalogue) | 2 | 1 654,30 |\n| REF-016 | 253,72 (catalogue) | 3 | 761,16 |\n\nTotal : 8 832,76\n\nREPONSE: 8832.76",
+      "usage": {
+        "prompt_tokens": 13125,
+        "completion_tokens": 1163
+      }
+    },
+    {
+      "task_id": "C-01",
+      "band": "C_recovery",
+      "depth": 10,
+      "min_steps": 10,
+      "rep": 2,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "8832.76",
+      "expected": 8832.76,
+      "steps": 10,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [
+        "expected_miss",
+        "expected_miss",
+        "expected_miss"
+      ],
+      "latency_s": 40.19,
+      "final_text": "Calcul du montant total de la commande CMD-0035 :\n\n| Réf | Tarif appliqué | Qté | Sous-total |\n|---|---|---|---|\n| REF-088 | 668,17 (négocié) | 5 | 3 340,85 |\n| REF-058 | 159,88 (négocié) | 4 | 639,52 |\n| REF-005 | 812,31 (catalogue) | 3 | 2 436,93 |\n| REF-069 | 827,15 (catalogue) | 2 | 1 654,30 |\n| REF-016 | 253,72 (catalogue) | 3 | 761,16 |\n\nTotal : 8 832,76\n\nREPONSE: 8832.76",
+      "usage": {
+        "prompt_tokens": 13125,
+        "completion_tokens": 1163
+      }
+    },
+    {
+      "task_id": "C-01",
+      "band": "C_recovery",
+      "depth": 10,
+      "min_steps": 10,
+      "rep": 3,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "8832.76",
+      "expected": 8832.76,
+      "steps": 10,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [
+        "expected_miss",
+        "expected_miss",
+        "expected_miss"
+      ],
+      "latency_s": 42.18,
+      "final_text": "Calcul du montant total de la commande CMD-0035 :\n\n| Réf | Tarif appliqué | Qté | Sous-total |\n|---|---|---|---|\n| REF-088 | 668,17 (négocié) | 5 | 3 340,85 |\n| REF-058 | 159,88 (négocié) | 4 | 639,52 |\n| REF-005 | 812,31 (catalogue) | 3 | 2 436,93 |\n| REF-069 | 827,15 (catalogue) | 2 | 1 654,30 |\n| REF-016 | 253,72 (catalogue) | 3 | 761,16 |\n\nTotal : 8 832,76\n\nREPONSE: 8832.76",
+      "usage": {
+        "prompt_tokens": 13125,
+        "completion_tokens": 1163
+      }
+    },
+    {
+      "task_id": "C-02",
+      "band": "C_recovery",
+      "depth": 10,
+      "min_steps": 10,
+      "rep": 1,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "10795.28",
+      "expected": 10795.28,
+      "steps": 10,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [
+        "expected_miss",
+        "expected_miss",
+        "expected_miss"
+      ],
+      "latency_s": 42.58,
+      "final_text": "Le montant total de la commande CMD-0036 est calculé comme suit :\n\n- REF-081 : tarif négocié 134,66 × 3 = 403,98\n- REF-088 : tarif négocié 515,58 × 3 = 1 546,74\n- REF-030 : prix catalogue 854,85 × 5 = 4 274,25\n- REF-078 : prix catalogue 127,19 × 4 = 508,76\n- REF-005 : prix catalogue 812,31 × 5 = 4 061,55\n\nTotal : 10 795,28\n\nREPONSE: 10795.28",
+      "usage": {
+        "prompt_tokens": 13130,
+        "completion_tokens": 1184
+      }
+    },
+    {
+      "task_id": "C-02",
+      "band": "C_recovery",
+      "depth": 10,
+      "min_steps": 10,
+      "rep": 2,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "10795.28",
+      "expected": 10795.28,
+      "steps": 10,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [
+        "expected_miss",
+        "expected_miss",
+        "expected_miss"
+      ],
+      "latency_s": 37.95,
+      "final_text": "Calcul du montant total de la commande CMD-0036 :\n\n- REF-081 : tarif négocié 134,66 × 3 = 403,98\n- REF-088 : tarif négocié 515,58 × 3 = 1 546,74\n- REF-030 : pas de tarif négocié → catalogue 854,85 × 5 = 4 274,25\n- REF-078 : pas de tarif négocié → catalogue 127,19 × 4 = 508,76\n- REF-005 : pas de tarif négocié → catalogue 812,31 × 5 = 4 061,55\n\nTotal = 10 795,28\n\nREPONSE: 10795.28",
+      "usage": {
+        "prompt_tokens": 13130,
+        "completion_tokens": 962
+      }
+    },
+    {
+      "task_id": "C-02",
+      "band": "C_recovery",
+      "depth": 10,
+      "min_steps": 10,
+      "rep": 3,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "10795.28",
+      "expected": 10795.28,
+      "steps": 10,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [
+        "expected_miss",
+        "expected_miss",
+        "expected_miss"
+      ],
+      "latency_s": 36.98,
+      "final_text": "Le montant total de la commande CMD-0036 est calculé comme suit :\n\n- REF-081 : tarif négocié 134,66 × 3 = 403,98\n- REF-088 : tarif négocié 515,58 × 3 = 1 546,74\n- REF-030 : prix catalogue 854,85 × 5 = 4 274,25\n- REF-078 : prix catalogue 127,19 × 4 = 508,76\n- REF-005 : prix catalogue 812,31 × 5 = 4 061,55\n\nTotal : 10 795,28\n\nREPONSE: 10795.28",
+      "usage": {
+        "prompt_tokens": 13130,
+        "completion_tokens": 1127
+      }
+    },
+    {
+      "task_id": "C-03",
+      "band": "C_recovery",
+      "depth": 10,
+      "min_steps": 10,
+      "rep": 1,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "2667.64",
+      "expected": 2667.64,
+      "steps": 10,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [
+        "expected_miss",
+        "expected_miss",
+        "expected_miss"
+      ],
+      "latency_s": 40.25,
+      "final_text": "Calcul du montant total de la commande CMD-0037 :\n\n| Réf | Tarif appliqué | Qté | Sous-total |\n|---|---|---|---|\n| REF-008 | 298,95 (négocié) | 2 | 597,90 |\n| REF-012 | 215,44 (négocié) | 3 | 646,32 |\n| REF-085 | 316,51 (catalogue) | 2 | 633,02 |\n| REF-080 | 93,27 (catalogue) | 3 | 279,81 |\n| REF-020 | 510,59 (catalogue) | 1 | 510,59 |\n\nTotal : 597,90 + 646,32 + 633,02 + 279,81 + 510,59 = **2667,64 €**\n\nREPONSE: 2667.64",
+      "usage": {
+        "prompt_tokens": 13116,
+        "completion_tokens": 1210
+      }
+    },
+    {
+      "task_id": "C-03",
+      "band": "C_recovery",
+      "depth": 10,
+      "min_steps": 10,
+      "rep": 2,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "2667.64",
+      "expected": 2667.64,
+      "steps": 10,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [
+        "expected_miss",
+        "expected_miss",
+        "expected_miss"
+      ],
+      "latency_s": 41.44,
+      "final_text": "Calcul du montant total de la commande CMD-0037 :\n\n| Réf | Tarif appliqué | Qté | Sous-total |\n|---|---|---|---|\n| REF-008 | 298,95 (négocié) | 2 | 597,90 |\n| REF-012 | 215,44 (négocié) | 3 | 646,32 |\n| REF-085 | 316,51 (catalogue) | 2 | 633,02 |\n| REF-080 | 93,27 (catalogue) | 3 | 279,81 |\n| REF-020 | 510,59 (catalogue) | 1 | 510,59 |\n\nTotal : 597,90 + 646,32 + 633,02 + 279,81 + 510,59 = **2667,64 €**\n\nREPONSE: 2667.64",
+      "usage": {
+        "prompt_tokens": 13116,
+        "completion_tokens": 1210
+      }
+    },
+    {
+      "task_id": "C-03",
+      "band": "C_recovery",
+      "depth": 10,
+      "min_steps": 10,
+      "rep": 3,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "2667.64",
+      "expected": 2667.64,
+      "steps": 10,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [
+        "expected_miss",
+        "expected_miss",
+        "expected_miss"
+      ],
+      "latency_s": 43.52,
+      "final_text": "Calcul du montant total de la commande CMD-0037 :\n\n| Réf | Tarif appliqué | Qté | Sous-total |\n|---|---|---|---|\n| REF-008 | 298,95 (négocié) | 2 | 597,90 |\n| REF-012 | 215,44 (négocié) | 3 | 646,32 |\n| REF-085 | 316,51 (catalogue) | 2 | 633,02 |\n| REF-080 | 93,27 (catalogue) | 3 | 279,81 |\n| REF-020 | 510,59 (catalogue) | 1 | 510,59 |\n\nTotal : 597,90 + 646,32 + 633,02 + 279,81 + 510,59 = **2667,64 €**\n\nREPONSE: 2667.64",
+      "usage": {
+        "prompt_tokens": 13116,
+        "completion_tokens": 1213
+      }
+    },
+    {
+      "task_id": "C-04",
+      "band": "C_recovery",
+      "depth": 10,
+      "min_steps": 10,
+      "rep": 1,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "7246.96",
+      "expected": 7246.96,
+      "steps": 10,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [
+        "expected_miss",
+        "expected_miss",
+        "expected_miss"
+      ],
+      "latency_s": 43.74,
+      "final_text": "Calcul du montant total de la commande CMD-0038 :\n\n| Réf | Prix appliqué | Qté | Sous-total |\n|---|---|---|---|\n| REF-066 | 410,16 (négocié) | 2 | 820,32 |\n| REF-053 | 180,15 (négocié) | 2 | 360,30 |\n| REF-038 | 654,91 (catalogue) | 4 | 2 619,64 |\n| REF-076 | 448,10 (catalogue) | 4 | 1 792,40 |\n| REF-069 | 827,15 (catalogue) | 2 | 1 654,30 |\n\nTotal : 820,32 + 360,30 + 2 619,64 + 1 792,40 + 1 654,30 = **7 246,96 €**\n\nREPONSE: 7246.96",
+      "usage": {
+        "prompt_tokens": 13123,
+        "completion_tokens": 1210
+      }
+    },
+    {
+      "task_id": "C-04",
+      "band": "C_recovery",
+      "depth": 10,
+      "min_steps": 10,
+      "rep": 2,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "7246.96",
+      "expected": 7246.96,
+      "steps": 10,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [
+        "expected_miss",
+        "expected_miss",
+        "expected_miss"
+      ],
+      "latency_s": 41.31,
+      "final_text": "Le montant total de la commande CMD-0038 est calculé ligne par ligne :\n\n- REF-066 : tarif négocié 410,16 × 2 = 820,32\n- REF-053 : tarif négocié 180,15 × 2 = 360,30\n- REF-038 : pas de tarif négocié → catalogue 654,91 × 4 = 2 619,64\n- REF-076 : pas de tarif négocié → catalogue 448,10 × 4 = 1 792,40\n- REF-069 : pas de tarif négocié → catalogue 827,15 × 2 = 1 654,30\n\nTotal : 7 246,96\n\nREPONSE: 7246.96",
+      "usage": {
+        "prompt_tokens": 13123,
+        "completion_tokens": 1142
+      }
+    },
+    {
+      "task_id": "C-04",
+      "band": "C_recovery",
+      "depth": 10,
+      "min_steps": 10,
+      "rep": 3,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "7246.96",
+      "expected": 7246.96,
+      "steps": 10,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [
+        "expected_miss",
+        "expected_miss",
+        "expected_miss"
+      ],
+      "latency_s": 40.28,
+      "final_text": "Le montant total de la commande CMD-0038 est calculé ligne par ligne :\n\n- REF-066 : tarif négocié 410,16 × 2 = 820,32\n- REF-053 : tarif négocié 180,15 × 2 = 360,30\n- REF-038 : pas de tarif négocié → catalogue 654,91 × 4 = 2 619,64\n- REF-076 : pas de tarif négocié → catalogue 448,10 × 4 = 1 792,40\n- REF-069 : pas de tarif négocié → catalogue 827,15 × 2 = 1 654,30\n\nTotal : 7 246,96\n\nREPONSE: 7246.96",
+      "usage": {
+        "prompt_tokens": 13123,
+        "completion_tokens": 1142
+      }
+    },
+    {
+      "task_id": "C-05",
+      "band": "C_recovery",
+      "depth": 10,
+      "min_steps": 10,
+      "rep": 1,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "4647.64",
+      "expected": 4647.64,
+      "steps": 10,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [
+        "expected_miss",
+        "expected_miss",
+        "expected_miss"
+      ],
+      "latency_s": 39.13,
+      "final_text": "Calcul du montant total de la commande CMD-0039 :\n\n| Réf | Tarif appliqué | Qté | Sous-total |\n|---|---|---|---|\n| REF-056 | 705,02 (négocié) | 3 | 2 115,06 |\n| REF-071 | 240,64 (négocié) | 3 | 721,92 |\n| REF-078 | 127,19 (catalogue) | 3 | 381,57 |\n| REF-044 | 169,13 (catalogue) | 5 | 845,65 |\n| REF-025 | 194,48 (catalogue) | 3 | 583,44 |\n\nTotal : 4 647,64\n\nREPONSE: 4647.64",
+      "usage": {
+        "prompt_tokens": 13127,
+        "completion_tokens": 1110
+      }
+    },
+    {
+      "task_id": "C-05",
+      "band": "C_recovery",
+      "depth": 10,
+      "min_steps": 10,
+      "rep": 2,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "4647.64",
+      "expected": 4647.64,
+      "steps": 10,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [
+        "expected_miss",
+        "expected_miss",
+        "expected_miss"
+      ],
+      "latency_s": 36.08,
+      "final_text": "Calcul du montant total de la commande CMD-0039 :\n\n- REF-056 : tarif négocié 705,02 × 3 = 2 115,06\n- REF-071 : tarif négocié 240,64 × 3 = 721,92\n- REF-078 : pas de tarif négocié → catalogue 127,19 × 3 = 381,57\n- REF-044 : pas de tarif négocié → catalogue 169,13 × 5 = 845,65\n- REF-025 : pas de tarif négocié → catalogue 194,48 × 3 = 583,44\n\nTotal = 4 647,64\n\nREPONSE: 4647.64",
+      "usage": {
+        "prompt_tokens": 13127,
+        "completion_tokens": 950
+      }
+    },
+    {
+      "task_id": "C-05",
+      "band": "C_recovery",
+      "depth": 10,
+      "min_steps": 10,
+      "rep": 3,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "4647.64",
+      "expected": 4647.64,
+      "steps": 10,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [
+        "expected_miss",
+        "expected_miss",
+        "expected_miss"
+      ],
+      "latency_s": 41.8,
+      "final_text": "Calcul du montant total de la commande CMD-0039 :\n\n| Réf | Tarif appliqué | Qté | Sous-total |\n|---|---|---|---|\n| REF-056 | 705,02 (négocié) | 3 | 2 115,06 |\n| REF-071 | 240,64 (négocié) | 3 | 721,92 |\n| REF-078 | 127,19 (catalogue) | 3 | 381,57 |\n| REF-044 | 169,13 (catalogue) | 5 | 845,65 |\n| REF-025 | 194,48 (catalogue) | 3 | 583,44 |\n\nTotal : 4 647,64\n\nREPONSE: 4647.64",
+      "usage": {
+        "prompt_tokens": 13127,
+        "completion_tokens": 1110
+      }
+    },
+    {
+      "task_id": "D-01",
+      "band": "D_composite",
+      "depth": 18,
+      "min_steps": 18,
+      "rep": 1,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "13128.69",
+      "expected": 13128.69,
+      "steps": 18,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [
+        "expected_miss",
+        "expected_miss",
+        "expected_miss",
+        "expected_miss",
+        "expected_miss"
+      ],
+      "latency_s": 62.93,
+      "final_text": "Le chiffre d'affaires total du magasin MAG-101 est calculé comme suit :\n\n**CMD-0045 (CLI-200) :**\n- REF-084 : 4 × 502,07 (tarif négocié) = 2 008,28\n- REF-067 : 3 × 484,46 (catalogue) = 1 453,38\n- REF-083 : 3 × 865,08 (catalogue) = 2 595,24\n\n**CMD-0046 (CLI-201) :**\n- REF-086 : 4 × 564,26 (tarif négocié) = 2 257,04\n- REF-001 : 3 × 881,63 (catalogue) = 2 644,89\n- REF-024 : 1 × 366,84 (catalogue) = 366,84\n\n**CMD-0047 (CLI-202) :**\n- REF-048 : 4 × 92,91 (tarif négocié) = 371,64\n- REF-015 : 2 × 715,69 (catalogue) = 1 431,38\n\n**Total : 13 128,69 €**\n\nREPONSE: 13128.69",
+      "usage": {
+        "prompt_tokens": 17738,
+        "completion_tokens": 2286
+      }
+    },
+    {
+      "task_id": "D-01",
+      "band": "D_composite",
+      "depth": 18,
+      "min_steps": 18,
+      "rep": 2,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "13128.69",
+      "expected": 13128.69,
+      "steps": 21,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [
+        "expected_miss",
+        "expected_miss",
+        "expected_miss",
+        "expected_miss",
+        "expected_miss"
+      ],
+      "latency_s": 70.8,
+      "final_text": "Le chiffre d'affaires total du magasin MAG-101 est calculé comme suit :\n\n**CMD-0045 (CLI-200)**\n- REF-084 : 4 × 502,07 (tarif négocié) = 2 008,28\n- REF-067 : 3 × 484,46 (catalogue) = 1 453,38\n- REF-083 : 3 × 865,08 (catalogue) = 2 595,24\n\n**CMD-0046 (CLI-201)**\n- REF-086 : 4 × 564,26 (tarif négocié) = 2 257,04\n- REF-001 : 3 × 881,63 (catalogue) = 2 644,89\n- REF-024 : 1 × 366,84 (catalogue) = 366,84\n\n**CMD-0047 (CLI-202)**\n- REF-048 : 4 × 92,91 (tarif négocié) = 371,64\n- REF-015 : 2 × 715,69 (catalogue) = 1 431,38\n\nTotal : 13 128,69\n\nREPONSE: 13128.69",
+      "usage": {
+        "prompt_tokens": 14994,
+        "completion_tokens": 2221
+      }
+    },
+    {
+      "task_id": "D-01",
+      "band": "D_composite",
+      "depth": 18,
+      "min_steps": 18,
+      "rep": 3,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "13128.69",
+      "expected": 13128.69,
+      "steps": 21,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [
+        "expected_miss",
+        "expected_miss",
+        "expected_miss",
+        "expected_miss",
+        "expected_miss"
+      ],
+      "latency_s": 78.88,
+      "final_text": "Calcul du chiffre d'affaires du magasin MAG-101 :\n\n**CMD-0045** (client CLI-200) :\n- REF-084 × 4 @ 502,07 (tarif négocié) = 2 008,28\n- REF-067 × 3 @ 484,46 (catalogue) = 1 453,38\n- REF-083 × 3 @ 865,08 (catalogue) = 2 595,24\n\n**CMD-0046** (client CLI-201) :\n- REF-086 × 4 @ 564,26 (tarif négocié) = 2 257,04\n- REF-001 × 3 @ 881,63 (catalogue) = 2 644,89\n- REF-024 × 1 @ 366,84 (catalogue) = 366,84\n\n**CMD-0047** (client CLI-202) :\n- REF-048 × 4 @ 92,91 (tarif négocié) = 371,64\n- REF-015 × 2 @ 715,69 (catalogue) = 1 431,38\n\nTotal : 13 128,69\n\nREPONSE: 13128.69",
+      "usage": {
+        "prompt_tokens": 14994,
+        "completion_tokens": 2225
+      }
+    },
+    {
+      "task_id": "D-02",
+      "band": "D_composite",
+      "depth": 18,
+      "min_steps": 18,
+      "rep": 1,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "9813.93",
+      "expected": 9813.93,
+      "steps": 18,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [
+        "expected_miss",
+        "expected_miss",
+        "expected_miss",
+        "expected_miss",
+        "expected_miss"
+      ],
+      "latency_s": 88.63,
+      "final_text": "Calcul détaillé :\n\n**CMD-0048 (CLI-203) :**\n- REF-003 : tarif négocié 127,71 × 1 = 127,71\n- REF-044 : catalogue 169,13 × 1 = 169,13\n- REF-013 : catalogue 386,67 × 2 = 773,34\n- Sous-total : 1 070,18\n\n**CMD-0049 (CLI-204) :**\n- REF-031 : tarif négocié 592,43 × 2 = 1 184,86\n- REF-054 : catalogue 795,60 × 4 = 3 182,40\n- REF-038 : catalogue 654,91 × 3 = 1 964,73\n- Sous-total : 6 331,99\n\n**CMD-0050 (CLI-205) :**\n- REF-029 : tarif négocié 35,58 × 4 = 142,32\n- REF-055 : catalogue 756,48 × 3 = 2 269,44\n- Sous-total : 2 411,76\n\n**Total : 1 070,18 + 6 331,99 + 2 411,76 = 9 813,93**\n\nREPONSE: 9813.93",
+      "usage": {
+        "prompt_tokens": 17716,
+        "completion_tokens": 2276
+      }
+    },
+    {
+      "task_id": "D-02",
+      "band": "D_composite",
+      "depth": 18,
+      "min_steps": 18,
+      "rep": 2,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "9813.93",
+      "expected": 9813.93,
+      "steps": 18,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [
+        "expected_miss",
+        "expected_miss",
+        "expected_miss",
+        "expected_miss",
+        "expected_miss"
+      ],
+      "latency_s": 81.04,
+      "final_text": "Le chiffre d'affaires total du magasin MAG-102 est calculé comme suit :\n\n**CMD-0048** (client CLI-203) :\n- REF-003 : tarif négocié 127,71 × 1 = 127,71\n- REF-044 : catalogue 169,13 × 1 = 169,13\n- REF-013 : catalogue 386,67 × 2 = 773,34\n- Sous-total : 1 070,18\n\n**CMD-0049** (client CLI-204) :\n- REF-031 : tarif négocié 592,43 × 2 = 1 184,86\n- REF-054 : catalogue 795,60 × 4 = 3 182,40\n- REF-038 : catalogue 654,91 × 3 = 1 964,73\n- Sous-total : 6 331,99\n\n**CMD-0050** (client CLI-205) :\n- REF-029 : tarif négocié 35,58 × 4 = 142,32\n- REF-055 : catalogue 756,48 × 3 = 2 269,44\n- Sous-total : 2 411,76\n\n**Total : 1 070,18 + 6 331,99 + 2 411,76 = 9 813,93**\n\nREPONSE: 9813.93",
+      "usage": {
+        "prompt_tokens": 17720,
+        "completion_tokens": 2286
+      }
+    },
+    {
+      "task_id": "D-02",
+      "band": "D_composite",
+      "depth": 18,
+      "min_steps": 18,
+      "rep": 3,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "9813.93",
+      "expected": 9813.93,
+      "steps": 18,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [
+        "expected_miss",
+        "expected_miss",
+        "expected_miss",
+        "expected_miss",
+        "expected_miss"
+      ],
+      "latency_s": 81.27,
+      "final_text": "Calcul détaillé :\n\n**CMD-0048 (CLI-203)**\n- REF-003 : tarif négocié 127,71 × 1 = 127,71\n- REF-044 : catalogue 169,13 × 1 = 169,13\n- REF-013 : catalogue 386,67 × 2 = 773,34\n- Sous-total : 1 070,18\n\n**CMD-0049 (CLI-204)**\n- REF-031 : tarif négocié 592,43 × 2 = 1 184,86\n- REF-054 : catalogue 795,60 × 4 = 3 182,40\n- REF-038 : catalogue 654,91 × 3 = 1 964,73\n- Sous-total : 6 331,99\n\n**CMD-0050 (CLI-205)**\n- REF-029 : tarif négocié 35,58 × 4 = 142,32\n- REF-055 : catalogue 756,48 × 3 = 2 269,44\n- Sous-total : 2 411,76\n\n**Total : 1 070,18 + 6 331,99 + 2 411,76 = 9 813,93**\n\nREPONSE: 9813.93",
+      "usage": {
+        "prompt_tokens": 17716,
+        "completion_tokens": 2273
+      }
+    },
+    {
+      "task_id": "D-03",
+      "band": "D_composite",
+      "depth": 18,
+      "min_steps": 18,
+      "rep": 1,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "12273.98",
+      "expected": 12273.98,
+      "steps": 18,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [
+        "expected_miss",
+        "expected_miss",
+        "expected_miss",
+        "expected_miss",
+        "expected_miss"
+      ],
+      "latency_s": 79.79,
+      "final_text": "Calcul détaillé :\n\n**CMD-0051 (CLI-206)**\n- REF-015 : tarif négocié 488,38 × 1 = 488,38\n- REF-083 : catalogue 865,08 × 4 = 3 460,32\n- REF-040 : catalogue 299,89 × 1 = 299,89\n- Sous-total : 4 248,59\n\n**CMD-0052 (CLI-207)**\n- REF-066 : tarif négocié 428,89 × 1 = 428,89\n- REF-059 : catalogue 939,25 × 4 = 3 757,00\n- REF-067 : catalogue 484,46 × 4 = 1 937,84\n- Sous-total : 6 123,73\n\n**CMD-0053 (CLI-208)**\n- REF-051 : tarif négocié 190,88 × 1 = 190,88\n- REF-023 : catalogue 855,39 × 2 = 1 710,78\n- Sous-total : 1 901,66\n\n**Total : 4 248,59 + 6 123,73 + 1 901,66 = 12 273,98**\n\nREPONSE: 12273.98",
+      "usage": {
+        "prompt_tokens": 17736,
+        "completion_tokens": 2196
+      }
+    },
+    {
+      "task_id": "D-03",
+      "band": "D_composite",
+      "depth": 18,
+      "min_steps": 18,
+      "rep": 2,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "12273.98",
+      "expected": 12273.98,
+      "steps": 18,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [
+        "expected_miss",
+        "expected_miss",
+        "expected_miss",
+        "expected_miss",
+        "expected_miss"
+      ],
+      "latency_s": 78.33,
+      "final_text": "Le chiffre d'affaires total du magasin MAG-103 est calculé comme suit :\n\n**CMD-0051 (CLI-206) :**\n- REF-015 : tarif négocié 488,38 × 1 = 488,38\n- REF-083 : catalogue 865,08 × 4 = 3 460,32\n- REF-040 : catalogue 299,89 × 1 = 299,89\n- Sous-total : 4 248,59\n\n**CMD-0052 (CLI-207) :**\n- REF-066 : tarif négocié 428,89 × 1 = 428,89\n- REF-059 : catalogue 939,25 × 4 = 3 757,00\n- REF-067 : catalogue 484,46 × 4 = 1 937,84\n- Sous-total : 6 123,73\n\n**CMD-0053 (CLI-208) :**\n- REF-051 : tarif négocié 190,88 × 1 = 190,88\n- REF-023 : catalogue 855,39 × 2 = 1 710,78\n- Sous-total : 1 901,66\n\n**Total : 4 248,59 + 6 123,73 + 1 901,66 = 12 273,98**\n\nREPONSE: 12273.98",
+      "usage": {
+        "prompt_tokens": 17736,
+        "completion_tokens": 2201
+      }
+    },
+    {
+      "task_id": "D-03",
+      "band": "D_composite",
+      "depth": 18,
+      "min_steps": 18,
+      "rep": 3,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "12273.98",
+      "expected": 12273.98,
+      "steps": 18,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [
+        "expected_miss",
+        "expected_miss",
+        "expected_miss",
+        "expected_miss",
+        "expected_miss"
+      ],
+      "latency_s": 79.97,
+      "final_text": "Calcul détaillé :\n\n**CMD-0051 (CLI-206)**\n- REF-015 : tarif négocié 488,38 × 1 = 488,38\n- REF-083 : pas de tarif négocié → catalogue 865,08 × 4 = 3 460,32\n- REF-040 : pas de tarif négocié → catalogue 299,89 × 1 = 299,89\n- Sous-total : 4 248,59\n\n**CMD-0052 (CLI-207)**\n- REF-066 : tarif négocié 428,89 × 1 = 428,89\n- REF-059 : pas de tarif négocié → catalogue 939,25 × 4 = 3 757,00\n- REF-067 : pas de tarif négocié → catalogue 484,46 × 4 = 1 937,84\n- Sous-total : 6 123,73\n\n**CMD-0053 (CLI-208)**\n- REF-051 : tarif négocié 190,88 × 1 = 190,88\n- REF-023 : pas de tarif négocié → catalogue 855,39 × 2 = 1 710,78\n- Sous-total : 1 901,66\n\n**Total : 4 248,59 + 6 123,73 + 1 901,66 = 12 273,98**\n\nREPONSE: 12273.98",
+      "usage": {
+        "prompt_tokens": 17736,
+        "completion_tokens": 2280
+      }
+    },
+    {
+      "task_id": "D-04",
+      "band": "D_composite",
+      "depth": 18,
+      "min_steps": 18,
+      "rep": 1,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "8942.37",
+      "expected": 8942.37,
+      "steps": 18,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [
+        "expected_miss",
+        "expected_miss",
+        "expected_miss",
+        "expected_miss",
+        "expected_miss"
+      ],
+      "latency_s": 78.97,
+      "final_text": "Le chiffre d'affaires total du magasin MAG-104 est calculé comme suit :\n\n**CMD-0054 (CLI-209) :**\n- REF-033 : tarif négocié 57,43 × 4 = 229,72\n- REF-025 : catalogue 194,48 × 3 = 583,44\n- REF-066 : catalogue 671,57 × 2 = 1 343,14\n- Sous-total : 2 156,30\n\n**CMD-0055 (CLI-210) :**\n- REF-082 : tarif négocié 621,85 × 1 = 621,85\n- REF-075 : catalogue 168,79 × 4 = 675,16\n- REF-037 : catalogue 890,45 × 2 = 1 780,90\n- Sous-total : 3 077,91\n\n**CMD-0056 (CLI-211) :**\n- REF-028 : tarif négocié 431,48 × 1 = 431,48\n- REF-077 : catalogue 819,17 × 4 = 3 276,68\n- Sous-total : 3 708,16\n\n**Total : 8 942,37 €**\n\nREPONSE: 8942.37",
+      "usage": {
+        "prompt_tokens": 17727,
+        "completion_tokens": 2136
+      }
+    },
+    {
+      "task_id": "D-04",
+      "band": "D_composite",
+      "depth": 18,
+      "min_steps": 18,
+      "rep": 2,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "8942.37",
+      "expected": 8942.37,
+      "steps": 18,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [
+        "expected_miss",
+        "expected_miss",
+        "expected_miss",
+        "expected_miss",
+        "expected_miss"
+      ],
+      "latency_s": 77.06,
+      "final_text": "Calcul du chiffre d'affaires du magasin MAG-104 :\n\n**CMD-0054** (client CLI-209) :\n- REF-033 × 4 @ 57,43 (tarif négocié) = 229,72\n- REF-025 × 3 @ 194,48 (catalogue) = 583,44\n- REF-066 × 2 @ 671,57 (catalogue) = 1 343,14\n- Sous-total : 2 156,30\n\n**CMD-0055** (client CLI-210) :\n- REF-082 × 1 @ 621,85 (tarif négocié) = 621,85\n- REF-075 × 4 @ 168,79 (catalogue) = 675,16\n- REF-037 × 2 @ 890,45 (catalogue) = 1 780,90\n- Sous-total : 3 077,91\n\n**CMD-0056** (client CLI-211) :\n- REF-028 × 1 @ 431,48 (tarif négocié) = 431,48\n- REF-077 × 4 @ 819,17 (catalogue) = 3 276,68\n- Sous-total : 3 708,16\n\n**Total : 2 156,30 + 3 077,91 + 3 708,16 = 8 942,37 €**\n\nREPONSE: 8942.37",
+      "usage": {
+        "prompt_tokens": 17727,
+        "completion_tokens": 2160
+      }
+    },
+    {
+      "task_id": "D-04",
+      "band": "D_composite",
+      "depth": 18,
+      "min_steps": 18,
+      "rep": 3,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "8942.37",
+      "expected": 8942.37,
+      "steps": 18,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [
+        "expected_miss",
+        "expected_miss",
+        "expected_miss",
+        "expected_miss",
+        "expected_miss"
+      ],
+      "latency_s": 78.43,
+      "final_text": "Le chiffre d'affaires total du magasin MAG-104 est calculé comme suit :\n\n**CMD-0054** (client CLI-209) :\n- REF-033 : tarif négocié 57,43 × 4 = 229,72\n- REF-025 : catalogue 194,48 × 3 = 583,44\n- REF-066 : catalogue 671,57 × 2 = 1 343,14\n- Sous-total : 2 156,30\n\n**CMD-0055** (client CLI-210) :\n- REF-082 : tarif négocié 621,85 × 1 = 621,85\n- REF-075 : catalogue 168,79 × 4 = 675,16\n- REF-037 : catalogue 890,45 × 2 = 1 780,90\n- Sous-total : 3 077,91\n\n**CMD-0056** (client CLI-211) :\n- REF-028 : tarif négocié 431,48 × 1 = 431,48\n- REF-077 : catalogue 819,17 × 4 = 3 276,68\n- Sous-total : 3 708,16\n\n**Total : 8 942,37 €**\n\nREPONSE: 8942.37",
+      "usage": {
+        "prompt_tokens": 17727,
+        "completion_tokens": 2207
+      }
+    },
+    {
+      "task_id": "D-05",
+      "band": "D_composite",
+      "depth": 18,
+      "min_steps": 18,
+      "rep": 1,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "12271.19",
+      "expected": 12271.19,
+      "steps": 18,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [
+        "expected_miss",
+        "expected_miss",
+        "expected_miss",
+        "expected_miss",
+        "expected_miss"
+      ],
+      "latency_s": 80.63,
+      "final_text": "Calcul détaillé :\n\n**CMD-0057 (CLI-212)**\n- REF-041 : tarif négocié 235,69 × 3 = 707,07\n- REF-077 : pas de tarif négocié → catalogue 819,17 × 3 = 2 457,51\n- REF-009 : pas de tarif négocié → catalogue 790,74 × 3 = 2 372,22\n- Sous-total : 5 536,80\n\n**CMD-0058 (CLI-213)**\n- REF-073 : tarif négocié 605,25 × 3 = 1 815,75\n- REF-041 : pas de tarif négocié → catalogue 281,96 × 1 = 281,96\n- REF-043 : pas de tarif négocié → catalogue 659,60 × 3 = 1 978,80\n- Sous-total : 4 076,51\n\n**CMD-0059 (CLI-214)**\n- REF-037 : tarif négocié 582,04 × 4 = 2 328,16\n- REF-012 : pas de tarif négocié → catalogue 329,72 × 1 = 329,72\n- Sous-total : 2 657,88\n\n**Total : 5 536,80 + 4 076,51 + 2 657,88 = 12 271,19**\n\nREPONSE: 12271.19",
+      "usage": {
+        "prompt_tokens": 17733,
+        "completion_tokens": 2320
+      }
+    },
+    {
+      "task_id": "D-05",
+      "band": "D_composite",
+      "depth": 18,
+      "min_steps": 18,
+      "rep": 2,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "12271.19",
+      "expected": 12271.19,
+      "steps": 18,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [
+        "expected_miss",
+        "expected_miss",
+        "expected_miss",
+        "expected_miss",
+        "expected_miss"
+      ],
+      "latency_s": 81.62,
+      "final_text": "Calcul détaillé :\n\n**CMD-0057 (CLI-212)**\n- REF-041 ×3 : tarif négocié 235,69 → 707,07\n- REF-077 ×3 : pas de tarif négocié, catalogue 819,17 → 2 457,51\n- REF-009 ×3 : pas de tarif négocié, catalogue 790,74 → 2 372,22\n- Sous-total : 5 536,80\n\n**CMD-0058 (CLI-213)**\n- REF-073 ×3 : tarif négocié 605,25 → 1 815,75\n- REF-041 ×1 : pas de tarif négocié, catalogue 281,96 → 281,96\n- REF-043 ×3 : pas de tarif négocié, catalogue 659,60 → 1 978,80\n- Sous-total : 4 076,51\n\n**CMD-0059 (CLI-214)**\n- REF-037 ×4 : tarif négocié 582,04 → 2 328,16\n- REF-012 ×1 : pas de tarif négocié, catalogue 329,72 → 329,72\n- Sous-total : 2 657,88\n\n**Total : 5 536,80 + 4 076,51 + 2 657,88 = 12 271,19**\n\nREPONSE: 12271.19",
+      "usage": {
+        "prompt_tokens": 17733,
+        "completion_tokens": 2288
+      }
+    },
+    {
+      "task_id": "D-05",
+      "band": "D_composite",
+      "depth": 18,
+      "min_steps": 18,
+      "rep": 3,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "12271.19",
+      "expected": 12271.19,
+      "steps": 18,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [
+        "expected_miss",
+        "expected_miss",
+        "expected_miss",
+        "expected_miss",
+        "expected_miss"
+      ],
+      "latency_s": 76.12,
+      "final_text": "Calcul du chiffre d'affaires du magasin MAG-105 :\n\n**CMD-0057** (client CLI-212) :\n- REF-041 : tarif négocié 235,69 × 3 = 707,07\n- REF-077 : pas de tarif négocié → catalogue 819,17 × 3 = 2 457,51\n- REF-009 : pas de tarif négocié → catalogue 790,74 × 3 = 2 372,22\n- Sous-total : 5 536,80\n\n**CMD-0058** (client CLI-213) :\n- REF-073 : tarif négocié 605,25 × 3 = 1 815,75\n- REF-041 : pas de tarif négocié → catalogue 281,96 × 1 = 281,96\n- REF-043 : pas de tarif négocié → catalogue 659,60 × 3 = 1 978,80\n- Sous-total : 4 076,51\n\n**CMD-0059** (client CLI-214) :\n- REF-037 : tarif négocié 582,04 × 4 = 2 328,16\n- REF-012 : pas de tarif négocié → catalogue 329,72 × 1 = 329,72\n- Sous-total : 2 657,88\n\n**Total : 5 536,80 + 4 076,51 + 2 657,88 = 12 271,19**\n\nREPONSE: 12271.19",
+      "usage": {
+        "prompt_tokens": 17733,
+        "completion_tokens": 2328
+      }
+    }
+  ]
+}

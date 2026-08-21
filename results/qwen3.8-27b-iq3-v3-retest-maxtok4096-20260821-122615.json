@@ -1,0 +1,263 @@
+{
+  "model": "qwen3.8-27b-iq3",
+  "suite": "v3",
+  "base_url": "http://127.0.0.1:9292/v1",
+  "timestamp": "20260821-122615",
+  "reps": 3,
+  "temperature": 0.0,
+  "wall_time_s": 791.8,
+  "runs": [
+    {
+      "task_id": "H-01",
+      "band": "H_contexte",
+      "depth": 12,
+      "min_steps": 12,
+      "rep": 1,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "114852.91",
+      "expected": 114852.91,
+      "steps": 12,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 270.36,
+      "final_text": "J'ai récupéré la commande CMD-9001 (80 lignes, 10 références distinctes) et les prix catalogue de chaque référence :\n\n| Réf | Prix unitaire | Qté totale | Sous-total |\n|---|---|---|---|\n| REF-083 | 865,08 | 23 | 19 896,84 |\n| REF-005 | 812,31 | 21 | 17 058,51 |\n| REF-044 | 169,13 | 23 | 3 889,99 |\n| REF-008 | 366,60 | 18 | 6 598,80 |\n| REF-088 | 798,82 | 17 | 13 579,94 |\n| REF-006 | 714,32 | 22 | 15 715,04 |\n| REF-066 | 671,57 | 19 | 12 759,83 |\n| REF-017 | 318,96 | 25 | 7 974,00 |\n| REF-071 | 397,38 | 20 | 7 947,60 |\n| REF-026 | 449,16 | 21 | 9 432,36 |\n\nTotal : 114 852,91 €\n\nREPONSE: 114852.91",
+      "usage": {
+        "prompt_tokens": 15578,
+        "completion_tokens": 8676
+      }
+    },
+    {
+      "task_id": "H-01",
+      "band": "H_contexte",
+      "depth": 12,
+      "min_steps": 12,
+      "rep": 2,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "114852.91",
+      "expected": 114852.91,
+      "steps": 12,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 228.69,
+      "final_text": "J'ai récupéré la commande CMD-9001 (80 lignes, 10 références distinctes) et les prix catalogue de chaque référence :\n\n| Réf | Prix unitaire | Qté totale | Sous-total |\n|---|---|---|---|\n| REF-083 | 865,08 | 23 | 19 896,84 |\n| REF-005 | 812,31 | 21 | 17 058,51 |\n| REF-044 | 169,13 | 23 | 3 889,99 |\n| REF-008 | 366,60 | 18 | 6 598,80 |\n| REF-088 | 798,82 | 17 | 13 579,94 |\n| REF-006 | 714,32 | 22 | 15 715,04 |\n| REF-066 | 671,57 | 19 | 12 759,83 |\n| REF-017 | 318,96 | 25 | 7 974,00 |\n| REF-071 | 397,38 | 20 | 7 947,60 |\n| REF-026 | 449,16 | 21 | 9 432,36 |\n\nTotal : 114 852,91 €\n\nREPONSE: 114852.91",
+      "usage": {
+        "prompt_tokens": 15578,
+        "completion_tokens": 8676
+      }
+    },
+    {
+      "task_id": "H-01",
+      "band": "H_contexte",
+      "depth": 12,
+      "min_steps": 12,
+      "rep": 3,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "114852.91",
+      "expected": 114852.91,
+      "steps": 12,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 242.98,
+      "final_text": "J'ai récupéré la commande CMD-9001 (80 lignes, 10 références distinctes) et les prix catalogue de chaque référence.\n\nQuantités totales par référence :\n- REF-083 (865,08 €) : 23\n- REF-005 (812,31 €) : 21\n- REF-044 (169,13 €) : 23\n- REF-008 (366,60 €) : 18\n- REF-088 (798,82 €) : 17\n- REF-006 (714,32 €) : 22\n- REF-066 (671,57 €) : 19\n- REF-017 (318,96 €) : 25\n- REF-071 (397,38 €) : 20\n- REF-026 (449,16 €) : 21\n\nTotal = 19 896,84 + 17 058,51 + 3 889,99 + 6 598,80 + 13 579,94 + 15 715,04 + 12 759,83 + 7 974,00 + 7 947,60 + 9 432,36 = **114 852,91 €**\n\nREPONSE: 114852.91",
+      "usage": {
+        "prompt_tokens": 15577,
+        "completion_tokens": 6681
+      }
+    },
+    {
+      "task_id": "H-02",
+      "band": "H_contexte",
+      "depth": 1,
+      "min_steps": 1,
+      "rep": 1,
+      "correct": false,
+      "verdict": "aucune_reponse",
+      "answer": null,
+      "expected": 209,
+      "steps": 2,
+      "decoy_calls": 0,
+      "stop_reason": "no_marker",
+      "errors": [],
+      "latency_s": 160.09,
+      "final_text": "",
+      "usage": {
+        "prompt_tokens": 10030,
+        "completion_tokens": 6038
+      }
+    },
+    {
+      "task_id": "H-02",
+      "band": "H_contexte",
+      "depth": 1,
+      "min_steps": 1,
+      "rep": 2,
+      "correct": false,
+      "verdict": "aucune_reponse",
+      "answer": null,
+      "expected": 209,
+      "steps": 1,
+      "decoy_calls": 0,
+      "stop_reason": "no_marker",
+      "errors": [],
+      "latency_s": 108.08,
+      "final_text": "",
+      "usage": {
+        "prompt_tokens": 6058,
+        "completion_tokens": 4175
+      }
+    },
+    {
+      "task_id": "H-02",
+      "band": "H_contexte",
+      "depth": 1,
+      "min_steps": 1,
+      "rep": 3,
+      "correct": false,
+      "verdict": "aucune_reponse",
+      "answer": null,
+      "expected": 209,
+      "steps": 1,
+      "decoy_calls": 0,
+      "stop_reason": "no_marker",
+      "errors": [],
+      "latency_s": 129.19,
+      "final_text": "",
+      "usage": {
+        "prompt_tokens": 6058,
+        "completion_tokens": 4175
+      }
+    },
+    {
+      "task_id": "H-03",
+      "band": "H_contexte",
+      "depth": 1,
+      "min_steps": 1,
+      "rep": 1,
+      "correct": false,
+      "verdict": "valeur_fausse",
+      "answer": "25",
+      "expected": 21,
+      "steps": 2,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 84.25,
+      "final_text": "La commande CMD-9001 contient 9 lignes pour la référence REF-005, avec les quantités suivantes : 2, 1, 2, 2, 3, 4, 3, 4 et 4.\n\nTotal : 2 + 1 + 2 + 2 + 3 + 4 + 3 + 4 + 4 = 25 unités.\n\nREPONSE: 25",
+      "usage": {
+        "prompt_tokens": 9893,
+        "completion_tokens": 838
+      }
+    },
+    {
+      "task_id": "H-03",
+      "band": "H_contexte",
+      "depth": 1,
+      "min_steps": 1,
+      "rep": 2,
+      "correct": false,
+      "verdict": "valeur_fausse",
+      "answer": "25",
+      "expected": 21,
+      "steps": 2,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 28.37,
+      "final_text": "La commande CMD-9001 contient 9 lignes pour la référence REF-005, avec les quantités suivantes : 2, 1, 2, 2, 3, 4, 3, 4 et 4.\n\nTotal : 2 + 1 + 2 + 2 + 3 + 4 + 3 + 4 + 4 = 25 unités.\n\nREPONSE: 25",
+      "usage": {
+        "prompt_tokens": 9893,
+        "completion_tokens": 838
+      }
+    },
+    {
+      "task_id": "H-03",
+      "band": "H_contexte",
+      "depth": 1,
+      "min_steps": 1,
+      "rep": 3,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "21",
+      "expected": 21,
+      "steps": 2,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 95.8,
+      "final_text": "La commande CMD-9001 contient 8 lignes pour la référence REF-005, avec les quantités suivantes : 2, 1, 2, 2, 3, 4, 3 et 4.\n\nTotal : 2 + 1 + 2 + 2 + 3 + 4 + 3 + 4 = 21 unités.\n\nREPONSE: 21",
+      "usage": {
+        "prompt_tokens": 9891,
+        "completion_tokens": 1790
+      }
+    },
+    {
+      "task_id": "H-04",
+      "band": "H_contexte",
+      "depth": 1,
+      "min_steps": 1,
+      "rep": 1,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "REF-017",
+      "expected": "REF-017",
+      "steps": 1,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 83.8,
+      "final_text": "J'ai additionné les quantités par référence sur les 80 lignes de la commande CMD-9001 :\n\n- REF-017 : 25\n- REF-083 : 23\n- REF-044 : 23\n- REF-006 : 22\n- REF-005 : 21\n- REF-026 : 21\n- REF-071 : 20\n- REF-066 : 19\n- REF-008 : 18\n- REF-088 : 17\n\nLa référence dont la quantité cumulée est la plus élevée est REF-017 (25 unités).\n\nREPONSE: REF-017",
+      "usage": {
+        "prompt_tokens": 6058,
+        "completion_tokens": 3792
+      }
+    },
+    {
+      "task_id": "H-04",
+      "band": "H_contexte",
+      "depth": 1,
+      "min_steps": 1,
+      "rep": 2,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "REF-017",
+      "expected": "REF-017",
+      "steps": 1,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 44.33,
+      "final_text": "J'ai récupéré les 80 lignes de la commande CMD-9001 et cumulé les quantités par référence :\n\n- REF-083 : 23\n- REF-005 : 21\n- REF-044 : 23\n- REF-008 : 18\n- REF-088 : 17\n- REF-006 : 22\n- REF-066 : 19\n- REF-017 : 25\n- REF-071 : 20\n- REF-026 : 21\n\nLa référence avec la quantité cumulée la plus élevée est REF-017 (25 unités).\n\nREPONSE: REF-017",
+      "usage": {
+        "prompt_tokens": 6058,
+        "completion_tokens": 2336
+      }
+    },
+    {
+      "task_id": "H-04",
+      "band": "H_contexte",
+      "depth": 1,
+      "min_steps": 1,
+      "rep": 3,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "REF-017",
+      "expected": "REF-017",
+      "steps": 1,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 73.27,
+      "final_text": "J'ai récupéré les 80 lignes de la commande CMD-9001 et cumulé les quantités par référence :\n\n- REF-083 : 23\n- REF-005 : 21\n- REF-044 : 23\n- REF-008 : 18\n- REF-088 : 17\n- REF-006 : 22\n- REF-066 : 19\n- REF-017 : 25\n- REF-071 : 20\n- REF-026 : 21\n\nLa référence avec la quantité cumulée la plus élevée est REF-017 (25 unités).\n\nREPONSE: REF-017",
+      "usage": {
+        "prompt_tokens": 6058,
+        "completion_tokens": 2336
+      }
+    }
+  ]
+}
