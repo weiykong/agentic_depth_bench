@@ -190,93 +190,102 @@ désormais `api.openai.com` dans `--base-url` et bascule automatiquement sur
 `vba_benchmark/models.py`), et journalise `usage` pour permettre le chiffrage
 a posteriori.
 
-## Comparaison qwen3.8-27b-iq3 (llama-swap, MTP) — 2026-08-21
+## Comparaison qwen3.8-27b-iq3 (llama-swap, MTP) — 2026-08-21, corrigée le 2026-08-21
 
 Même trois suites, sur `qwen3.8-27b-iq3` (bartowski/Qwen3.8-27B-GGUF, quant
 IQ3_M, ~12,9 Go, couches MTP natives — `--spec-type draft-mtp
 --spec-draft-n-max 2` actif et vérifié via `draft_n`/`draft_n_accepted` dans
 les timings). Local, gratuit, via llama-swap (port 9292).
 
-| Bande | gemma-4-12b | gpt-5.6-terra | **qwen3.8-27b-iq3** |
+**Premier passage vicié, corrigé ci-dessous.** La toute première comparaison
+publiée ici (v3 à `--temperature 0.0 --reps 3`) ne suivait pas le protocole
+utilisé pour gemma-4-12b et gpt-5.6-terra sur v3 (`--temperature 0.7 --reps 5`,
+voir en-tête des fichiers de résultats). Elle affichait F_conflit et
+H_contexte à 0 %, présentés à l'époque comme un effondrement propre à ce
+modèle. Rejoué au bon protocole (`--temperature 0.7 --reps 5 --max-tokens
+4096`, n=20 comme les deux autres), le tableau change nettement :
+
+| Bande | gemma-4-12b | gpt-5.6-terra | **qwen3.8-27b-iq3 (n=20, protocole aligné)** |
 |---|---|---|---|
 | v1 (toutes profondeurs) | 100 % | 100 % | **100 %** |
 | v2 (toutes bandes) | 100 % | 100 % | **100 %** |
 | I_controle | 100 % | 100 % | **100 %** |
 | G_impossible | 75 % | 90 % | **75 %** |
-| **F_conflit** | 100 % | 100 % | **0 %** |
-| **H_contexte** | 40 % | 80 % | **0 %** (58,3 % après correctif, voir plus bas) |
+| H_contexte | 40 % | 80 % | **45 %** |
+| **F_conflit** | 100 % | 100 % | **25 %** |
 | E_intention | 0 % | 5 % | **0 %** |
 
-n=12 (reps=3) pour qwen3.8-27b-iq3 contre n=20 (reps=5) pour les deux autres —
-même réserve que pour la comparaison gpt-5.6-terra : comparaison qualitative
-valable, intervalle de confiance non comparable terme à terme.
+H_contexte n'est donc **pas** un effondrement propre à ce modèle une fois le
+budget de sortie corrigé (`--max-tokens 4096`) et le protocole aligné : 45 %,
+au niveau de gemma-4-12b (40 %), loin derrière gpt-5.6-terra (80 %) mais dans
+le même ordre de grandeur que le 12B local. Le vrai écart qui survit à la
+correction, c'est **F_conflit à 25 % contre 100 % ailleurs** — celui-là est
+confirmé, pas un artefact.
 
-### F_conflit : le même défaut d'intention, mais qui déborde
+### F_conflit : le vrai point faible qui reste
 
-Sur les deux autres modèles, F_conflit est acquis à 100 %. Ici, 0/12. La trace
-de F-01 montre que le travail mécanique est correct — 6/6 étapes, le bon
-calcul (36+39+39+14 = 128 contre un agrégat système à 48) — mais le modèle
-**résout le conflit en silence** au lieu de le signaler :
+Sur les deux autres modèles, F_conflit est acquis à 100 %. Ici, 5/20 même à
+bon protocole. La trace de F-01 montre que le travail mécanique est
+généralement correct (bon calcul, 36+39+39+14 = 128 contre un agrégat système
+à 48), mais la plupart du temps le modèle **résout le conflit en silence**
+au lieu de le signaler :
 
 > « L'export nocturne étant un agrégat qui peut être décalé du réel, je
 > retiens la somme des stocks réels par entrepôt. REPONSE: 128 »
 
-Même défaut que E_intention (chiffre juste, source non nommée, aucun
-marqueur de conflit), mais qui ici déborde sur une bande où gemma-4-12b et
-gpt-5.6-terra ne trébuchent jamais. Ce n'est pas un artefact de budget : la
-réponse est complète et cohérente, juste non signalée.
+Sur quelques répétitions à température 0,7 le modèle réussit (`conflit_chiffre`,
+« 48 (EXPORT NOCTURNE) VS 128 (SOMME DES S... ») : ce n'est donc pas un mur
+absolu, mais un taux de réussite bas et non fiable là où gemma-4-12b et
+gpt-5.6-terra ne trébuchent jamais. Même défaut que E_intention (chiffre
+juste, conflit non signalé), qui ici déborde sur une bande où les deux autres
+modèles sont parfaits.
 
-### H_contexte : budget de sortie, puis un vrai plafond
+### H_contexte : le budget de sortie expliquait la majeure partie du problème
 
-0/12 en premier passage — mais la trace ne ressemblait pas à un échec de
-raisonnement : un seul appel d'outil (`get_commande`, ~80 lignes de JSON),
+Le premier passage (temp 0, `--max-tokens 1024` implicite) donnait 0/12 avec
+un motif suspect : un seul appel d'outil (`get_commande`, ~80 lignes de JSON),
 puis `content` vide, aucun tool_call, ~1100 tokens de complétion consommés
-malgré `--max-tokens 1024`. Le modèle n'échouait pas la tâche, il ne
+malgré le plafond de 1024. Le modèle n'échouait pas la tâche, il ne
 l'atteignait jamais — budget épuisé en réflexion interne (`reasoning_content`)
-avant d'avoir écrit quoi que ce soit en sortie.
+avant d'avoir écrit quoi que ce soit en sortie. Une fois `--max-tokens 4096`
+et le protocole complet appliqués (n=20), le score remonte à 45 % — proche de
+gemma-4-12b. La leçon de plateforme reste valide (voir plus bas), mais elle
+n'explique plus un effondrement : juste un écart de puissance ordinaire par
+rapport au modèle frontière.
 
-Retest ciblé, `--bands H_contexte --max-tokens 4096` (n=12) :
+### Verdict (corrigé)
 
-| Tâche | 1024 tokens | 4096 tokens |
-|---|---|---|
-| H-01 | 0/3, silence | **3/3**, correct (114852,91) |
-| H-04 | 0/3, silence | **3/3**, correct (REF-017) |
-| H-03 | 0/3, silence | 1/3 correct (21), 2/3 valeur fausse (25) |
-| H-02 | 0/3, silence | **0/3, silence** — même à 4096 |
+**La mécanique est acquise, l'intention ne l'est pas — et sur ce modèle
+précis, à cette quantification, F_conflit est le seul vrai point de rupture
+qui survit à un protocole correct.** v1 et v2 sont parfaits (120/120 à eux
+deux, MTP actif, donc pas de compromis vitesse/qualité visible sur ce
+terrain). G_impossible et H_contexte sont dans le même ordre de grandeur que
+gemma-4-12b — pas d'écart qualitatif propre à ce modèle une fois le protocole
+aligné. Mais **F_conflit à 25 % contre 100 % ailleurs dit quelque chose de
+réel** : ce modèle-là est moins fiable pour repérer un conflit entre deux
+sources et le signaler, même si le calcul sous-jacent est correct. Utilisable
+pour de l'enchaînement d'outils bien spécifié (v1/v2, où il égale les deux
+autres modèles gratuitement et localement) et pour la plupart des tâches v3 ;
+pas pour un pipeline qui doit détecter tout seul qu'une réponse est
+contredite par une autre source.
 
-58,3 % (7/12) au global. Deux tâches sur quatre (H-01, H-04) n'étaient
-**que** du budget : une fois la marge donnée, réponse correcte à 100 %. Les
-deux autres révèlent une vraie limite : H-03 se trompe de valeur une fois sur
-la marge donnée (25 au lieu de 21), et H-02 — qui demande de sommer 80
-quantités dans une liste répétitive — calcule un total faux (215 au lieu de
-209 via son propre appel à `calculer`) puis **s'arrête sans jamais écrire la
-réponse**, même avec 6038 tokens de complétion consommés (au-dessus du
-plafond de 4096 — la réflexion n'y est visiblement pas non plus strictement
-comptée côté serveur). Plus de budget retarde l'échec, il ne le corrige pas :
-l'extraction/sommation numérique sur une liste longue et répétitive reste un
-vrai point faible de cette quantification.
+Leçons de plateforme, généralisables aux prochaines comparaisons :
 
-### Verdict
-
-**La mécanique est acquise, l'intention ne l'est pas — et à cette
-quantification, elle est même moins fiable que chez les deux autres modèles
-sur ce point précis.** v1 et v2 sont parfaits (120/120 à eux deux, MTP actif,
-donc pas de compromis vitesse/qualité visible sur ce terrain). Mais
-F_conflit qui s'effondre à 0 % alors qu'il est acquis ailleurs, et H_contexte
-qui ne remonte qu'à 58 % même en corrigeant le vrai bug de budget, disent la
-même chose : **ce modèle-là, dans cette quantification, n'est pas fait pour
-tourner sans supervision sur des tâches qui demandent de repérer un conflit
-ou de faire un calcul fiable sur une longue liste.** Il est utilisable pour
-de l'enchaînement d'outils bien spécifié (v1/v2, où il égale les deux autres
-modèles gratuitement et localement), pas pour un pipeline qui doit détecter
-tout seul qu'une réponse est douteuse.
-
-Leçon de plateforme, généralisable aux prochaines comparaisons : le
-`--max-tokens 1024` par défaut de `runner.py` est calibré pour des modèles
-non-raisonneurs. Un modèle qui écrit dans `reasoning_content` avant `content`
-peut se taire complètement à ce budget sans que ce soit un échec de
-capacité — `--max-tokens 4096` (voire plus) est le minimum à essayer avant de
-conclure quoi que ce soit sur un modèle de cette famille.
+- Le `--max-tokens 1024` par défaut de `runner.py` est calibré pour des
+  modèles non-raisonneurs. Un modèle qui écrit dans `reasoning_content` avant
+  `content` peut se taire complètement à ce budget sans que ce soit un échec
+  de capacité — `--max-tokens 4096` (voire plus) est le minimum à essayer
+  avant de conclure quoi que ce soit sur un modèle de cette famille.
+- **Toujours passer `--temperature` explicitement pour v3**, même si elle
+  semble redondante avec le protocole documenté. Le premier passage sur ce
+  modèle a tourné à 0,0 (défaut de `runner.py`) au lieu de 0,7 (protocole v3
+  établi pour gemma et gpt-5.6-terra) simplement parce que le flag n'a pas
+  été passé sur la ligne de commande — l'erreur n'a été détectée qu'en
+  comparant les en-têtes des fichiers de résultats a posteriori.
+- `max_tokens` n'était pas journalisé dans l'en-tête des résultats,
+  rendant impossible de vérifier après coup quel budget avait servi pour un
+  run donné. Corrigé : `runner.py` écrit maintenant `cfg.max_tokens` dans le
+  résumé JSON au même titre que `temperature` et `reps`.
 
 ## Ce qui reste hors périmètre
 
@@ -356,14 +365,16 @@ déterministe, et son absence est comptée séparément (`no_marker`).
 Le banc a trouvé où ça casse. Deux directions, par ordre de valeur :
 
 1. **Comparer les modèles.** Fait pour l'API OpenAI (`gpt-5.6-terra`) et pour
-   Qwen3.8-27B en IQ3 (`qwen3.8-27b-iq3`, voir ci-dessus — verdict : mécanique
-   au niveau des deux autres, mais F_conflit et H_contexte en net retrait,
-   pas déployable sans supervision). Reste à rejouer v1+v2+v3 sur le
-   fine-tune agentique GGUF et sur le Qwen3.6-27B en IQ3 (hypothèse
-   toujours ouverte : l'IQ3 dégrade la précision d'appel d'outils bien plus
-   que la fluidité — à confirmer ou infirmer sur un second modèle 27B avant
-   de généraliser à la taille plutôt qu'à ce checkpoint précis). Une commande
-   par modèle via `--base-url`, `--max-tokens 4096` si le modèle raisonne.
+   Qwen3.8-27B en IQ3 (`qwen3.8-27b-iq3`, voir ci-dessus — verdict corrigé au
+   bon protocole : mécanique et G_impossible/H_contexte au niveau de
+   gemma-4-12b, seul F_conflit en net retrait, 25 % contre 100 % ailleurs).
+   Reste à rejouer v1+v2+v3 sur le fine-tune agentique GGUF et sur le
+   Qwen3.6-27B en IQ3 (hypothèse toujours ouverte : l'IQ3 dégrade la précision
+   d'appel d'outils bien plus que la fluidité — à confirmer ou infirmer sur un
+   second modèle 27B avant de généraliser à la taille plutôt qu'à ce
+   checkpoint précis) — et sur Muse Glimmer 30B une fois testé côté français.
+   Une commande par modèle via `--base-url`, `--temperature 0.7 --reps 5
+   --max-tokens 4096` pour v3, à passer explicitement à chaque fois.
 2. **Attaquer E autrement.** Le modèle échoue à 0 % en rendant un nombre nu.
    Vérifier si un prompt système qui exige explicitement de nommer la source à
    chaque réponse chiffrée suffit à corriger ça, ou si le défaut résiste. C'est

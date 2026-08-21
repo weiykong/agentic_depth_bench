@@ -403,6 +403,7 @@ def main():
         "timestamp": stamp,
         "reps": cfg.reps,
         "temperature": cfg.temperature,
+        "max_tokens": cfg.max_tokens,
         "wall_time_s": round(time.time() - started, 1),
         "runs": [{k: v for k, v in r.items() if k != "trace"} for r in results],
     }

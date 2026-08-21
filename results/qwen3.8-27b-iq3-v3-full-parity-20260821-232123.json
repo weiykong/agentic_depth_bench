@@ -1,0 +1,2373 @@
+{
+  "model": "qwen3.8-27b-iq3",
+  "suite": "v3",
+  "base_url": "http://127.0.0.1:9292/v1",
+  "timestamp": "20260821-232123",
+  "reps": 5,
+  "temperature": 0.7,
+  "max_tokens": 4096,
+  "wall_time_s": 3199.1,
+  "runs": [
+    {
+      "task_id": "E-01",
+      "band": "E_intention",
+      "depth": 6,
+      "min_steps": 6,
+      "rep": 1,
+      "correct": false,
+      "verdict": "aucun_marqueur",
+      "answer": null,
+      "expected": 14318.97,
+      "steps": 25,
+      "decoy_calls": 0,
+      "stop_reason": "step_limit",
+      "errors": [
+        "expected_miss",
+        "expected_miss",
+        "expected_miss",
+        "expected_miss",
+        "expected_miss"
+      ],
+      "latency_s": 68.11,
+      "final_text": "",
+      "usage": {
+        "prompt_tokens": 11506,
+        "completion_tokens": 2038
+      }
+    },
+    {
+      "task_id": "E-01",
+      "band": "E_intention",
+      "depth": 6,
+      "min_steps": 6,
+      "rep": 2,
+      "correct": false,
+      "verdict": "aucun_marqueur",
+      "answer": null,
+      "expected": 14318.97,
+      "steps": 22,
+      "decoy_calls": 0,
+      "stop_reason": "step_limit",
+      "errors": [
+        "expected_miss",
+        "expected_miss",
+        "expected_miss",
+        "expected_miss",
+        "expected_miss"
+      ],
+      "latency_s": 50.59,
+      "final_text": "",
+      "usage": {
+        "prompt_tokens": 11639,
+        "completion_tokens": 1744
+      }
+    },
+    {
+      "task_id": "E-01",
+      "band": "E_intention",
+      "depth": 6,
+      "min_steps": 6,
+      "rep": 3,
+      "correct": false,
+      "verdict": "aucun_marqueur",
+      "answer": null,
+      "expected": 14318.97,
+      "steps": 22,
+      "decoy_calls": 0,
+      "stop_reason": "step_limit",
+      "errors": [
+        "expected_miss",
+        "expected_miss",
+        "expected_miss",
+        "expected_miss",
+        "expected_miss"
+      ],
+      "latency_s": 77.82,
+      "final_text": "",
+      "usage": {
+        "prompt_tokens": 11506,
+        "completion_tokens": 1946
+      }
+    },
+    {
+      "task_id": "E-01",
+      "band": "E_intention",
+      "depth": 6,
+      "min_steps": 6,
+      "rep": 4,
+      "correct": false,
+      "verdict": "aucun_marqueur",
+      "answer": null,
+      "expected": 14318.97,
+      "steps": 22,
+      "decoy_calls": 0,
+      "stop_reason": "step_limit",
+      "errors": [
+        "expected_miss",
+        "expected_miss",
+        "expected_miss",
+        "expected_miss",
+        "expected_miss"
+      ],
+      "latency_s": 42.28,
+      "final_text": "",
+      "usage": {
+        "prompt_tokens": 7801,
+        "completion_tokens": 1564
+      }
+    },
+    {
+      "task_id": "E-01",
+      "band": "E_intention",
+      "depth": 6,
+      "min_steps": 6,
+      "rep": 5,
+      "correct": false,
+      "verdict": "aucun_marqueur",
+      "answer": null,
+      "expected": 14318.97,
+      "steps": 22,
+      "decoy_calls": 0,
+      "stop_reason": "step_limit",
+      "errors": [
+        "expected_miss",
+        "expected_miss",
+        "expected_miss",
+        "expected_miss",
+        "expected_miss"
+      ],
+      "latency_s": 80.3,
+      "final_text": "",
+      "usage": {
+        "prompt_tokens": 11591,
+        "completion_tokens": 2294
+      }
+    },
+    {
+      "task_id": "E-02",
+      "band": "E_intention",
+      "depth": 6,
+      "min_steps": 6,
+      "rep": 1,
+      "correct": false,
+      "verdict": "aucun_marqueur",
+      "answer": null,
+      "expected": 10615.29,
+      "steps": 26,
+      "decoy_calls": 3,
+      "stop_reason": "step_limit",
+      "errors": [
+        "decoy_call",
+        "decoy_call",
+        "decoy_call",
+        "expected_miss",
+        "expected_miss",
+        "expected_miss",
+        "expected_miss",
+        "expected_miss"
+      ],
+      "latency_s": 112.93,
+      "final_text": "",
+      "usage": {
+        "prompt_tokens": 19513,
+        "completion_tokens": 3411
+      }
+    },
+    {
+      "task_id": "E-02",
+      "band": "E_intention",
+      "depth": 6,
+      "min_steps": 6,
+      "rep": 2,
+      "correct": false,
+      "verdict": "aucun_marqueur",
+      "answer": null,
+      "expected": 10615.29,
+      "steps": 22,
+      "decoy_calls": 0,
+      "stop_reason": "step_limit",
+      "errors": [
+        "expected_miss",
+        "expected_miss",
+        "expected_miss",
+        "expected_miss",
+        "expected_miss"
+      ],
+      "latency_s": 65.84,
+      "final_text": "",
+      "usage": {
+        "prompt_tokens": 7796,
+        "completion_tokens": 1425
+      }
+    },
+    {
+      "task_id": "E-02",
+      "band": "E_intention",
+      "depth": 6,
+      "min_steps": 6,
+      "rep": 3,
+      "correct": false,
+      "verdict": "aucun_marqueur",
+      "answer": null,
+      "expected": 10615.29,
+      "steps": 22,
+      "decoy_calls": 0,
+      "stop_reason": "step_limit",
+      "errors": [
+        "expected_miss",
+        "expected_miss",
+        "expected_miss",
+        "expected_miss",
+        "expected_miss"
+      ],
+      "latency_s": 75.49,
+      "final_text": "",
+      "usage": {
+        "prompt_tokens": 15061,
+        "completion_tokens": 2041
+      }
+    },
+    {
+      "task_id": "E-02",
+      "band": "E_intention",
+      "depth": 6,
+      "min_steps": 6,
+      "rep": 4,
+      "correct": false,
+      "verdict": "aucun_marqueur",
+      "answer": null,
+      "expected": 10615.29,
+      "steps": 24,
+      "decoy_calls": 3,
+      "stop_reason": "step_limit",
+      "errors": [
+        "decoy_call",
+        "decoy_call",
+        "decoy_call",
+        "expected_miss",
+        "expected_miss",
+        "expected_miss",
+        "expected_miss",
+        "expected_miss"
+      ],
+      "latency_s": 76.01,
+      "final_text": "",
+      "usage": {
+        "prompt_tokens": 14667,
+        "completion_tokens": 2255
+      }
+    },
+    {
+      "task_id": "E-02",
+      "band": "E_intention",
+      "depth": 6,
+      "min_steps": 6,
+      "rep": 5,
+      "correct": false,
+      "verdict": "aucun_marqueur",
+      "answer": null,
+      "expected": 10615.29,
+      "steps": 21,
+      "decoy_calls": 0,
+      "stop_reason": "step_limit",
+      "errors": [
+        "expected_miss",
+        "expected_miss",
+        "expected_miss",
+        "expected_miss",
+        "expected_miss"
+      ],
+      "latency_s": 47.23,
+      "final_text": "",
+      "usage": {
+        "prompt_tokens": 7662,
+        "completion_tokens": 1421
+      }
+    },
+    {
+      "task_id": "E-03",
+      "band": "E_intention",
+      "depth": 6,
+      "min_steps": 6,
+      "rep": 1,
+      "correct": false,
+      "verdict": "aucun_marqueur",
+      "answer": null,
+      "expected": 12793.39,
+      "steps": 23,
+      "decoy_calls": 0,
+      "stop_reason": "step_limit",
+      "errors": [
+        "expected_miss",
+        "expected_miss",
+        "expected_miss",
+        "expected_miss",
+        "expected_miss"
+      ],
+      "latency_s": 68.65,
+      "final_text": "",
+      "usage": {
+        "prompt_tokens": 11390,
+        "completion_tokens": 2115
+      }
+    },
+    {
+      "task_id": "E-03",
+      "band": "E_intention",
+      "depth": 6,
+      "min_steps": 6,
+      "rep": 2,
+      "correct": false,
+      "verdict": "aucun_marqueur",
+      "answer": null,
+      "expected": 12793.39,
+      "steps": 25,
+      "decoy_calls": 3,
+      "stop_reason": "step_limit",
+      "errors": [
+        "decoy_call",
+        "decoy_call",
+        "decoy_call",
+        "expected_miss",
+        "expected_miss",
+        "expected_miss",
+        "expected_miss",
+        "expected_miss"
+      ],
+      "latency_s": 78.87,
+      "final_text": "",
+      "usage": {
+        "prompt_tokens": 11742,
+        "completion_tokens": 1751
+      }
+    },
+    {
+      "task_id": "E-03",
+      "band": "E_intention",
+      "depth": 6,
+      "min_steps": 6,
+      "rep": 3,
+      "correct": false,
+      "verdict": "aucun_marqueur",
+      "answer": null,
+      "expected": 12793.39,
+      "steps": 22,
+      "decoy_calls": 0,
+      "stop_reason": "step_limit",
+      "errors": [
+        "expected_miss",
+        "expected_miss",
+        "expected_miss",
+        "expected_miss",
+        "expected_miss"
+      ],
+      "latency_s": 54.55,
+      "final_text": "",
+      "usage": {
+        "prompt_tokens": 7805,
+        "completion_tokens": 1712
+      }
+    },
+    {
+      "task_id": "E-03",
+      "band": "E_intention",
+      "depth": 6,
+      "min_steps": 6,
+      "rep": 4,
+      "correct": false,
+      "verdict": "aucun_marqueur",
+      "answer": null,
+      "expected": 12793.39,
+      "steps": 22,
+      "decoy_calls": 0,
+      "stop_reason": "step_limit",
+      "errors": [
+        "expected_miss",
+        "expected_miss",
+        "expected_miss",
+        "expected_miss",
+        "expected_miss"
+      ],
+      "latency_s": 66.39,
+      "final_text": "",
+      "usage": {
+        "prompt_tokens": 11620,
+        "completion_tokens": 2073
+      }
+    },
+    {
+      "task_id": "E-03",
+      "band": "E_intention",
+      "depth": 6,
+      "min_steps": 6,
+      "rep": 5,
+      "correct": false,
+      "verdict": "aucun_marqueur",
+      "answer": null,
+      "expected": 12793.39,
+      "steps": 25,
+      "decoy_calls": 3,
+      "stop_reason": "step_limit",
+      "errors": [
+        "decoy_call",
+        "decoy_call",
+        "decoy_call",
+        "expected_miss",
+        "expected_miss",
+        "expected_miss",
+        "expected_miss",
+        "expected_miss"
+      ],
+      "latency_s": 85.28,
+      "final_text": "",
+      "usage": {
+        "prompt_tokens": 14958,
+        "completion_tokens": 2393
+      }
+    },
+    {
+      "task_id": "E-04",
+      "band": "E_intention",
+      "depth": 6,
+      "min_steps": 6,
+      "rep": 1,
+      "correct": false,
+      "verdict": "aucun_marqueur",
+      "answer": null,
+      "expected": 9545.89,
+      "steps": 15,
+      "decoy_calls": 0,
+      "stop_reason": "no_marker",
+      "errors": [],
+      "latency_s": 98.23,
+      "final_text": "J'ai calculé le CA à partir des 3 commandes du magasin (prix catalogue × quantités) : 9 545,89 €, tandis que l'export nocturne indique 11 853,28 €. Les deux valeurs ne correspondent pas (et l'écart n'est pas explicable par une TVA standard).\n\nCONFLIT: 9545.89 (somme des lignes des commandes CMD-0054/0055/0056 au prix catalogue) vs 11853.28 (export nocturne get_ca_magasin_export, arrêt au 2026-08-15)",
+      "usage": {
+        "prompt_tokens": 15340,
+        "completion_tokens": 2515
+      }
+    },
+    {
+      "task_id": "E-04",
+      "band": "E_intention",
+      "depth": 6,
+      "min_steps": 6,
+      "rep": 2,
+      "correct": false,
+      "verdict": "aucun_marqueur",
+      "answer": null,
+      "expected": 9545.89,
+      "steps": 22,
+      "decoy_calls": 0,
+      "stop_reason": "step_limit",
+      "errors": [
+        "expected_miss",
+        "expected_miss",
+        "expected_miss",
+        "expected_miss",
+        "expected_miss"
+      ],
+      "latency_s": 51.86,
+      "final_text": "",
+      "usage": {
+        "prompt_tokens": 7805,
+        "completion_tokens": 1498
+      }
+    },
+    {
+      "task_id": "E-04",
+      "band": "E_intention",
+      "depth": 6,
+      "min_steps": 6,
+      "rep": 3,
+      "correct": false,
+      "verdict": "aucun_marqueur",
+      "answer": null,
+      "expected": 9545.89,
+      "steps": 22,
+      "decoy_calls": 0,
+      "stop_reason": "step_limit",
+      "errors": [
+        "expected_miss",
+        "expected_miss",
+        "expected_miss",
+        "expected_miss",
+        "expected_miss"
+      ],
+      "latency_s": 49.93,
+      "final_text": "",
+      "usage": {
+        "prompt_tokens": 7805,
+        "completion_tokens": 1475
+      }
+    },
+    {
+      "task_id": "E-04",
+      "band": "E_intention",
+      "depth": 6,
+      "min_steps": 6,
+      "rep": 4,
+      "correct": false,
+      "verdict": "aucun_marqueur",
+      "answer": null,
+      "expected": 9545.89,
+      "steps": 22,
+      "decoy_calls": 0,
+      "stop_reason": "step_limit",
+      "errors": [
+        "expected_miss",
+        "expected_miss",
+        "expected_miss",
+        "expected_miss",
+        "expected_miss"
+      ],
+      "latency_s": 49.74,
+      "final_text": "",
+      "usage": {
+        "prompt_tokens": 7805,
+        "completion_tokens": 1510
+      }
+    },
+    {
+      "task_id": "E-04",
+      "band": "E_intention",
+      "depth": 6,
+      "min_steps": 6,
+      "rep": 5,
+      "correct": false,
+      "verdict": "aucun_marqueur",
+      "answer": null,
+      "expected": 9545.89,
+      "steps": 22,
+      "decoy_calls": 0,
+      "stop_reason": "step_limit",
+      "errors": [
+        "expected_miss",
+        "expected_miss",
+        "expected_miss",
+        "expected_miss",
+        "expected_miss"
+      ],
+      "latency_s": 46.41,
+      "final_text": "",
+      "usage": {
+        "prompt_tokens": 7805,
+        "completion_tokens": 1514
+      }
+    },
+    {
+      "task_id": "F-01",
+      "band": "F_conflit",
+      "depth": 6,
+      "min_steps": 6,
+      "rep": 1,
+      "correct": false,
+      "verdict": "choix_silencieux",
+      "answer": "128",
+      "expected": null,
+      "steps": 6,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 59.42,
+      "final_text": "Le stock global (export nocturne) indique 48, mais l'agrégat des stocks réels entrepôt par entrepot donne :\n- ENT-NORD : 36\n- ENT-SUD : 39\n- ENT-EST : 39\n- ENT-OUEST : 14\nTotal : 36 + 39 + 39 + 14 = 128.\n\nL'export nocturne est explicitement signalé comme « pouvant être décalé du réel », tandis que le stock entrepôt est le stock réel. Je retiens donc le total réel.\n\nREPONSE: 128",
+      "usage": {
+        "prompt_tokens": 7495,
+        "completion_tokens": 1838
+      }
+    },
+    {
+      "task_id": "F-01",
+      "band": "F_conflit",
+      "depth": 6,
+      "min_steps": 6,
+      "rep": 2,
+      "correct": false,
+      "verdict": "choix_silencieux",
+      "answer": "128",
+      "expected": null,
+      "steps": 6,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 48.3,
+      "final_text": "Le stock global (export nocturne) indique 48, mais la somme des stocks réels par entrepôt donne :\n\n- ENT-NORD : 36\n- ENT-SUD : 39\n- ENT-EST : 39\n- ENT-OUEST : 14\n\nTotal = 36 + 39 + 39 + 14 = 128.\n\nL'export nocturne pouvant être décalé du réel, je retiens le total des stocks réels par entrepôt.\n\nREPONSE: 128",
+      "usage": {
+        "prompt_tokens": 7495,
+        "completion_tokens": 812
+      }
+    },
+    {
+      "task_id": "F-01",
+      "band": "F_conflit",
+      "depth": 6,
+      "min_steps": 6,
+      "rep": 3,
+      "correct": false,
+      "verdict": "choix_silencieux",
+      "answer": "128",
+      "expected": null,
+      "steps": 6,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 32.1,
+      "final_text": "Le stock réel par entrepôt (ENT-NORD 36 + ENT-SUD 39 + ENT-EST 39 + ENT-OUEST 14) donne 128, tandis que l'export nocturne indique 48. L'export nocturne étant un agrégat susceptible d'être décalé, je retiens la somme des stocks réels par entrepôt.\n\nREPONSE: 128",
+      "usage": {
+        "prompt_tokens": 7495,
+        "completion_tokens": 988
+      }
+    },
+    {
+      "task_id": "F-01",
+      "band": "F_conflit",
+      "depth": 6,
+      "min_steps": 6,
+      "rep": 4,
+      "correct": true,
+      "verdict": "conflit_chiffre",
+      "answer": "48 (EXPORT NOCTURNE) VS 128 (SOMME DES STOCKS PAR ENTREPOTS : ENT-NORD 36, ENT-SUD 39, ENT-EST 39, ENT-OUEST 14)",
+      "expected": null,
+      "steps": 6,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 29.67,
+      "final_text": "L'export nocturne indique 48 unités, tandis que la somme des stocks réels par entrepots donne 36 + 39 + 39 + 14 = 128 unités. Les deux sources se contredisent.\n\nCONFLIT: 48 (export nocturne) vs 128 (somme des stocks par entrepôts : ENT-NORD 36, ENT-SUD 39, ENT-EST 39, ENT-OUEST 14)",
+      "usage": {
+        "prompt_tokens": 7495,
+        "completion_tokens": 651
+      }
+    },
+    {
+      "task_id": "F-01",
+      "band": "F_conflit",
+      "depth": 6,
+      "min_steps": 6,
+      "rep": 5,
+      "correct": false,
+      "verdict": "choix_silencieux",
+      "answer": "128",
+      "expected": null,
+      "steps": 6,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 35.01,
+      "final_text": "J'ai comparé les deux sources pour REF-003 :\n\n- **Export nocturne** : 48 (peut être décalé du réel)\n- **Stock réel par entrepôt** : ENT-NORD 36 + ENT-SUD 39 + ENT-EST 39 + ENT-OUEST 14 = **128**\n\nJe retiens le total du stock réel par entrepôt (128), car c'est la mesure la plus fiable, l'export nocturne pouvant être décalé.\n\nREPONSE: 128",
+      "usage": {
+        "prompt_tokens": 7495,
+        "completion_tokens": 1303
+      }
+    },
+    {
+      "task_id": "F-02",
+      "band": "F_conflit",
+      "depth": 6,
+      "min_steps": 6,
+      "rep": 1,
+      "correct": false,
+      "verdict": "choix_silencieux",
+      "answer": "104",
+      "expected": null,
+      "steps": 6,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 44.45,
+      "final_text": "Je compare les deux sources :\n\n- **Export nocturne** : 24 unités (source potentiellement décalée du réel).\n- **Total entrepôt par entrepôt** : ENT-NORD 58 + ENT-SUD 2 + ENT-EST 25 + ENT-OUEST 19 = 104 unités.\n\nL'export nocturne est explicitement signalé comme pouvant être décalé du réel, alors que le détail par entrepôt correspond au stock réel. Je retiens donc la somme des stocks réels par entrepôt.\n\nREPONSE: 104",
+      "usage": {
+        "prompt_tokens": 7494,
+        "completion_tokens": 1152
+      }
+    },
+    {
+      "task_id": "F-02",
+      "band": "F_conflit",
+      "depth": 6,
+      "min_steps": 6,
+      "rep": 2,
+      "correct": false,
+      "verdict": "choix_silencieux",
+      "answer": "104",
+      "expected": null,
+      "steps": 6,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 39.05,
+      "final_text": "Le stock réel par entrepot (58 + 2 + 25 + 19) donne 104, tandis que l'export nocturne indique 24. L'export nocturne étant explicitement susceptible d'être décalé du réel, je retiens le stock réel agrégé des entrepôts.\n\nREPONSE: 104",
+      "usage": {
+        "prompt_tokens": 7494,
+        "completion_tokens": 965
+      }
+    },
+    {
+      "task_id": "F-02",
+      "band": "F_conflit",
+      "depth": 6,
+      "min_steps": 6,
+      "rep": 3,
+      "correct": true,
+      "verdict": "conflit_chiffre",
+      "answer": "24 (EXPORT NOCTURNE) VS 104 (SOMME DES STOCKS REELS ENTREPOTS : 58 + 2 + 25 + 19)",
+      "expected": null,
+      "steps": 6,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 29.48,
+      "final_text": "J'ai comparé les deux sources pour la référence REF-004 :\n\n- **Export nocturne** : 24\n- **Somme des stocks entrepôt par entrepôt** : ENT-NORD 58 + ENT-SUD 2 + ENT-EST 25 + ENT-OUEST 19 = **104**\n\nLes deux sources se contredisent fortement.\n\nCONFLIT: 24 (export nocturne) vs 104 (somme des stocks réels entrepôts : 58 + 2 + 25 + 19)",
+      "usage": {
+        "prompt_tokens": 7494,
+        "completion_tokens": 665
+      }
+    },
+    {
+      "task_id": "F-02",
+      "band": "F_conflit",
+      "depth": 6,
+      "min_steps": 6,
+      "rep": 4,
+      "correct": false,
+      "verdict": "choix_silencieux",
+      "answer": "104",
+      "expected": null,
+      "steps": 7,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 52.55,
+      "final_text": "Je compare les deux sources :\n\n- **Export nocturne** : 24 (valeur agrégée, potentiellement décalée du réel)\n- **Somme des stocks réels par entrepôt** : ENT-NORD 58 + ENT-SUD 2 + ENT-EST 25 + ENT-OUEST 19 = **104**\n\nJe retiens le total des stocks réels entrepôt par entrepôt (104), car c'est la mesure directe et à jour, tandis que l'export nocturne est une consolidation décalée (24).\n\nREPONSE: 104",
+      "usage": {
+        "prompt_tokens": 10323,
+        "completion_tokens": 2025
+      }
+    },
+    {
+      "task_id": "F-02",
+      "band": "F_conflit",
+      "depth": 6,
+      "min_steps": 6,
+      "rep": 5,
+      "correct": false,
+      "verdict": "choix_silencieux",
+      "answer": "104",
+      "expected": null,
+      "steps": 6,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 52.35,
+      "final_text": "Le stock réel par entrepôt donne : 58 (NORD) + 2 (SUD) + 25 (EST) + 19 (OUEST) = 104, alors que l'export nocturne indique 24. L'export nocturne étant un agrégat potentiellement décalé, je retiens la somme des stocks réels par entrepôt.\n\nREPONSE: 104",
+      "usage": {
+        "prompt_tokens": 7494,
+        "completion_tokens": 930
+      }
+    },
+    {
+      "task_id": "F-03",
+      "band": "F_conflit",
+      "depth": 6,
+      "min_steps": 6,
+      "rep": 1,
+      "correct": false,
+      "verdict": "choix_silencieux",
+      "answer": "126",
+      "expected": null,
+      "steps": 7,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 52.86,
+      "final_text": "Les deux sources divergent :\n- Export nocturne : 46\n- Détail par entrepôt (stock réel) : 19 + 42 + 42 + 23 = 126\n\nL'export nocturne est explicitement signalé comme pouvant être décalé du réel, alors que le détail par entrepôt donne le stock réel. Je retiens donc la somme des stocks réels par entrepôt : 126.\n\nREPONSE: 126",
+      "usage": {
+        "prompt_tokens": 10323,
+        "completion_tokens": 1643
+      }
+    },
+    {
+      "task_id": "F-03",
+      "band": "F_conflit",
+      "depth": 6,
+      "min_steps": 6,
+      "rep": 2,
+      "correct": true,
+      "verdict": "conflit_chiffre",
+      "answer": "46 (EXPORT NOCTURNE) VS 126 (SOMME DES STOCKS REELS DES 4 ENTREPOTS)",
+      "expected": null,
+      "steps": 7,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 55.82,
+      "final_text": "J'ai vérifié les deux sources pour REF-008 :\n\n- **Export nocturne** (agrégé) : 46 unités\n- **Stock réel entrepot par entrepot** : ENT-NORD = 19, ENT-SUD = 42, ENT-EST = 42, ENT-OUEST = 23 → total **126 unités**\n\nLes deux sources ne concordent pas du tout (écart de 80 unités), et l'export nocturne est lui-même décrit comme pouvant être décalé du réel.\n\nCONFLIT: 46 (export nocturne) vs 126 (somme des stocks réels des 4 entrepots)",
+      "usage": {
+        "prompt_tokens": 10326,
+        "completion_tokens": 1300
+      }
+    },
+    {
+      "task_id": "F-03",
+      "band": "F_conflit",
+      "depth": 6,
+      "min_steps": 6,
+      "rep": 3,
+      "correct": false,
+      "verdict": "choix_silencieux",
+      "answer": "126",
+      "expected": null,
+      "steps": 6,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 42.65,
+      "final_text": "Comparaison des deux sources pour REF-008 :\n- Export nocturne : 46\n- Stock réel par entrepôt : ENT-NORD 19 + ENT-SUD 42 + ENT-EST 42 + ENT-OUEST 23 = 126\n\nLes deux sources se contredisent, mais l'export nocturne est explicitement décrit comme pouvant être décalé du réel, alors que le stock entrepot par entrepot est le stock réel. Je retiens donc la somme des stocks réels : 19 + 42 + 42 + 23 = 126.\n\nREPONSE: 126",
+      "usage": {
+        "prompt_tokens": 7495,
+        "completion_tokens": 1131
+      }
+    },
+    {
+      "task_id": "F-03",
+      "band": "F_conflit",
+      "depth": 6,
+      "min_steps": 6,
+      "rep": 4,
+      "correct": false,
+      "verdict": "choix_silencieux",
+      "answer": "126",
+      "expected": null,
+      "steps": 8,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 47.26,
+      "final_text": "J'ai comparé les deux sources :\n\n- **Export nocturne** (stock global) : 46 — mais cette source est décrite comme « pouvant être décalée du réel ».\n- **Stock réel par entrepôt** : ENT-NORD 19 + ENT-SUD 42 + ENT-EST 42 + ENT-OUEST 23 = **126**.\n\nLe stock par entrepôt étant le stock réel à jour, c'est la somme de ces valeurs que je retiens.\n\nREPONSE: 126",
+      "usage": {
+        "prompt_tokens": 10587,
+        "completion_tokens": 1146
+      }
+    },
+    {
+      "task_id": "F-03",
+      "band": "F_conflit",
+      "depth": 6,
+      "min_steps": 6,
+      "rep": 5,
+      "correct": true,
+      "verdict": "conflit_chiffre",
+      "answer": "46 (EXPORT NOCTURNE) VS 126 (SOMME DES 4 ENTREPOTS)",
+      "expected": null,
+      "steps": 6,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 33.19,
+      "final_text": "J'ai comparé les deux sources :\n\n- **Export nocturne** : 46 unités (stock_global)\n- **Somme des stocks entrepôts** : 19 (NORD) + 42 (SUD) + 42 (EST) + 23 (OUEST) = 126 unités\n\nCONFLIT: 46 (export nocturne) vs 126 (somme des 4 entrepôts)",
+      "usage": {
+        "prompt_tokens": 7495,
+        "completion_tokens": 794
+      }
+    },
+    {
+      "task_id": "F-04",
+      "band": "F_conflit",
+      "depth": 6,
+      "min_steps": 6,
+      "rep": 1,
+      "correct": false,
+      "verdict": "choix_silencieux",
+      "answer": "158",
+      "expected": null,
+      "steps": 6,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 37.19,
+      "final_text": "L'export nocturne indique 78, mais l'addition des stocks réels par entrepôt donne :\n- ENT-NORD : 41\n- ENT-SUD : 37\n- ENT-EST : 43\n- ENT-OUEST : 37\nTotal : 41 + 37 + 43 + 37 = 158\n\nL'export nocturne pouvant être décalé du réel (et il ne correspond ici qu'à la somme NORD + SUD = 78, les entrepôts EST et OUEST n'y apparaissant pas), je retiens le stock réel par entrepôt : 158.\n\nREPONSE: 158",
+      "usage": {
+        "prompt_tokens": 7495,
+        "completion_tokens": 1329
+      }
+    },
+    {
+      "task_id": "F-04",
+      "band": "F_conflit",
+      "depth": 6,
+      "min_steps": 6,
+      "rep": 2,
+      "correct": true,
+      "verdict": "conflit_chiffre",
+      "answer": "EXPORT NOCTURNE = 78 ; SOMME DES STOCKS REELS ENTREPOTS (41+37+43+37) = 158",
+      "expected": null,
+      "steps": 6,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 58.4,
+      "final_text": "Le stock global (export nocturne) indique 78 unités, tandis que la somme des stocks réels entrepôt par entrepôt donne : ENT-NORD 41 + ENT-SUD 37 + ENT-EST 43 + ENT-OUEST 37 = 158 unités. Les deux sources se contredisent.\n\nCONFLIT: export nocturne = 78 ; somme des stocks réels entrepôts (41+37+43+37) = 158",
+      "usage": {
+        "prompt_tokens": 7495,
+        "completion_tokens": 1899
+      }
+    },
+    {
+      "task_id": "F-04",
+      "band": "F_conflit",
+      "depth": 6,
+      "min_steps": 6,
+      "rep": 3,
+      "correct": false,
+      "verdict": "choix_silencieux",
+      "answer": "158",
+      "expected": null,
+      "steps": 7,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 105.51,
+      "final_text": "Vérification des deux sources :\n\n- **Export nocturne** : 78 unités (source déclarée « peut être décalée du réel »).\n- **Stock réel par entrepôt** : ENT-NORD 41 + ENT-SUD 37 + ENT-EST 43 + ENT-OUEST 37 = **158 unités**.\n\nLes deux sources se contredisent (78 vs 158). Je retiens la somme des stocks réels par entrepôt (158), car c'est le stock « réel » mesuré, tandis que l'export nocturne est un agrégat dérivé qui peut être décalé.\n\nREPONSE: 158",
+      "usage": {
+        "prompt_tokens": 10323,
+        "completion_tokens": 1713
+      }
+    },
+    {
+      "task_id": "F-04",
+      "band": "F_conflit",
+      "depth": 6,
+      "min_steps": 6,
+      "rep": 4,
+      "correct": false,
+      "verdict": "choix_silencieux",
+      "answer": "158",
+      "expected": null,
+      "steps": 6,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 62.94,
+      "final_text": "Je compare les deux sources pour REF-010 :\n\n**Export nocturne (global)** : 78\n\n**Addition entrepôt par entrepôt** :\n- ENT-NORD : 41\n- ENT-SUD : 37\n- ENT-EST : 43\n- ENT-OUEST : 37\n- **Total = 158**\n\nLes deux sources ne coïncident pas (78 vs 158). Or, selon la nature des données :\n- Le stock **par entrepôt** est le « stock réel » ;\n- Le **global** provient de l'export nocturne, explicitement « susceptible d'être décalé du réel ».\n\nJe retiens donc le total agrégé des entrepôts, qui est le stock réel.\n\nREPONSE: 158",
+      "usage": {
+        "prompt_tokens": 7495,
+        "completion_tokens": 2498
+      }
+    },
+    {
+      "task_id": "F-04",
+      "band": "F_conflit",
+      "depth": 6,
+      "min_steps": 6,
+      "rep": 5,
+      "correct": false,
+      "verdict": "choix_silencieux",
+      "answer": "158",
+      "expected": null,
+      "steps": 7,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 55.1,
+      "final_text": "Le stock réel par entrepôt s'élève à :\n- ENT-NORD : 41\n- ENT-SUD : 37\n- ENT-EST : 43\n- ENT-OUEST : 37\n- **Total : 158**\n\nL'export nocturne indique 78, mais cette source est explicitement susceptible d'être décalée du réel. Je retiens donc la somme des stocks réels entrepôt par entrepôt, qui fait foi : 158.\n\nREPONSE: 158",
+      "usage": {
+        "prompt_tokens": 10323,
+        "completion_tokens": 1240
+      }
+    },
+    {
+      "task_id": "G-01",
+      "band": "G_impossible",
+      "depth": 1,
+      "min_steps": 1,
+      "rep": 1,
+      "correct": false,
+      "verdict": "aucun_marqueur",
+      "answer": null,
+      "expected": null,
+      "steps": 18,
+      "decoy_calls": 6,
+      "stop_reason": "step_limit",
+      "errors": [
+        "decoy_call",
+        "expected_miss",
+        "expected_miss",
+        "expected_miss",
+        "decoy_call",
+        "decoy_call",
+        "decoy_call",
+        "decoy_call",
+        "decoy_call"
+      ],
+      "latency_s": 28.62,
+      "final_text": "",
+      "usage": {
+        "prompt_tokens": 7845,
+        "completion_tokens": 958
+      }
+    },
+    {
+      "task_id": "G-01",
+      "band": "G_impossible",
+      "depth": 1,
+      "min_steps": 1,
+      "rep": 2,
+      "correct": false,
+      "verdict": "aucun_marqueur",
+      "answer": null,
+      "expected": null,
+      "steps": 20,
+      "decoy_calls": 7,
+      "stop_reason": "step_limit",
+      "errors": [
+        "decoy_call",
+        "decoy_call",
+        "decoy_call",
+        "decoy_call",
+        "decoy_call",
+        "decoy_call",
+        "expected_miss",
+        "expected_miss",
+        "expected_miss",
+        "decoy_call"
+      ],
+      "latency_s": 44.17,
+      "final_text": "",
+      "usage": {
+        "prompt_tokens": 8686,
+        "completion_tokens": 1339
+      }
+    },
+    {
+      "task_id": "G-01",
+      "band": "G_impossible",
+      "depth": 1,
+      "min_steps": 1,
+      "rep": 3,
+      "correct": false,
+      "verdict": "aucun_marqueur",
+      "answer": null,
+      "expected": null,
+      "steps": 17,
+      "decoy_calls": 6,
+      "stop_reason": "step_limit",
+      "errors": [
+        "decoy_call",
+        "decoy_call",
+        "decoy_call",
+        "decoy_call",
+        "decoy_call",
+        "decoy_call",
+        "expected_miss",
+        "expected_miss",
+        "expected_miss"
+      ],
+      "latency_s": 45.64,
+      "final_text": "",
+      "usage": {
+        "prompt_tokens": 7777,
+        "completion_tokens": 1154
+      }
+    },
+    {
+      "task_id": "G-01",
+      "band": "G_impossible",
+      "depth": 1,
+      "min_steps": 1,
+      "rep": 4,
+      "correct": false,
+      "verdict": "aucun_marqueur",
+      "answer": null,
+      "expected": null,
+      "steps": 18,
+      "decoy_calls": 6,
+      "stop_reason": "step_limit",
+      "errors": [
+        "expected_miss",
+        "expected_miss",
+        "expected_miss",
+        "decoy_call",
+        "decoy_call",
+        "decoy_call",
+        "decoy_call",
+        "decoy_call",
+        "decoy_call"
+      ],
+      "latency_s": 45.03,
+      "final_text": "",
+      "usage": {
+        "prompt_tokens": 8180,
+        "completion_tokens": 1181
+      }
+    },
+    {
+      "task_id": "G-01",
+      "band": "G_impossible",
+      "depth": 1,
+      "min_steps": 1,
+      "rep": 5,
+      "correct": false,
+      "verdict": "aucun_marqueur",
+      "answer": null,
+      "expected": null,
+      "steps": 18,
+      "decoy_calls": 7,
+      "stop_reason": "step_limit",
+      "errors": [
+        "decoy_call",
+        "expected_miss",
+        "expected_miss",
+        "expected_miss",
+        "decoy_call",
+        "decoy_call",
+        "decoy_call",
+        "decoy_call",
+        "decoy_call",
+        "decoy_call"
+      ],
+      "latency_s": 44.23,
+      "final_text": "",
+      "usage": {
+        "prompt_tokens": 8188,
+        "completion_tokens": 1244
+      }
+    },
+    {
+      "task_id": "G-02",
+      "band": "G_impossible",
+      "depth": 1,
+      "min_steps": 1,
+      "rep": 1,
+      "correct": true,
+      "verdict": "impossible_signale",
+      "answer": "AUCUNE DATE DE COMMANDE NI DE LIVRAISON N'EST DISPONIBLE DANS LE SYSTEME POUR CALCULER LE DELAI MOYEN CONSTATE",
+      "expected": null,
+      "steps": 9,
+      "decoy_calls": 4,
+      "stop_reason": "ok",
+      "errors": [
+        "decoy_call",
+        "decoy_call",
+        "decoy_call",
+        "decoy_call"
+      ],
+      "latency_s": 74.5,
+      "final_text": "J'ai examiné les données disponibles pour le client CLI-021 :\n\n- **Commandes** : CMD-0035 (statut « livrée ») et CMD-9001 (statut « en préparation »).\n- **Fiche client** (CLI-021) : nom et magasin uniquement, aucune donnée de délai.\n- **Informations de livraison** (CMD-0035, CMD-9001) : transporteur (Geodis) et numéro de suivi seulement.\n- **Factures** : numéro et statut de paiement seulement.\n\nAucun des outils ne fournit de date de commande ni de date de livraison, or c'est la seule façon de calculer un délai de livraison « constaté » (effectif). Le délai de livraison présent dans le système est celui des fournisseurs (délai contractuel/prévisionnel), qui ne correspond pas au délai constaté par client.\n\nIMPOSSIBLE: aucune date de commande ni de livraison n'est disponible dans le système pour calculer le délai moyen constaté",
+      "usage": {
+        "prompt_tokens": 21904,
+        "completion_tokens": 1978
+      }
+    },
+    {
+      "task_id": "G-02",
+      "band": "G_impossible",
+      "depth": 1,
+      "min_steps": 1,
+      "rep": 2,
+      "correct": true,
+      "verdict": "impossible_signale",
+      "answer": "AUCUNE DATE DE COMMANDE OU DE LIVRAISON N'EST DISPONIBLE DANS LE SYSTEME POUR CALCULER UN DELAI CONSTATE",
+      "expected": null,
+      "steps": 9,
+      "decoy_calls": 4,
+      "stop_reason": "ok",
+      "errors": [
+        "decoy_call",
+        "decoy_call",
+        "decoy_call",
+        "decoy_call"
+      ],
+      "latency_s": 88.89,
+      "final_text": "Le système ne fournit aucune date de commande ni de livraison, et l'information de transport (get_livraison) ne contient que le transporteur et le numéro de suivi. Il est donc impossible de calculer un délai moyen de livraison constaté.\n\nIMPOSSIBLE: aucune date de commande ou de livraison n'est disponible dans le système pour calculer un délai constaté",
+      "usage": {
+        "prompt_tokens": 24508,
+        "completion_tokens": 1802
+      }
+    },
+    {
+      "task_id": "G-02",
+      "band": "G_impossible",
+      "depth": 1,
+      "min_steps": 1,
+      "rep": 3,
+      "correct": true,
+      "verdict": "impossible_signale",
+      "answer": "AUCUNE DATE DE COMMANDE NI DE LIVRAISON EFFECTIVE N'EST DISPONIBLE DANS LE SYSTEME POUR LE CLIENT CLI-021, IMPOSSIBLE DE",
+      "expected": null,
+      "steps": 8,
+      "decoy_calls": 4,
+      "stop_reason": "ok",
+      "errors": [
+        "decoy_call",
+        "decoy_call",
+        "decoy_call",
+        "decoy_call"
+      ],
+      "latency_s": 64.56,
+      "final_text": "J'ai examiné toutes les données disponibles pour le client CLI-021 et ses deux commandes :\n\n- **CMD-0035** (statut : livrée) → get_livraison : transporteur Geodis, suivi TRK00359021\n- **CMD-9001** (statut : en préparation) → get_livraison : transporteur Geodis, suivi TRK90019021\n\nAucun des outils (get_livraison, get_commande, get_facture, get_client) ne renvoie de **date de commande** ni de **date de livraison effective**. Or le « délai de livraison constaté » suppose précisément ces dates pour pouvoir mesurer la durée réelle. Seule une information de délai standard existe dans le système (celle des fournisseurs), mais elle ne constitue pas un délai « constaté » par client.\n\nLa donnée nécessaire (dates de livraison réelles) est absente du système, il est donc impossible de calculer la moyenne demandée.\n\nIMPOSSIBLE: aucune date de commande ni de livraison effective n'est disponible dans le système pour le client CLI-021, impossible de calculer un délai constaté.",
+      "usage": {
+        "prompt_tokens": 15963,
+        "completion_tokens": 1629
+      }
+    },
+    {
+      "task_id": "G-02",
+      "band": "G_impossible",
+      "depth": 1,
+      "min_steps": 1,
+      "rep": 4,
+      "correct": true,
+      "verdict": "impossible_signale",
+      "answer": "AUCUNE DATE DE COMMANDE OU DE LIVRAISON DISPONIBLE DANS LE SYSTEME POUR CALCULER UN DELAI CONSTATE",
+      "expected": null,
+      "steps": 8,
+      "decoy_calls": 4,
+      "stop_reason": "ok",
+      "errors": [
+        "decoy_call",
+        "decoy_call",
+        "decoy_call",
+        "decoy_call"
+      ],
+      "latency_s": 58.76,
+      "final_text": "Le système ne fournit aucune date de commande ni de livraison : `get_livraison` ne renvoie que le transporteur et le numéro de suivi, et `get_commande` ne contient aucun champ de date. Il est donc impossible de calculer un délai moyen constaté.\n\nIMPOSSIBLE: aucune date de commande ou de livraison disponible dans le système pour calculer un délai constaté",
+      "usage": {
+        "prompt_tokens": 18378,
+        "completion_tokens": 897
+      }
+    },
+    {
+      "task_id": "G-02",
+      "band": "G_impossible",
+      "depth": 1,
+      "min_steps": 1,
+      "rep": 5,
+      "correct": true,
+      "verdict": "impossible_signale",
+      "answer": "LES DATES DE PASSATION ET DE LIVRAISON DES COMMANDES NE SONT PAS DISPONIBLES DANS LE SYSTEME ; SEUL LE TRANSPORTEUR ET L",
+      "expected": null,
+      "steps": 9,
+      "decoy_calls": 4,
+      "stop_reason": "ok",
+      "errors": [
+        "decoy_call",
+        "decoy_call",
+        "decoy_call",
+        "decoy_call"
+      ],
+      "latency_s": 52.47,
+      "final_text": "Les données disponibles pour le client CLI-021 sont limitées :\n\n- Il a 2 commandes : CMD-0035 (livrée) et CMD-9001 (en préparation).\n- La fiche livraison ne donne que le transporteur (Geodis) et le numéro de suivi, sans dates de commande ni de livraison.\n- La fiche commande ne contient aucune date.\n\nSans dates de commande et de livraison réelles, il est impossible de calculer un délai de livraison « constaté ».\n\nIMPOSSIBLE: Les dates de passation et de livraison des commandes ne sont pas disponibles dans le système ; seul le transporteur et le numéro de suivi sont fournis, ce qui ne permet pas de calculer un délai constaté.",
+      "usage": {
+        "prompt_tokens": 20440,
+        "completion_tokens": 1213
+      }
+    },
+    {
+      "task_id": "G-03",
+      "band": "G_impossible",
+      "depth": 1,
+      "min_steps": 1,
+      "rep": 1,
+      "correct": true,
+      "verdict": "impossible_signale",
+      "answer": "LA REFERENCE REF-999 N'EXISTE PAS DANS LA BASE DE DONNEES (PRODUIT ET STOCK INCONNUS)",
+      "expected": null,
+      "steps": 3,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [
+        "tool_lookup_miss",
+        "tool_lookup_miss"
+      ],
+      "latency_s": 19.67,
+      "final_text": "La référence REF-999 est inconnue du système (aucun produit, aucun stock global).\n\nIMPOSSIBLE: la référence REF-999 n'existe pas dans la base de données (produit et stock inconnus)",
+      "usage": {
+        "prompt_tokens": 7127,
+        "completion_tokens": 245
+      }
+    },
+    {
+      "task_id": "G-03",
+      "band": "G_impossible",
+      "depth": 1,
+      "min_steps": 1,
+      "rep": 2,
+      "correct": true,
+      "verdict": "impossible_signale",
+      "answer": "LA REFERENCE REF-999 N'EXISTE PAS DANS LA BASE DE DONNEES",
+      "expected": null,
+      "steps": 4,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [
+        "tool_lookup_miss",
+        "tool_lookup_miss",
+        "tool_lookup_miss"
+      ],
+      "latency_s": 26.14,
+      "final_text": "La référence REF-999 est inconnue dans le système (fiche produit, stock global et stocks d'entrepôts renvoient tous « référence inconnue »).\n\nIMPOSSIBLE: la référence REF-999 n'existe pas dans la base de données",
+      "usage": {
+        "prompt_tokens": 9722,
+        "completion_tokens": 471
+      }
+    },
+    {
+      "task_id": "G-03",
+      "band": "G_impossible",
+      "depth": 1,
+      "min_steps": 1,
+      "rep": 3,
+      "correct": true,
+      "verdict": "impossible_signale",
+      "answer": "LA REFERENCE REF-999 EST INCONNUE DU SYSTEME, AUCUN STOCK DISPONIBLE",
+      "expected": null,
+      "steps": 2,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [
+        "tool_lookup_miss",
+        "tool_lookup_miss"
+      ],
+      "latency_s": 13.38,
+      "final_text": "La référence REF-999 n'existe pas dans le système (fiche produit et stock inconnus).\n\nIMPOSSIBLE: la référence REF-999 est inconnue du système, aucun stock disponible",
+      "usage": {
+        "prompt_tokens": 7035,
+        "completion_tokens": 289
+      }
+    },
+    {
+      "task_id": "G-03",
+      "band": "G_impossible",
+      "depth": 1,
+      "min_steps": 1,
+      "rep": 4,
+      "correct": true,
+      "verdict": "impossible_signale",
+      "answer": "LA REFERENCE REF-999 N'EXISTE PAS DANS LA BASE DE DONNEES",
+      "expected": null,
+      "steps": 7,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [
+        "tool_lookup_miss",
+        "tool_lookup_miss",
+        "tool_lookup_miss",
+        "tool_lookup_miss",
+        "tool_lookup_miss",
+        "tool_lookup_miss"
+      ],
+      "latency_s": 16.44,
+      "final_text": "La référence REF-999 n'existe pas dans le système : elle est inconnue aussi bien dans la fiche produit que dans le stock global et dans chacun des quatre entrepôts (ENT-NORD, ENT-SUD, ENT-EST, ENT-OUEST).\n\nIMPOSSIBLE: la reference REF-999 n'existe pas dans la base de donnees\n\nREPONSE: 0",
+      "usage": {
+        "prompt_tokens": 7403,
+        "completion_tokens": 468
+      }
+    },
+    {
+      "task_id": "G-03",
+      "band": "G_impossible",
+      "depth": 1,
+      "min_steps": 1,
+      "rep": 5,
+      "correct": true,
+      "verdict": "impossible_signale",
+      "answer": "LA REFERENCE REF-999 EST INCONNUE DU SYSTEME (AUCUNE FICHE PRODUIT, AUCUN STOCK RETROUVE)",
+      "expected": null,
+      "steps": 7,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [
+        "tool_lookup_miss",
+        "tool_lookup_miss",
+        "tool_lookup_miss",
+        "tool_lookup_miss",
+        "tool_lookup_miss",
+        "tool_lookup_miss"
+      ],
+      "latency_s": 17.01,
+      "final_text": "La référence REF-999 n'existe pas dans le système : ni fiche produit, ni stock global, ni stock dans aucun des quatre entrepôts (ENT-NORD, ENT-SUD, ENT-EST, ENT-OUEST) ne la mentionne.\n\nIMPOSSIBLE: la reference REF-999 est inconnue du systeme (aucune fiche produit, aucun stock retrouve)",
+      "usage": {
+        "prompt_tokens": 7403,
+        "completion_tokens": 523
+      }
+    },
+    {
+      "task_id": "G-04",
+      "band": "G_impossible",
+      "depth": 1,
+      "min_steps": 1,
+      "rep": 1,
+      "correct": true,
+      "verdict": "impossible_signale",
+      "answer": "AUCUNE DONNEE SUR LES RETOURS PRODUITS N'EST DISPONIBLE DANS LE SYSTEME (AUCUN OUTIL NI CHAMP DEDIE AUX RETOURS)",
+      "expected": null,
+      "steps": 5,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 34.55,
+      "final_text": "Les outils disponibles ne permettent pas de consulter les retours produits : il n'existe aucun outil dédié aux retours, et les commandes du magasin MAG-101 (CMD-0045, CMD-0046, CMD-0047) ne contiennent aucune information de retour.\n\nIMPOSSIBLE: aucune donnée sur les retours produits n'est disponible dans le système (aucun outil ni champ dédié aux retours)",
+      "usage": {
+        "prompt_tokens": 9994,
+        "completion_tokens": 1053
+      }
+    },
+    {
+      "task_id": "G-04",
+      "band": "G_impossible",
+      "depth": 1,
+      "min_steps": 1,
+      "rep": 2,
+      "correct": true,
+      "verdict": "impossible_signale",
+      "answer": "AUCUNE DONNEE SUR LES RETOURS PRODUITS N'EST DISPONIBLE DANS LE SYSTEME (AUCUN OUTIL NE PERMET DE CONSULTER LES RETOURS)",
+      "expected": null,
+      "steps": 5,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 38.1,
+      "final_text": "Aucun outil ne permet d'accéder aux données de retours produits. Les commandes du magasin MAG-101 (CMD-0045, CMD-0046, CMD-0047) n'ont pas de statut de retour, et aucune fonction ne permet de consulter les retours produits.\n\nIMPOSSIBLE: aucune donnée sur les retours produits n'est disponible dans le système (aucun outil ne permet de consulter les retours)",
+      "usage": {
+        "prompt_tokens": 9994,
+        "completion_tokens": 1101
+      }
+    },
+    {
+      "task_id": "G-04",
+      "band": "G_impossible",
+      "depth": 1,
+      "min_steps": 1,
+      "rep": 3,
+      "correct": true,
+      "verdict": "impossible_signale",
+      "answer": "AUCUNE DONNEE SUR LES RETOURS PRODUITS N'EST DISPONIBLE DANS LE SYSTEME (NI DANS LA FICHE MAGASIN, NI DANS LES COMMANDES",
+      "expected": null,
+      "steps": 11,
+      "decoy_calls": 6,
+      "stop_reason": "ok",
+      "errors": [
+        "decoy_call",
+        "decoy_call",
+        "decoy_call",
+        "decoy_call",
+        "decoy_call",
+        "decoy_call"
+      ],
+      "latency_s": 59.18,
+      "final_text": "J'ai vérifié toutes les données disponibles pour le magasin MAG-101 : sa fiche magasin, ses 3 commandes (CMD-0045, CMD-0046, CMD-0047), leurs livraisons et factures. Aucune de ces données ne contient d'information sur des retours produits, et aucun outil ne permet d'interroger un registre de retours.\n\nIMPOSSIBLE: Aucune donnée sur les retours produits n'est disponible dans le système (ni dans la fiche magasin, ni dans les commandes, livraisons ou factures du magasin MAG-101).",
+      "usage": {
+        "prompt_tokens": 13344,
+        "completion_tokens": 1423
+      }
+    },
+    {
+      "task_id": "G-04",
+      "band": "G_impossible",
+      "depth": 1,
+      "min_steps": 1,
+      "rep": 4,
+      "correct": true,
+      "verdict": "impossible_signale",
+      "answer": "AUCUNE DONNEE DE RETOURS PRODUITS N'EST DISPONIBLE DANS LE SYSTEME POUR LE MAGASIN MAG-101",
+      "expected": null,
+      "steps": 8,
+      "decoy_calls": 3,
+      "stop_reason": "ok",
+      "errors": [
+        "decoy_call",
+        "decoy_call",
+        "decoy_call"
+      ],
+      "latency_s": 35.13,
+      "final_text": "J'ai vérifié les informations disponibles pour le magasin MAG-101 :\n\n- Fiche magasin : aucun champ relatif aux retours.\n- Ses 3 commandes (CMD-0045, CMD-0046, CMD-0047) : statuts « en_preparation » et « expediee », sans mention de retour.\n- Les livraisons et autres fiches associées ne contiennent aucune donnée de retour produit.\n\nAucun outil ne permet de consulter des retours produits (ni par magasin, ni par commande). La donnée demandée n'existe pas dans le système.\n\nIMPOSSIBLE: aucune donnée de retours produits n'est disponible dans le système pour le magasin MAG-101",
+      "usage": {
+        "prompt_tokens": 7858,
+        "completion_tokens": 1201
+      }
+    },
+    {
+      "task_id": "G-04",
+      "band": "G_impossible",
+      "depth": 1,
+      "min_steps": 1,
+      "rep": 5,
+      "correct": true,
+      "verdict": "impossible_signale",
+      "answer": "LE SYSTEME NE CONTIENT AUCUNE DONNEE SUR LES RETOURS PRODUITS (AUCUN OUTIL NI CHAMP CONCERNE LES RETOURS)",
+      "expected": null,
+      "steps": 5,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 41.81,
+      "final_text": "Aucun outil ne permet de consulter les retours produits (aucune donnée sur les retours dans les fiches magasins, commandes ou livraisons).\n\nIMPOSSIBLE: le systeme ne contient aucune donnee sur les retours produits (aucun outil ni champ concerne les retours)",
+      "usage": {
+        "prompt_tokens": 9994,
+        "completion_tokens": 1032
+      }
+    },
+    {
+      "task_id": "H-01",
+      "band": "H_contexte",
+      "depth": 12,
+      "min_steps": 12,
+      "rep": 1,
+      "correct": false,
+      "verdict": "aucune_reponse",
+      "answer": null,
+      "expected": 114852.91,
+      "steps": 12,
+      "decoy_calls": 0,
+      "stop_reason": "no_marker",
+      "errors": [],
+      "latency_s": 145.62,
+      "final_text": "",
+      "usage": {
+        "prompt_tokens": 15577,
+        "completion_tokens": 7994
+      }
+    },
+    {
+      "task_id": "H-01",
+      "band": "H_contexte",
+      "depth": 12,
+      "min_steps": 12,
+      "rep": 2,
+      "correct": false,
+      "verdict": "aucune_reponse",
+      "answer": null,
+      "expected": 114852.91,
+      "steps": 12,
+      "decoy_calls": 0,
+      "stop_reason": "no_marker",
+      "errors": [],
+      "latency_s": 288.26,
+      "final_text": "",
+      "usage": {
+        "prompt_tokens": 15577,
+        "completion_tokens": 8141
+      }
+    },
+    {
+      "task_id": "H-01",
+      "band": "H_contexte",
+      "depth": 12,
+      "min_steps": 12,
+      "rep": 3,
+      "correct": false,
+      "verdict": "aucune_reponse",
+      "answer": null,
+      "expected": 114852.91,
+      "steps": 13,
+      "decoy_calls": 0,
+      "stop_reason": "no_marker",
+      "errors": [],
+      "latency_s": 342.65,
+      "final_text": "",
+      "usage": {
+        "prompt_tokens": 20730,
+        "completion_tokens": 12636
+      }
+    },
+    {
+      "task_id": "H-01",
+      "band": "H_contexte",
+      "depth": 12,
+      "min_steps": 12,
+      "rep": 4,
+      "correct": false,
+      "verdict": "valeur_fausse",
+      "answer": "114058.15",
+      "expected": 114852.91,
+      "steps": 13,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 403.59,
+      "final_text": "Vérification des quantités par référence (80 lignes, 8 références × 10 répétitions... non, 10 références × 8 lignes) :\n\n- REF-083 : 2+1+3+4+3+4+2+4 = 23 → 23 × 865,08 = 19 896,84\n- REF-005 : 2+1+2+2+3+4+3+4 = 21 → 21 × 812,31 = 17 058,51\n- REF-044 : 2+3+1+3+4+4+3+3 = 23 → 23 × 169,13 = 3 889,99\n- REF-008 : 2+1+1+4+2+3+3+2 = 18 → 18 × 366,60 = 6 598,80\n- REF-088 : 4+1+2+3+2+1+2+2 = 17 → 17 × 798,82 = 13 579,94\n- REF-006 : 4+2+1+3+3+2+4+3 = 22 → 22 × 714,32 = 15 715,04\n- REF-066 : 1+1+1+4+4+2+2+4 = 19 → 19 × 671,57 = 12 759,83\n- REF-017 : 3+1+4+2+3+4+4+4 = 25 → 25 × 318,96 = 7 974,00\n- REF-071 : 4+1+2+2+1+4+2+2 = 18 → 18 × 397,38 = 7 152,84\n- REF-026 : 4+1+4+4+2+1+4+1 = 21 → 21 × 449,16 = 9 432,36\n\nTotal = 114 058,15 € (confirmé par le premier calcul ; le second contenait une erratum sur REF-026).\n\nREPONSE: 114058.15",
+      "usage": {
+        "prompt_tokens": 20611,
+        "completion_tokens": 10606
+      }
+    },
+    {
+      "task_id": "H-01",
+      "band": "H_contexte",
+      "depth": 12,
+      "min_steps": 12,
+      "rep": 5,
+      "correct": false,
+      "verdict": "aucune_reponse",
+      "answer": null,
+      "expected": 114852.91,
+      "steps": 1,
+      "decoy_calls": 0,
+      "stop_reason": "no_marker",
+      "errors": [],
+      "latency_s": 166.58,
+      "final_text": "",
+      "usage": {
+        "prompt_tokens": 6052,
+        "completion_tokens": 4182
+      }
+    },
+    {
+      "task_id": "H-02",
+      "band": "H_contexte",
+      "depth": 1,
+      "min_steps": 1,
+      "rep": 1,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "209",
+      "expected": 209,
+      "steps": 2,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 166.55,
+      "final_text": "La commande CMD-9001 comporte bien 80 lignes. La somme des quantités de toutes les lignes donne :\n\n- Lignes 1–10 : 28\n- Lignes 11–20 : 13\n- Lignes 21–30 : 21\n- Lignes 31–40 : 31\n- Lignes 41–50 : 27\n- Lignes 51–60 : 29\n- Lignes 61–70 : 31\n- Lignes 71–80 : 29\n\nTotal = 209 unités.\n\nREPONSE: 209",
+      "usage": {
+        "prompt_tokens": 10030,
+        "completion_tokens": 5567
+      }
+    },
+    {
+      "task_id": "H-02",
+      "band": "H_contexte",
+      "depth": 1,
+      "min_steps": 1,
+      "rep": 2,
+      "correct": false,
+      "verdict": "aucune_reponse",
+      "answer": null,
+      "expected": 209,
+      "steps": 2,
+      "decoy_calls": 0,
+      "stop_reason": "no_marker",
+      "errors": [],
+      "latency_s": 168.89,
+      "final_text": "",
+      "usage": {
+        "prompt_tokens": 10030,
+        "completion_tokens": 5210
+      }
+    },
+    {
+      "task_id": "H-02",
+      "band": "H_contexte",
+      "depth": 1,
+      "min_steps": 1,
+      "rep": 3,
+      "correct": false,
+      "verdict": "valeur_fausse",
+      "answer": "201",
+      "expected": 209,
+      "steps": 2,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 190.96,
+      "final_text": "La commande CMD-9001 contient bien 80 lignes. J'ai additionné les quantités de toutes les lignes :\n\n- Lignes 1–10 : 28\n- Lignes 11–20 : 13\n- Lignes 21–30 : 21\n- Lignes 31–40 : 31\n- Lignes 41–50 : 27\n- Lignes 51–60 : 27\n- Lignes 61–70 : 33\n- Lignes 71–80 : 21\n\nTotal : 201 unités.\n\nREPONSE: 201",
+      "usage": {
+        "prompt_tokens": 10026,
+        "completion_tokens": 4006
+      }
+    },
+    {
+      "task_id": "H-02",
+      "band": "H_contexte",
+      "depth": 1,
+      "min_steps": 1,
+      "rep": 4,
+      "correct": false,
+      "verdict": "aucune_reponse",
+      "answer": null,
+      "expected": 209,
+      "steps": 2,
+      "decoy_calls": 0,
+      "stop_reason": "http_500",
+      "errors": [
+        "bad_json_args",
+        "http_500"
+      ],
+      "latency_s": 116.32,
+      "final_text": "",
+      "usage": {
+        "prompt_tokens": 6058,
+        "completion_tokens": 4159
+      }
+    },
+    {
+      "task_id": "H-02",
+      "band": "H_contexte",
+      "depth": 1,
+      "min_steps": 1,
+      "rep": 5,
+      "correct": false,
+      "verdict": "valeur_fausse",
+      "answer": "211",
+      "expected": 209,
+      "steps": 2,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 64.72,
+      "final_text": "J'ai récupéré la commande CMD-9001 et additionné les quantités de ses 80 lignes.\n\nVérification par référence :\n- REF-083 : 23\n- REF-005 : 24\n- REF-044 : 23\n- REF-008 : 22\n- REF-088 : 17\n- REF-006 : 22\n- REF-066 : 25\n- REF-017 : 25\n- REF-071 : 21\n- REF-026 : 24\n\nTotal : 23+24+23+22+17+22+25+25+21+24 = 211\n\nREPONSE: 211",
+      "usage": {
+        "prompt_tokens": 10030,
+        "completion_tokens": 2508
+      }
+    },
+    {
+      "task_id": "H-03",
+      "band": "H_contexte",
+      "depth": 1,
+      "min_steps": 1,
+      "rep": 1,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "21",
+      "expected": 21,
+      "steps": 2,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 58.56,
+      "final_text": "La commande CMD-9001 comporte bien 80 lignes, dont 8 lignes pour la référence REF-005 (quantités : 2, 1, 2, 2, 3, 4, 3, 4), soit un total de 21 unités.\n\nREPONSE: 21",
+      "usage": {
+        "prompt_tokens": 10003,
+        "completion_tokens": 772
+      }
+    },
+    {
+      "task_id": "H-03",
+      "band": "H_contexte",
+      "depth": 1,
+      "min_steps": 1,
+      "rep": 2,
+      "correct": false,
+      "verdict": "valeur_fausse",
+      "answer": "25",
+      "expected": 21,
+      "steps": 2,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 35.58,
+      "final_text": "La commande CMD-9001 contient 9 lignes pour la référence REF-005, avec des quantités de 2, 1, 2, 2, 3, 4, 3, 4 et 4, soit un total de 25 unités.\n\nREPONSE: 25",
+      "usage": {
+        "prompt_tokens": 9945,
+        "completion_tokens": 1581
+      }
+    },
+    {
+      "task_id": "H-03",
+      "band": "H_contexte",
+      "depth": 1,
+      "min_steps": 1,
+      "rep": 3,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "21",
+      "expected": 21,
+      "steps": 2,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 34.28,
+      "final_text": "La commande CMD-9001 contient 8 lignes pour la référence REF-005 avec les quantités suivantes : 2, 1, 2, 2, 3, 4, 3 et 4.\n\nLa somme de ces quantités donne : 2 + 1 + 2 + 2 + 3 + 4 + 3 + 4 = 21.\n\nREPONSE: 21",
+      "usage": {
+        "prompt_tokens": 9891,
+        "completion_tokens": 483
+      }
+    },
+    {
+      "task_id": "H-03",
+      "band": "H_contexte",
+      "depth": 1,
+      "min_steps": 1,
+      "rep": 4,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "21",
+      "expected": 21,
+      "steps": 2,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 29.03,
+      "final_text": "La commande CMD-9001 comporte bien 80 lignes, et la référence REF-005 y apparaît 8 fois avec les quantités suivantes : 2 + 1 + 2 + 2 + 3 + 4 + 3 + 4 = 21 unités.\n\nREPONSE: 21",
+      "usage": {
+        "prompt_tokens": 9891,
+        "completion_tokens": 486
+      }
+    },
+    {
+      "task_id": "H-03",
+      "band": "H_contexte",
+      "depth": 1,
+      "min_steps": 1,
+      "rep": 5,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "21",
+      "expected": 21,
+      "steps": 1,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 20.93,
+      "final_text": "La somme des quantités de la référence REF-005 dans la commande CMD-9001 est : 2 + 1 + 2 + 2 + 3 + 4 + 3 + 4 = 21.\n\nREPONSE: 21",
+      "usage": {
+        "prompt_tokens": 6062,
+        "completion_tokens": 937
+      }
+    },
+    {
+      "task_id": "H-04",
+      "band": "H_contexte",
+      "depth": 1,
+      "min_steps": 1,
+      "rep": 1,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "REF-017",
+      "expected": "REF-017",
+      "steps": 1,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 43.89,
+      "final_text": "J'ai analysé les 80 lignes de la commande CMD-9001 et cumulé les quantités par référence :\n\n- REF-083 : 23\n- REF-005 : 21\n- REF-044 : 23\n- REF-008 : 18\n- REF-088 : 17\n- REF-006 : 22\n- REF-066 : 19\n- **REF-017 : 25**\n- REF-071 : 20\n- REF-026 : 21\n\nLa référence avec la quantité cumulée la plus élevée est REF-017 (25 unités).\n\nREPONSE: REF-017",
+      "usage": {
+        "prompt_tokens": 6058,
+        "completion_tokens": 2375
+      }
+    },
+    {
+      "task_id": "H-04",
+      "band": "H_contexte",
+      "depth": 1,
+      "min_steps": 1,
+      "rep": 2,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "REF-017",
+      "expected": "REF-017",
+      "steps": 1,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 80.93,
+      "final_text": "J'ai récupéré les 80 lignes de la commande CMD-9001 et cumulé les quantités par référence :\n\n- REF-083 : 23\n- REF-005 : 21\n- REF-044 : 23\n- REF-008 : 18\n- REF-088 : 17\n- REF-006 : 22\n- REF-066 : 19\n- REF-017 : **25**\n- REF-071 : 20\n- REF-026 : 21\n\n(Total vérifié : 209 unités sur 80 lignes.)\n\nLa référence avec la quantité cumulée la plus élevée est REF-017 (25 unités).\n\nREPONSE: REF-017",
+      "usage": {
+        "prompt_tokens": 6058,
+        "completion_tokens": 2770
+      }
+    },
+    {
+      "task_id": "H-04",
+      "band": "H_contexte",
+      "depth": 1,
+      "min_steps": 1,
+      "rep": 3,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "REF-017",
+      "expected": "REF-017",
+      "steps": 14,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 207.14,
+      "final_text": "Calcul des quantités cumulées par référence sur les 80 lignes :\n\n- REF-083 : 2+1+3+4+3+4+2+4 = 23\n- REF-005 : 2+1+2+2+3+4+3+4 = 21\n- REF-044 : 2+3+1+3+4+4+3+3 = 23\n- REF-008 : 2+1+1+4+2+3+3+2 = 18\n- REF-088 : 4+1+2+3+2+1+2+2 = 17\n- REF-006 : 4+2+1+3+3+2+4+3 = 22\n- REF-066 : 1+1+1+4+4+2+2+4 = 19\n- REF-017 : 3+1+4+2+3+4+4+4 = 25\n- REF-071 : 4+1+2+2+1+4+4+2 = 20\n- REF-026 : 4+1+4+4+2+1+4+1 = 21\n\nLa référence dont la quantité cumulée est la plus élevée est REF-017 (25 unités).\n\nREPONSE: REF-017",
+      "usage": {
+        "prompt_tokens": 14508,
+        "completion_tokens": 7326
+      }
+    },
+    {
+      "task_id": "H-04",
+      "band": "H_contexte",
+      "depth": 1,
+      "min_steps": 1,
+      "rep": 4,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "REF-017",
+      "expected": "REF-017",
+      "steps": 1,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 85.28,
+      "final_text": "J'ai récupéré la commande CMD-9001 et cumulé les quantités par référence :\n\n- REF-083 : 23\n- REF-005 : 21\n- REF-044 : 23\n- REF-008 : 18\n- REF-088 : 17\n- REF-006 : 22\n- REF-066 : 19\n- REF-017 : 25\n- REF-071 : 20\n- REF-026 : 21\n\nLa référence dont la quantité cumulée est la plus élevée est REF-017 (25 unités).\n\nREPONSE: REF-017",
+      "usage": {
+        "prompt_tokens": 6058,
+        "completion_tokens": 3008
+      }
+    },
+    {
+      "task_id": "H-04",
+      "band": "H_contexte",
+      "depth": 1,
+      "min_steps": 1,
+      "rep": 5,
+      "correct": false,
+      "verdict": "aucune_reponse",
+      "answer": null,
+      "expected": "REF-017",
+      "steps": 1,
+      "decoy_calls": 0,
+      "stop_reason": "no_marker",
+      "errors": [],
+      "latency_s": 144.78,
+      "final_text": "",
+      "usage": {
+        "prompt_tokens": 6058,
+        "completion_tokens": 4217
+      }
+    },
+    {
+      "task_id": "I-01",
+      "band": "I_controle",
+      "depth": 1,
+      "min_steps": 1,
+      "rep": 1,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "510.59",
+      "expected": 510.59,
+      "steps": 1,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 67.65,
+      "final_text": "Le prix unitaire catalogue de la référence REF-020 (Nordis 2, famille Poignée) est de 510,59 €.\n\nREPONSE: 510.59",
+      "usage": {
+        "prompt_tokens": 4673,
+        "completion_tokens": 125
+      }
+    },
+    {
+      "task_id": "I-01",
+      "band": "I_controle",
+      "depth": 1,
+      "min_steps": 1,
+      "rep": 2,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "510.59",
+      "expected": 510.59,
+      "steps": 1,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 4.77,
+      "final_text": "Le prix unitaire catalogue de la référence REF-020 (Nordis 2, famille Poignée) est de 510,59 €.\n\nREPONSE: 510.59",
+      "usage": {
+        "prompt_tokens": 4673,
+        "completion_tokens": 130
+      }
+    },
+    {
+      "task_id": "I-01",
+      "band": "I_controle",
+      "depth": 1,
+      "min_steps": 1,
+      "rep": 3,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "510.59",
+      "expected": 510.59,
+      "steps": 1,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 6.42,
+      "final_text": "Le prix unitaire catalogue de la référence REF-020 (Nordis 2, famille Poignée) est de 510,59 €.\n\nREPONSE: 510.59",
+      "usage": {
+        "prompt_tokens": 4673,
+        "completion_tokens": 199
+      }
+    },
+    {
+      "task_id": "I-01",
+      "band": "I_controle",
+      "depth": 1,
+      "min_steps": 1,
+      "rep": 4,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "510.59",
+      "expected": 510.59,
+      "steps": 1,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 6.56,
+      "final_text": "Le prix unitaire catalogue de la référence REF-020 (Nordis 2, famille Poignée) est de 510.59.\n\nREPONSE: 510.59",
+      "usage": {
+        "prompt_tokens": 4673,
+        "completion_tokens": 136
+      }
+    },
+    {
+      "task_id": "I-01",
+      "band": "I_controle",
+      "depth": 1,
+      "min_steps": 1,
+      "rep": 5,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "510.59",
+      "expected": 510.59,
+      "steps": 1,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 5.7,
+      "final_text": "Le prix unitaire catalogue de la référence REF-020 (Nordis 2, famille Poignée) est de 510,59 €.\n\nREPONSE: 510.59",
+      "usage": {
+        "prompt_tokens": 4673,
+        "completion_tokens": 121
+      }
+    },
+    {
+      "task_id": "I-02",
+      "band": "I_controle",
+      "depth": 2,
+      "min_steps": 2,
+      "rep": 1,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "ITALIE",
+      "expected": "Italie",
+      "steps": 2,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 8.48,
+      "final_text": "Le fournisseur de la référence REF-020 (Nordis 2) est FRN-018, situé en Italie.\n\nREPONSE: Italie",
+      "usage": {
+        "prompt_tokens": 7149,
+        "completion_tokens": 202
+      }
+    },
+    {
+      "task_id": "I-02",
+      "band": "I_controle",
+      "depth": 2,
+      "min_steps": 2,
+      "rep": 2,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "ITALIE",
+      "expected": "Italie",
+      "steps": 2,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 8.09,
+      "final_text": "Le fournisseur de la référence REF-020 (Nordis 2) est FRN-018, situé en Italie.\n\nREPONSE: Italie",
+      "usage": {
+        "prompt_tokens": 7149,
+        "completion_tokens": 214
+      }
+    },
+    {
+      "task_id": "I-02",
+      "band": "I_controle",
+      "depth": 2,
+      "min_steps": 2,
+      "rep": 3,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "ITALIE",
+      "expected": "Italie",
+      "steps": 2,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 7.67,
+      "final_text": "Le produit REF-020 (Nordis 2) est fourni par le fournisseur FRN-018, situé en Italie.\n\nREPONSE: Italie",
+      "usage": {
+        "prompt_tokens": 7149,
+        "completion_tokens": 194
+      }
+    },
+    {
+      "task_id": "I-02",
+      "band": "I_controle",
+      "depth": 2,
+      "min_steps": 2,
+      "rep": 4,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "ITALIE",
+      "expected": "Italie",
+      "steps": 2,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 6.64,
+      "final_text": "Le fournisseur de la référence REF-020 (Nordis 2) est le fournisseur FRN-018, situé en Italie.\n\nREPONSE: Italie",
+      "usage": {
+        "prompt_tokens": 7149,
+        "completion_tokens": 176
+      }
+    },
+    {
+      "task_id": "I-02",
+      "band": "I_controle",
+      "depth": 2,
+      "min_steps": 2,
+      "rep": 5,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "ITALIE",
+      "expected": "Italie",
+      "steps": 2,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 6.88,
+      "final_text": "Le produit REF-020 (Nordis 2) est fourni par le fournisseur FRN-018, situé en Italie.\n\nREPONSE: Italie",
+      "usage": {
+        "prompt_tokens": 7149,
+        "completion_tokens": 161
+      }
+    },
+    {
+      "task_id": "I-03",
+      "band": "I_controle",
+      "depth": 5,
+      "min_steps": 5,
+      "rep": 1,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "128",
+      "expected": 128,
+      "steps": 5,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 10.83,
+      "final_text": "Le stock réel de REF-020 dans les 4 entrepots est :\n- ENT-NORD : 50\n- ENT-SUD : 21\n- ENT-EST : 54\n- ENT-OUEST : 3\n\nSoit un total de 50 + 21 + 54 + 3 = 128 unités.\n\nREPONSE: 128",
+      "usage": {
+        "prompt_tokens": 7324,
+        "completion_tokens": 386
+      }
+    },
+    {
+      "task_id": "I-03",
+      "band": "I_controle",
+      "depth": 5,
+      "min_steps": 5,
+      "rep": 2,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "128",
+      "expected": 128,
+      "steps": 5,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 13.83,
+      "final_text": "Stock cumulé de REF-020 sur les 4 entrepots :\n- ENT-NORD : 50\n- ENT-SUD : 21\n- ENT-EST : 54\n- ENT-OUEST : 3\n\nTotal : 50 + 21 + 54 + 3 = 128\n\nREPONSE: 128",
+      "usage": {
+        "prompt_tokens": 7324,
+        "completion_tokens": 390
+      }
+    },
+    {
+      "task_id": "I-03",
+      "band": "I_controle",
+      "depth": 5,
+      "min_steps": 5,
+      "rep": 3,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "128",
+      "expected": 128,
+      "steps": 6,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 18.39,
+      "final_text": "Le stock cumulé de la référence REF-020 sur les 4 entrepôts est :\n- ENT-NORD : 50\n- ENT-SUD : 21\n- ENT-EST : 54\n- ENT-OUEST : 3\n\nTotal : 128\n\nREPONSE: 128",
+      "usage": {
+        "prompt_tokens": 10075,
+        "completion_tokens": 433
+      }
+    },
+    {
+      "task_id": "I-03",
+      "band": "I_controle",
+      "depth": 5,
+      "min_steps": 5,
+      "rep": 4,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "128",
+      "expected": 128,
+      "steps": 6,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 16.34,
+      "final_text": "Stock par entrepôt pour REF-020 :\n- ENT-NORD : 50\n- ENT-SUD : 21\n- ENT-EST : 54\n- ENT-OUEST : 3\n\nTotal : 128\n\nREPONSE: 128",
+      "usage": {
+        "prompt_tokens": 10075,
+        "completion_tokens": 431
+      }
+    },
+    {
+      "task_id": "I-03",
+      "band": "I_controle",
+      "depth": 5,
+      "min_steps": 5,
+      "rep": 5,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "128",
+      "expected": 128,
+      "steps": 6,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 21.52,
+      "final_text": "Stock cumulé de REF-020 sur les 4 entrepots : ENT-NORD (50) + ENT-SUD (21) + ENT-EST (54) + ENT-OUEST (3) = 128.\n\nREPONSE: 128",
+      "usage": {
+        "prompt_tokens": 10075,
+        "completion_tokens": 440
+      }
+    },
+    {
+      "task_id": "I-04",
+      "band": "I_controle",
+      "depth": 10,
+      "min_steps": 10,
+      "rep": 1,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "10795.28",
+      "expected": 10795.28,
+      "steps": 12,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [
+        "expected_miss",
+        "expected_miss",
+        "expected_miss"
+      ],
+      "latency_s": 29.56,
+      "final_text": "Calcul du total de la commande CMD-0036 :\n- REF-081 (Perle 3) : tarif négocié 134,66 × 3 = 403,98\n- REF-088 (Ambre 4) : tarif négocié 515,58 × 3 = 1546,74\n- REF-030 (Ombra 6) : pas de tarif négocié → catalogue 854,85 × 5 = 4274,25\n- REF-078 (Onyx 6) : pas de tarif négocié → catalogue 127,19 × 4 = 508,76\n- REF-005 (Lumia 5) : pas de tarif négocié → catalogue 812,31 × 5 = 4061,55\n\nTotal = 403,98 + 1546,74 + 4274,25 + 508,76 + 4061,55 = 10795,28\n\nREPONSE: 10795.28",
+      "usage": {
+        "prompt_tokens": 11698,
+        "completion_tokens": 1184
+      }
+    },
+    {
+      "task_id": "I-04",
+      "band": "I_controle",
+      "depth": 10,
+      "min_steps": 10,
+      "rep": 2,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "10795.28",
+      "expected": 10795.28,
+      "steps": 12,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [
+        "expected_miss",
+        "expected_miss",
+        "expected_miss"
+      ],
+      "latency_s": 45.89,
+      "final_text": "Calcul pour la commande CMD-0036 (client CLI-022) :\n\n| Réf | Prix unitaire | Tarif utilisé | Qté | Sous-total |\n|---|---|---|---|---|\n| REF-081 | 159,22 | 134,66 (négocié) | 3 | 403,98 |\n| REF-088 | 798,82 | 515,58 (négocié) | 3 | 1 546,74 |\n| REF-030 | 854,85 | 854,85 (catalogue) | 5 | 4 274,25 |\n| REF-078 | 127,19 | 127,19 (catalogue) | 4 | 508,76 |\n| REF-005 | 812,31 | 812,31 (catalogue) | 5 | 4 061,55 |\n\nTotal : 403,98 + 1 546,74 + 4 274,25 + 508,76 + 4 061,55 = **10 795,28 €**\n\nREPONSE: 10795.28",
+      "usage": {
+        "prompt_tokens": 11698,
+        "completion_tokens": 1464
+      }
+    },
+    {
+      "task_id": "I-04",
+      "band": "I_controle",
+      "depth": 10,
+      "min_steps": 10,
+      "rep": 3,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "10795.28",
+      "expected": 10795.28,
+      "steps": 12,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [
+        "expected_miss",
+        "expected_miss",
+        "expected_miss"
+      ],
+      "latency_s": 47.78,
+      "final_text": "Calcul détaillé pour la commande CMD-0036 (client CLI-022) :\n\n| Réf | Produit | Qté | Prix utilisé | Sous-total |\n|---|---|---|---|---|\n| REF-081 | Perle 3 | 3 | 134,66 (négocié) | 403,98 |\n| REF-088 | Ambre 4 | 3 | 515,58 (négocié) | 1 546,74 |\n| REF-030 | Ombra 6 | 5 | 854,85 (catalogue) | 4 274,25 |\n| REF-078 | Onyx 6 | 4 | 127,19 (catalogue) | 508,76 |\n| REF-005 | Lumia 5 | 5 | 812,31 (catalogue) | 4 061,55 |\n\nLe tarif négocié existait pour REF-081 et REF-088 ; pour les trois autres références, le prix catalogue a été appliqué.\n\nTotal : 403,98 + 1 546,74 + 4 274,25 + 508,76 + 4 061,55 = 10 795,28\n\nREPONSE: 10795.28",
+      "usage": {
+        "prompt_tokens": 11698,
+        "completion_tokens": 1225
+      }
+    },
+    {
+      "task_id": "I-04",
+      "band": "I_controle",
+      "depth": 10,
+      "min_steps": 10,
+      "rep": 4,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "10795.28",
+      "expected": 10795.28,
+      "steps": 12,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [
+        "expected_miss",
+        "expected_miss",
+        "expected_miss"
+      ],
+      "latency_s": 45.25,
+      "final_text": "Calcul du montant total de la commande CMD-0036 :\n\n| Réf. | Qté | Tarif appliqué | Sous-total |\n|------|-----|----------------|------------|\n| REF-081 (Perle 3) | 3 | 134,66 (négocié) | 403,98 |\n| REF-088 (Ambre 4) | 3 | 515,58 (négocié) | 1 546,74 |\n| REF-030 (Ombra 6) | 5 | 854,85 (catalogue) | 4 274,25 |\n| REF-078 (Onyx 6) | 4 | 127,19 (catalogue) | 508,76 |\n| REF-005 (Lumia 5) | 5 | 812,31 (catalogue) | 4 061,55 |\n\nMontant total : **10 795,28 €**\n\nREPONSE: 10795.28",
+      "usage": {
+        "prompt_tokens": 11698,
+        "completion_tokens": 1318
+      }
+    },
+    {
+      "task_id": "I-04",
+      "band": "I_controle",
+      "depth": 10,
+      "min_steps": 10,
+      "rep": 5,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "10795.28",
+      "expected": 10795.28,
+      "steps": 12,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [
+        "expected_miss",
+        "expected_miss",
+        "expected_miss"
+      ],
+      "latency_s": 43.88,
+      "final_text": "Calcul du montant total de la commande CMD-0036 :\n\n| Réf | Produit | Qté | Tarif (négocié sinon catalogue) | Sous-total |\n|---|---|---|---|---|\n| REF-081 | Perle 3 | 3 | 134,66 (négocié) | 403,98 |\n| REF-088 | Ambre 4 | 3 | 515,58 (négocié) | 1 546,74 |\n| REF-030 | Ombra 6 | 5 | 854,85 (catalogue) | 4 274,25 |\n| REF-078 | Onyx 6 | 4 | 127,19 (catalogue) | 508,76 |\n| REF-005 | Lumia 5 | 5 | 812,31 (catalogue) | 4 061,55 |\n\nMontant total : 10 795,28\n\nREPONSE: 10795.28",
+      "usage": {
+        "prompt_tokens": 11698,
+        "completion_tokens": 1316
+      }
+    }
+  ]
+}
