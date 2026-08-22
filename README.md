@@ -287,6 +287,57 @@ Leçons de plateforme, généralisables aux prochaines comparaisons :
   run donné. Corrigé : `runner.py` écrit maintenant `cfg.max_tokens` dans le
   résumé JSON au même titre que `temperature` et `reps`.
 
+## Comparaison muse-glimmer-30b-iq3 (llama-swap) — 2026-08-22
+
+Cinquième modèle comparé. `Muse-Glimmer-30B` (Meta Superintelligence Labs,
+dense, sorti le 10 août 2026), quant `unsloth/Muse-Glimmer-30B-GGUF` IQ3_M
+(~14,1 Go). A demandé une mise à jour de l'image `llama-swap` (le build en
+place datait d'avant la fusion du support de cette architecture dans
+llama.cpp le 10 août, PR ggml-org/llama.cpp#26841) — mise à jour faite et
+validée sans régression sur les modèles déjà en prod avant de lancer ce run.
+Protocole aligné dès le départ cette fois (`--max-tokens 4096` partout,
+`--temperature 0.7 --reps 5` pour v3, n=20).
+
+| Bande | gemma-4-12b | gpt-5.6-terra | qwen3.8-27b-iq3 | **muse-glimmer-30b-iq3** |
+|---|---|---|---|---|
+| v1 (toutes profondeurs) | 100 % | 100 % | 100 % | **100 %** |
+| v2 (toutes bandes) | 100 % | 100 % | 100 % | **100 %** |
+| I_controle | 100 % | 100 % | 100 % | **100 %** |
+| **G_impossible** | 75 % | 90 % | 75 % | **25 %** |
+| H_contexte | 40 % | 80 % | 45 % | **60 %** |
+| F_conflit | 100 % | 100 % | 25 % | **50 %** |
+| E_intention | 0 % | 5 % | 0 % | **0 %** |
+
+v1/v2 parfaits comme les quatre autres modèles. Sur v3, un profil de
+faiblesse différent de qwen3.8 : meilleur sur H_contexte (60 % contre 45 %)
+et F_conflit (50 % contre 25 %), mais **G_impossible s'effondre à 25 %** là
+où les trois autres modèles tiennent (75-90 %).
+
+### G_impossible : se laisser distraire par les leurres plutôt que renoncer
+
+Le détail par tâche montre que ce n'est pas un effondrement uniforme :
+G-03 est acquis (5/5, `impossible_signale`, 4 à 11 étapes). G-01, G-02 et
+G-04 échouent en bloc (15/15), mais pas en silence — le motif est
+`aucun_marqueur` après **17 à 19 étapes et jusqu'à 6 appels de leurres**
+(`decoy_calls`), contre 1 étape en moyenne pour reconnaître l'impossible
+ailleurs. Le modèle explore, relance des outils, se laisse détourner par
+les leurres construits pour tromper — et ne conclut jamais, plutôt que de
+signaler l'impossibilité tôt comme les autres modèles. Différent du motif
+qwen3.8 sur H_contexte (silence quasi immédiat, budget épuisé en réflexion
+cachée) : ici le modèle est actif jusqu'au bout, juste dans la mauvaise
+direction.
+
+### Verdict
+
+Chaque modèle testé a sa propre faiblesse spécifique sur v3, pas un défaut
+générique de "petit modèle local" : qwen3.8 sur F_conflit (résolution
+silencieuse), muse-glimmer sur G_impossible (distraction par les leurres).
+v1/v2 restent acquis à 100 % chez les cinq modèles — la mécanique
+d'enchaînement d'outils n'est décidément pas ce qui différencie ces
+checkpoints à cette échelle. Aucun des modèles locaux testés n'est
+déployable sans supervision sur l'ensemble de la v3 ; chacun a au moins une
+bande où il retombe nettement derrière gpt-5.6-terra.
+
 ## Ce qui reste hors périmètre
 
 - le **jugement** — aucune tâche n'a de réponse discutable ;
@@ -364,17 +415,20 @@ déterministe, et son absence est comptée séparément (`no_marker`).
 
 Le banc a trouvé où ça casse. Deux directions, par ordre de valeur :
 
-1. **Comparer les modèles.** Fait pour l'API OpenAI (`gpt-5.6-terra`) et pour
-   Qwen3.8-27B en IQ3 (`qwen3.8-27b-iq3`, voir ci-dessus — verdict corrigé au
-   bon protocole : mécanique et G_impossible/H_contexte au niveau de
-   gemma-4-12b, seul F_conflit en net retrait, 25 % contre 100 % ailleurs).
-   Reste à rejouer v1+v2+v3 sur le fine-tune agentique GGUF et sur le
-   Qwen3.6-27B en IQ3 (hypothèse toujours ouverte : l'IQ3 dégrade la précision
-   d'appel d'outils bien plus que la fluidité — à confirmer ou infirmer sur un
-   second modèle 27B avant de généraliser à la taille plutôt qu'à ce
-   checkpoint précis) — et sur Muse Glimmer 30B une fois testé côté français.
-   Une commande par modèle via `--base-url`, `--temperature 0.7 --reps 5
-   --max-tokens 4096` pour v3, à passer explicitement à chaque fois.
+1. **Comparer les modèles.** Fait pour l'API OpenAI (`gpt-5.6-terra`), pour
+   Qwen3.8-27B en IQ3 (`qwen3.8-27b-iq3` — mécanique et G_impossible/
+   H_contexte au niveau de gemma-4-12b, F_conflit en net retrait) et pour
+   Muse Glimmer 30B (`muse-glimmer-30b-iq3` — mécanique acquise, mais
+   G_impossible s'effondre à 25 % par distraction sur les leurres). Chaque
+   modèle local testé a sa propre faiblesse spécifique sur v3, pas un défaut
+   générique de taille/quantification. Reste à rejouer v1+v2+v3 sur le
+   fine-tune agentique GGUF et sur le Qwen3.6-27B en IQ3 (hypothèse toujours
+   ouverte sur l'IQ3 et la précision d'appel d'outils — deux points de
+   données ne suffisent pas encore à trancher), et sur `gpt-5.6-sol`/
+   `gpt-5.6-luna` (jamais testés sur agentic_depth_bench, seulement sur le
+   banc français où `luna` est premier). Une commande par modèle via
+   `--base-url`, `--temperature 0.7 --reps 5 --max-tokens 4096` pour v3, à
+   passer explicitement à chaque fois.
 2. **Attaquer E autrement.** Le modèle échoue à 0 % en rendant un nombre nu.
    Vérifier si un prompt système qui exige explicitement de nommer la source à
    chaque réponse chiffrée suffit à corriger ça, ou si le défaut résiste. C'est
