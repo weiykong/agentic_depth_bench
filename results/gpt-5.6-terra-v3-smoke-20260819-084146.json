@@ -1,0 +1,32 @@
+{
+  "model": "gpt-5.6-terra",
+  "suite": "v3",
+  "base_url": "https://api.openai.com/v1",
+  "timestamp": "20260819-084146",
+  "reps": 1,
+  "temperature": 0.0,
+  "wall_time_s": 6.8,
+  "runs": [
+    {
+      "task_id": "H-01",
+      "band": "H_contexte",
+      "depth": 12,
+      "min_steps": 12,
+      "rep": 1,
+      "correct": false,
+      "verdict": "valeur_fausse",
+      "answer": "111995.63",
+      "expected": 114852.91,
+      "steps": 12,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [],
+      "latency_s": 6.84,
+      "final_text": "Valeur totale au prix catalogue : 111995.63\n\nREPONSE: 111995.63",
+      "usage": {
+        "prompt_tokens": 9837,
+        "completion_tokens": 313
+      }
+    }
+  ]
+}

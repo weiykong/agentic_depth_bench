@@ -1,0 +1,38 @@
+{
+  "model": "gpt-5.6-terra",
+  "suite": "v2",
+  "base_url": "https://api.openai.com/v1",
+  "timestamp": "20260819-084139",
+  "reps": 1,
+  "temperature": 0.0,
+  "wall_time_s": 8.6,
+  "runs": [
+    {
+      "task_id": "D-01",
+      "band": "D_composite",
+      "depth": 18,
+      "min_steps": 18,
+      "rep": 1,
+      "correct": true,
+      "verdict": "ok",
+      "answer": "13128.69",
+      "expected": 13128.69,
+      "steps": 21,
+      "decoy_calls": 0,
+      "stop_reason": "ok",
+      "errors": [
+        "expected_miss",
+        "expected_miss",
+        "expected_miss",
+        "expected_miss",
+        "expected_miss"
+      ],
+      "latency_s": 8.64,
+      "final_text": "REPONSE: 13128.69",
+      "usage": {
+        "prompt_tokens": 8180,
+        "completion_tokens": 553
+      }
+    }
+  ]
+}

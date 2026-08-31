@@ -1,0 +1,49 @@
+{
+  "model": "gpt-5.6-terra",
+  "suite": "v1",
+  "base_url": "https://api.openai.com/v1",
+  "timestamp": "20260819-084008",
+  "reps": 1,
+  "temperature": 0.0,
+  "wall_time_s": 0.9,
+  "runs": [
+    {
+      "task_id": "d1-01",
+      "band": "d1",
+      "depth": 1,
+      "min_steps": 1,
+      "rep": 1,
+      "correct": false,
+      "verdict": "aucune_reponse",
+      "answer": null,
+      "expected": 125,
+      "steps": 0,
+      "decoy_calls": 0,
+      "stop_reason": "http_400",
+      "errors": [
+        "http_400"
+      ],
+      "latency_s": 0.84,
+      "final_text": ""
+    },
+    {
+      "task_id": "d1-02",
+      "band": "d1",
+      "depth": 1,
+      "min_steps": 1,
+      "rep": 1,
+      "correct": false,
+      "verdict": "aucune_reponse",
+      "answer": null,
+      "expected": 545.98,
+      "steps": 0,
+      "decoy_calls": 0,
+      "stop_reason": "http_400",
+      "errors": [
+        "http_400"
+      ],
+      "latency_s": 0.86,
+      "final_text": ""
+    }
+  ]
+}
