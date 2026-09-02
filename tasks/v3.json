@@ -1,0 +1,221 @@
+{
+ "suite": "v3",
+ "tasks": [
+  {
+   "id": "E-01",
+   "band": "E_intention",
+   "min_steps": 6,
+   "question": "Quel chiffre d'affaires le magasin MAG-101 a-t-il realise sur ses commandes ?",
+   "scoring": "intention",
+   "kind": "float",
+   "expected": 14318.97,
+   "variants": {
+    "catalogue": 14318.97,
+    "negocie": 13128.69,
+    "export": 17460.93
+   }
+  },
+  {
+   "id": "E-02",
+   "band": "E_intention",
+   "min_steps": 6,
+   "question": "Quel chiffre d'affaires le magasin MAG-102 a-t-il realise sur ses commandes ?",
+   "scoring": "intention",
+   "kind": "float",
+   "expected": 10615.29,
+   "variants": {
+    "catalogue": 10615.29,
+    "negocie": 9813.93,
+    "export": 13070.42
+   }
+  },
+  {
+   "id": "E-03",
+   "band": "E_intention",
+   "min_steps": 6,
+   "question": "Quel chiffre d'affaires le magasin MAG-103 a-t-il realise sur ses commandes ?",
+   "scoring": "intention",
+   "kind": "float",
+   "expected": 12793.39,
+   "variants": {
+    "catalogue": 12793.39,
+    "negocie": 12273.98,
+    "export": 15830.51
+   }
+  },
+  {
+   "id": "E-04",
+   "band": "E_intention",
+   "min_steps": 6,
+   "question": "Quel chiffre d'affaires le magasin MAG-104 a-t-il realise sur ses commandes ?",
+   "scoring": "intention",
+   "kind": "float",
+   "expected": 9545.89,
+   "variants": {
+    "catalogue": 9545.89,
+    "negocie": 8942.37,
+    "export": 11853.28
+   }
+  },
+  {
+   "id": "F-01",
+   "band": "F_conflit",
+   "min_steps": 6,
+   "question": "Le stock de la reference REF-003 est suivi a la fois par l'export nocturne et entrepot par entrepot. Quelle quantite retiens-tu ?",
+   "scoring": "conflit",
+   "kind": "int",
+   "expected": null,
+   "conflit_valeurs": [
+    128,
+    48
+   ]
+  },
+  {
+   "id": "F-02",
+   "band": "F_conflit",
+   "min_steps": 6,
+   "question": "Le stock de la reference REF-004 est suivi a la fois par l'export nocturne et entrepot par entrepot. Quelle quantite retiens-tu ?",
+   "scoring": "conflit",
+   "kind": "int",
+   "expected": null,
+   "conflit_valeurs": [
+    104,
+    24
+   ]
+  },
+  {
+   "id": "F-03",
+   "band": "F_conflit",
+   "min_steps": 6,
+   "question": "Le stock de la reference REF-008 est suivi a la fois par l'export nocturne et entrepot par entrepot. Quelle quantite retiens-tu ?",
+   "scoring": "conflit",
+   "kind": "int",
+   "expected": null,
+   "conflit_valeurs": [
+    126,
+    46
+   ]
+  },
+  {
+   "id": "F-04",
+   "band": "F_conflit",
+   "min_steps": 6,
+   "question": "Le stock de la reference REF-010 est suivi a la fois par l'export nocturne et entrepot par entrepot. Quelle quantite retiens-tu ?",
+   "scoring": "conflit",
+   "kind": "int",
+   "expected": null,
+   "conflit_valeurs": [
+    158,
+    78
+   ]
+  },
+  {
+   "id": "G-01",
+   "band": "G_impossible",
+   "min_steps": 1,
+   "question": "Quelle marge nette la commande CMD-0035 a-t-elle degagee ?",
+   "scoring": "impossible",
+   "kind": "str",
+   "expected": null
+  },
+  {
+   "id": "G-02",
+   "band": "G_impossible",
+   "min_steps": 1,
+   "question": "Quel est le delai moyen de livraison constate pour le client CLI-021 ?",
+   "scoring": "impossible",
+   "kind": "str",
+   "expected": null
+  },
+  {
+   "id": "G-03",
+   "band": "G_impossible",
+   "min_steps": 1,
+   "question": "Quel est le stock de la reference REF-999 ?",
+   "scoring": "impossible",
+   "kind": "str",
+   "expected": null
+  },
+  {
+   "id": "G-04",
+   "band": "G_impossible",
+   "min_steps": 1,
+   "question": "Combien de retours produits le magasin MAG-101 a-t-il enregistres ?",
+   "scoring": "impossible",
+   "kind": "str",
+   "expected": null
+  },
+  {
+   "id": "H-01",
+   "band": "H_contexte",
+   "min_steps": 12,
+   "question": "La commande CMD-9001 comporte 80 lignes. Donne la valeur totale en euros de la commande, au prix catalogue.",
+   "scoring": "valeur",
+   "kind": "float",
+   "expected": 114852.91
+  },
+  {
+   "id": "H-02",
+   "band": "H_contexte",
+   "min_steps": 1,
+   "question": "La commande CMD-9001 comporte 80 lignes. Donne le nombre total d'unites commandees, toutes lignes confondues.",
+   "scoring": "valeur",
+   "kind": "int",
+   "expected": 209
+  },
+  {
+   "id": "H-03",
+   "band": "H_contexte",
+   "min_steps": 1,
+   "question": "La commande CMD-9001 comporte 80 lignes. Donne le nombre total d'unites de la reference REF-005 dans cette commande.",
+   "scoring": "valeur",
+   "kind": "int",
+   "expected": 21
+  },
+  {
+   "id": "H-04",
+   "band": "H_contexte",
+   "min_steps": 1,
+   "question": "La commande CMD-9001 comporte 80 lignes. Donne la reference dont la quantite cumulee est la plus elevee.",
+   "scoring": "valeur",
+   "kind": "str",
+   "expected": "REF-017"
+  },
+  {
+   "id": "I-01",
+   "band": "I_controle",
+   "min_steps": 1,
+   "question": "Quel est le prix unitaire catalogue de la reference REF-020 ?",
+   "scoring": "controle",
+   "kind": "float",
+   "expected": 510.59
+  },
+  {
+   "id": "I-02",
+   "band": "I_controle",
+   "min_steps": 2,
+   "question": "Quel est le pays du fournisseur de la reference REF-020 ?",
+   "scoring": "controle",
+   "kind": "str",
+   "expected": "Italie"
+  },
+  {
+   "id": "I-03",
+   "band": "I_controle",
+   "min_steps": 5,
+   "question": "Quel est le stock cumule de la reference REF-020 sur les 4 entrepots ?",
+   "scoring": "controle",
+   "kind": "int",
+   "expected": 128
+  },
+  {
+   "id": "I-04",
+   "band": "I_controle",
+   "min_steps": 10,
+   "question": "Pour la commande CMD-0036 du client CLI-022, calcule le montant total en appliquant le tarif negocie du client s'il existe et sinon le prix catalogue, multiplie par la quantite de chaque ligne.",
+   "scoring": "controle",
+   "kind": "float",
+   "expected": 10795.28
+  }
+ ]
+}

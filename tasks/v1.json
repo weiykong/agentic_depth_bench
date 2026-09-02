@@ -1,0 +1,165 @@
+{
+ "suite": "v1",
+ "tasks": [
+  {
+   "id": "d1-01",
+   "depth": 1,
+   "min_steps": 1,
+   "question": "Quel est le stock de la reference REF-007 ?",
+   "kind": "int",
+   "expected": 125
+  },
+  {
+   "id": "d1-02",
+   "depth": 1,
+   "min_steps": 1,
+   "question": "Quel est le prix unitaire en euros de la reference REF-019 ?",
+   "kind": "float",
+   "expected": 545.98
+  },
+  {
+   "id": "d1-03",
+   "depth": 1,
+   "min_steps": 1,
+   "question": "Quelle est la famille de la reference REF-032 ?",
+   "kind": "str",
+   "expected": "Plan de travail"
+  },
+  {
+   "id": "d1-04",
+   "depth": 1,
+   "min_steps": 1,
+   "question": "Quel est le stock de la reference REF-044 ?",
+   "kind": "int",
+   "expected": 290
+  },
+  {
+   "id": "d1-05",
+   "depth": 1,
+   "min_steps": 1,
+   "question": "Quel est le prix unitaire en euros de la reference REF-058 ?",
+   "kind": "float",
+   "expected": 82.6
+  },
+  {
+   "id": "d3-01",
+   "depth": 3,
+   "min_steps": 3,
+   "question": "Pour la commande CMD-0003, considere le produit de sa premiere ligne. Quel est le delai de livraison en jours du fournisseur de ce produit ?",
+   "kind": "int",
+   "expected": 21
+  },
+  {
+   "id": "d3-02",
+   "depth": 3,
+   "min_steps": 3,
+   "question": "Pour la commande CMD-0011, considere le produit de sa premiere ligne. Quel est le pays du fournisseur de ce produit ?",
+   "kind": "str",
+   "expected": "Allemagne"
+  },
+  {
+   "id": "d3-03",
+   "depth": 3,
+   "min_steps": 3,
+   "question": "Pour la commande CMD-0020, considere le produit de sa premiere ligne. Quel est le delai de livraison en jours du fournisseur de ce produit ?",
+   "kind": "int",
+   "expected": 44
+  },
+  {
+   "id": "d3-04",
+   "depth": 3,
+   "min_steps": 3,
+   "question": "Pour la commande CMD-0027, considere le produit de sa premiere ligne. Quel est le pays du fournisseur de ce produit ?",
+   "kind": "str",
+   "expected": "Espagne"
+  },
+  {
+   "id": "d3-05",
+   "depth": 3,
+   "min_steps": 3,
+   "question": "Pour la commande CMD-0034, considere le produit de sa premiere ligne. Quel est le delai de livraison en jours du fournisseur de ce produit ?",
+   "kind": "int",
+   "expected": 34
+  },
+  {
+   "id": "d6-01",
+   "depth": 6,
+   "min_steps": 6,
+   "question": "Le client CLI-021 a passe plusieurs commandes, chacune avec une seule ligne. Quelle est la somme des prix unitaires des produits concernes ?",
+   "kind": "float",
+   "expected": 1602.99
+  },
+  {
+   "id": "d6-02",
+   "depth": 6,
+   "min_steps": 6,
+   "question": "Le client CLI-022 a passe plusieurs commandes, chacune avec une seule ligne. Quelle est la somme des prix unitaires des produits concernes ?",
+   "kind": "float",
+   "expected": 265.95
+  },
+  {
+   "id": "d6-03",
+   "depth": 6,
+   "min_steps": 6,
+   "question": "Le client CLI-023 a passe plusieurs commandes, chacune avec une seule ligne. Quelle est la somme des prix unitaires des produits concernes ?",
+   "kind": "float",
+   "expected": 1505.2
+  },
+  {
+   "id": "d6-04",
+   "depth": 6,
+   "min_steps": 6,
+   "question": "Le client CLI-024 a passe plusieurs commandes, chacune avec une seule ligne. Quelle est la somme des prix unitaires des produits concernes ?",
+   "kind": "float",
+   "expected": 784.27
+  },
+  {
+   "id": "d6-05",
+   "depth": 6,
+   "min_steps": 6,
+   "question": "Le client CLI-025 a passe plusieurs commandes, chacune avec une seule ligne. Quelle est la somme des prix unitaires des produits concernes ?",
+   "kind": "float",
+   "expected": 1328.07
+  },
+  {
+   "id": "d10-01",
+   "depth": 10,
+   "min_steps": 10,
+   "question": "Quelle est la valeur totale de toutes les commandes du client CLI-031, c'est-a-dire la somme sur chaque ligne du prix unitaire multiplie par la quantite ?",
+   "kind": "float",
+   "expected": 4671.99
+  },
+  {
+   "id": "d10-02",
+   "depth": 10,
+   "min_steps": 10,
+   "question": "Quelle est la valeur totale de toutes les commandes du client CLI-032, c'est-a-dire la somme sur chaque ligne du prix unitaire multiplie par la quantite ?",
+   "kind": "float",
+   "expected": 7551.44
+  },
+  {
+   "id": "d10-03",
+   "depth": 10,
+   "min_steps": 10,
+   "question": "Quelle est la valeur totale de toutes les commandes du client CLI-033, c'est-a-dire la somme sur chaque ligne du prix unitaire multiplie par la quantite ?",
+   "kind": "float",
+   "expected": 11623.09
+  },
+  {
+   "id": "d10-04",
+   "depth": 10,
+   "min_steps": 10,
+   "question": "Quelle est la valeur totale de toutes les commandes du client CLI-034, c'est-a-dire la somme sur chaque ligne du prix unitaire multiplie par la quantite ?",
+   "kind": "float",
+   "expected": 3165.55
+  },
+  {
+   "id": "d10-05",
+   "depth": 10,
+   "min_steps": 10,
+   "question": "Quelle est la valeur totale de toutes les commandes du client CLI-035, c'est-a-dire la somme sur chaque ligne du prix unitaire multiplie par la quantite ?",
+   "kind": "float",
+   "expected": 6954.89
+  }
+ ]
+}
